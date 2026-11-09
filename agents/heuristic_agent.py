@@ -101,12 +101,15 @@ def _opponent_can_win_immediately(env: ConnectFourEnv) -> bool:
 
 def conn_think3(env: ConnectFourEnv) -> int:
     """
-    Cấp 4 - Heuristic (Look 3 steps ahead):
+    C    Cấp 4 - Heuristic (nhìn 2 nước, chặn đối thủ trước, ưu tiên cột giữa):
     1. Thắng ngay nếu có thể.
-    2. Chặn đối thủ thắng ngay.
-    3. Tìm nước tạo "fork" (đối thủ không thể chặn cả hai mối đe dọa sau 3 bước).
-    4. Tránh nước giúp đối thủ thắng sau 2 bước.
-    5. Ưu tiên cột giữa (4), sau đó cột gần giữa (3, 5, 2, 6, 1, 7).
+    2. Chặn: nếu đối thủ có nước thắng ngay thì chơi vào cột đó (nếu có nhiều
+       cột thì lấy cột nhỏ nhất).
+    3. Lọc các nước an toàn (không để đối thủ thắng ngay ở lượt sau), rồi chọn
+       theo thứ tự ưu tiên 4, 3, 5, 2, 6, 1, 7.
+    4. Nếu không có nước an toàn, chọn cột hợp lệ theo cùng thứ tự ưu tiên.
+    Lưu ý: không có bước tìm "fork" (hai mối đe dọa cùng lúc) và không có
+    chuỗi tấn công nhiều nước.
     
     Theo sách Liu (2024), Ch. 3, conn_think3().
     """
