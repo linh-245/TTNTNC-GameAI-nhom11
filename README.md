@@ -1,8 +1,8 @@
 # Connect Four 7×6 – Game AI đa cấp độ
 
-![tests](https://github.com/TEN_USER/TEN_REPO/actions/workflows/test.yml/badge.svg)
+![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg)
 
-Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 12 – GVHD: TS. Đỗ Như Tài.
+Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 11 – GVHD: TS. Đỗ Như Tài.
 Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Beta, MCTS và mạng nơ-ron, sau đó so sánh bằng giải đấu có kiểm soát ngân sách tính toán.
 
 ![Giao diện demo](docs/images/demo_ui.png)
@@ -11,9 +11,9 @@ Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Bet
 
 | Họ tên | MSSV | GitHub | Phụ trách |
 |---|---|---|---|
-| Nguyễn Kiều Linh (nhóm trưởng) | 3124720039 | @username | Engine, giao diện, Cấp 1–2, kiểm thử, solver, tích hợp |
-| Nguyễn Huỳnh Mai | 3124720043 | @username | Alpha-Beta, MCTS, giải đấu, ablation |
-| Nguyễn Lương Hồng Búp | 3124720009 | @username | Dữ liệu, Neural Network, RL |
+| Nguyễn Kiều Linh (nhóm trưởng) | 3124720039 | linh-245 | Engine, giao diện, Cấp 1–2, kiểm thử, solver, tích hợp |
+| Nguyễn Huỳnh Mai | 3124720043 | chloestudy0043-stack | Alpha-Beta, MCTS, giải đấu, ablation |
+| Nguyễn Lương Hồng Búp | 3124720009 | bupnguyen-19 | Dữ liệu, Neural Network, RL |
 
 Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
@@ -24,7 +24,7 @@ Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đ
 | 1 | Random | `agents/random_agent.py` | Đã có |
 | 2 | Rule-based (Think1–3) | `agents/heuristic_agent.py` | Đã có |
 | 3 | Alpha-Beta | `agents/alphabeta_agent.py` | Đã có; đang thêm cờ cắt tỉa, đếm nút, giới hạn thời gian |
-| 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; đang thêm seed, ngân sách thời gian |
+| 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; code đã có seed, ngân sách thời gian (`budget_ms`), `last_stats` |
 | 5 | Neural Network | `agents/nn_agent.py` | Đang thực hiện |
 | 6 | Reinforcement Learning | `training/train_rl.py` | Đang thực hiện |
 
@@ -39,9 +39,9 @@ training/    Sinh dữ liệu, huấn luyện SL và RL
 eval/        Giải đấu round-robin, Wilson CI, ablation
 ui/          Giao diện Pygame
 tests/       Kiểm thử tự động
-notebooks/   Notebook tạo bảng và hình từ log
-weights/     Checkpoint mô hình (file nhỏ)
-logs/        Log thi đấu thô
+notebooks/   Notebook tạo bảng và hình từ log (chưa có; hiện notebook nằm ở eval/, tests/ và demo.ipynb)
+weights/     Checkpoint mô hình, file nhỏ (sẽ có)
+logs/        Log thi đấu thô (sẽ có)
 docs/        Báo cáo, nhật ký đóng góp, hình
 ```
 
@@ -52,14 +52,14 @@ pip install -r requirements.txt
 
 python ui/pygame_ui.py          # demo chơi: Human vs AI, AI vs AI
 python -m pytest tests -q       # chạy kiểm thử
-python eval/tournament.py       # giải đấu (đang chuyển từ notebook sang file .py)
+# giải đấu: mở eval/tournament.ipynb (chưa có bản .py)
 ```
 
 Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (thêm khi hoàn thành). Ghi rõ seed, số ván, cấu hình máy trong các file này.
 
 ## Kết quả
 
-Bảng và hình nằm trong `results/` và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
+Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
 
 | Nội dung | Link |
 |---|---|
@@ -74,7 +74,7 @@ Bảng và hình nằm trong `results/` và được sinh lại từ `notebooks/
 
 ## Quy ước làm việc nhóm
 
-- Commit message của đề tài cuối kỳ: `CuoiKy/<Khu vực>: <việc đã làm>`, ví dụ `CuoiKy/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
+- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
 - Mỗi việc là một Issue; làm trên nhánh `feat/<tên>-<việc>`; gộp bằng Pull Request có người review.
 - Chi tiết: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md).
 
