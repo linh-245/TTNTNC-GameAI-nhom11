@@ -1,8 +1,8 @@
 # Connect Four 7×6 – Game AI đa cấp độ
 
-![tests](https://github.com/TEN_USER/TEN_REPO/actions/workflows/test.yml/badge.svg)
+![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg)
 
-Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 12 – GVHD: TS. Đỗ Như Tài.
+Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 11 – GVHD: TS. Đỗ Như Tài.
 Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Beta, MCTS và mạng nơ-ron, sau đó so sánh bằng giải đấu có kiểm soát ngân sách tính toán.
 
 ![Giao diện demo](docs/images/demo_ui.png)
@@ -11,9 +11,9 @@ Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Bet
 
 | Họ tên | MSSV | GitHub | Phụ trách |
 |---|---|---|---|
-| Nguyễn Kiều Linh (nhóm trưởng) | 3124720039 | @username | Engine, giao diện, Cấp 1–2, kiểm thử, solver, tích hợp |
-| Nguyễn Huỳnh Mai | 3124720043 | @username | Alpha-Beta, MCTS, giải đấu, ablation |
-| Nguyễn Lương Hồng Búp | 3124720009 | @username | Dữ liệu, Neural Network, RL |
+| Nguyễn Kiều Linh (nhóm trưởng) | 3124720039 | linh-245 | Engine, giao diện, Cấp 1–2, kiểm thử, solver, tích hợp |
+| Nguyễn Huỳnh Mai | 3124720043 | chloestudy0043-stack | Alpha-Beta, MCTS, giải đấu, ablation |
+| Nguyễn Lương Hồng Búp | 3124720009 | bupnguyen-19 | Dữ liệu, Neural Network, RL |
 
 Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
@@ -74,7 +74,7 @@ Bảng và hình nằm trong `results/` và được sinh lại từ `notebooks/
 
 ## Quy ước làm việc nhóm
 
-- Commit message của đề tài cuối kỳ: `CuoiKy/<Khu vực>: <việc đã làm>`, ví dụ `CuoiKy/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
+- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
 - Mỗi việc là một Issue; làm trên nhánh `feat/<tên>-<việc>`; gộp bằng Pull Request có người review.
 - Chi tiết: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md).
 
