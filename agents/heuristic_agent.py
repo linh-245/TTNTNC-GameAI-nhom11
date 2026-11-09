@@ -6,13 +6,17 @@ from game.connect4_env import ConnectFourEnv
 
 
 """
-Cấp 2 & 3: Heuristic Rule-Based Agent
-========================================
-Theo sách Ch. 3 (conn_think1, conn_think2, conn_think3).
+Cấp 2, 3 & 4: Heuristic Rule-Based Agent
+=========================================
+Kế thừa khung sách Liu (2024), Ch. 3 (conn_think1, conn_think2, conn_think3);
+nhóm đã sửa lỗi và chỉnh mô tả cho khớp với code hiện tại.
 
-Cấp 2 (Think1):  Nhìn 1 bước trước - thắng ngay nếu có thể.
-Cấp 3 (Think2):  Nhìn 2 bước - thắng ngay hoặc chặn đối thủ.
-Cấp 4 (Think3):  Nhìn 3 bước - đánh bại bằng chuỗi 2 nước tấn công.
+Cấp 2 (Think1):  Thắng ngay nếu có nước thắng, ngược lại đi ngẫu nhiên.
+Cấp 3 (Think2):  Thắng ngay; nếu không, đi nước đầu tiên (cột nhỏ nhất)
+                 không để đối thủ thắng ngay ở lượt sau.
+Cấp 4 (Think3):  Thắng ngay; chặn nước thắng của đối thủ; nếu không, đi nước
+                 không để đối thủ thắng ngay theo thứ tự ưu tiên cột giữa.
+                 Không có bước tìm "fork" hay chuỗi tấn công nhiều nước.
 """
 
 import sys
