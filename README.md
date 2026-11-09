@@ -59,7 +59,7 @@ Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README
 
 ## Kết quả
 
-Bảng và hình nằm trong `results/` và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
+Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
 
 | Nội dung | Link |
 |---|---|
