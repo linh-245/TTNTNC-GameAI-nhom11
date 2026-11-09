@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 python ui/pygame_ui.py          # demo chơi: Human vs AI, AI vs AI
 python -m pytest tests -q       # chạy kiểm thử
-python eval/tournament.py       # giải đấu (đang chuyển từ notebook sang file .py)
+# giải đấu: mở eval/tournament.ipynb (chưa có bản .py)
 ```
 
 Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (thêm khi hoàn thành). Ghi rõ seed, số ván, cấu hình máy trong các file này.
