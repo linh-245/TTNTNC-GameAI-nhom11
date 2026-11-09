@@ -12,10 +12,11 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 |---|---|---|
 | | | |
 
-## Nguyễn Lương Hồng Búp (@github-username)
+## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
-| | | |
+| 09/11 | Viết `training/encode.py` (mã hóa trạng thái 3x6x7) và `training/__init__.py` | commit `d43ff13`, nhánh `feat/bup-encode-model` (chưa push) |
+| 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | PR #6, nhánh `docs/bup-readme` |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
