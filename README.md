@@ -39,9 +39,9 @@ training/    Sinh dữ liệu, huấn luyện SL và RL
 eval/        Giải đấu round-robin, Wilson CI, ablation
 ui/          Giao diện Pygame
 tests/       Kiểm thử tự động
-notebooks/   Notebook tạo bảng và hình từ log
-weights/     Checkpoint mô hình (file nhỏ)
-logs/        Log thi đấu thô
+notebooks/   Notebook tạo bảng và hình từ log (chưa có; hiện notebook nằm ở eval/, tests/ và demo.ipynb)
+weights/     Checkpoint mô hình, file nhỏ (sẽ có)
+logs/        Log thi đấu thô (sẽ có)
 docs/        Báo cáo, nhật ký đóng góp, hình
 ```
 
