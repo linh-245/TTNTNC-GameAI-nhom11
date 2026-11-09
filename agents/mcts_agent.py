@@ -1,12 +1,10 @@
 import sys
 import os
-
-
 import math
 import random
+import time
 from typing import Optional, List, Dict
 from game.connect4_env import ConnectFourEnv
-
 
 """
 Cấp 5: Monte Carlo Tree Search (MCTS/UCT)
@@ -23,8 +21,6 @@ Bốn pha:
   4. Backpropagation: cập nhật W, N ngược lên root
 """
 
-import sys
-import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
@@ -63,10 +59,10 @@ class MCTSNode:
     def best_child(self, c: float = math.sqrt(2)) -> 'MCTSNode':
         return max(self.children, key=lambda node: node.uct_score(c))
 
-    def expand(self) -> 'MCTSNode':
-        """Mở rộng một node chưa được thăm."""
+    def expand(self, rng: random.Random) -> 'MCTSNode':
+        """Mở rộng một node chưa được thăm bằng đối tượng random riêng (rng)."""
         action = self.untried_actions.pop(
-            random.randint(0, len(self.untried_actions) - 1)
+            rng.randint(0, len(self.untried_actions) - 1)
         )
         new_env = self.env.copy()
         mover = new_env.turn
@@ -81,9 +77,9 @@ class MCTSNode:
         self.wins += result
 
 
-def _simulate(env: ConnectFourEnv, root_turn: str) -> float:
+def _simulate(env: ConnectFourEnv, root_turn: str, rng: random.Random) -> float:
     """
-    Rollout ngẫu nhiên đến khi game kết thúc.
+    Rollout ngẫu nhiên đến khi game kết thúc bằng rng riêng.
     
     Returns
     -------
@@ -91,44 +87,47 @@ def _simulate(env: ConnectFourEnv, root_turn: str) -> float:
     """
     sim_env = env.copy()
     while not sim_env.done:
-        action = sim_env.sample()
+        # Lấy danh sách action hợp lệ từ env và chọn ngẫu nhiên bằng rng riêng
+        valid_actions = sim_env.get_valid_actions()
+        if not valid_actions:
+            break
+        action = rng.choice(valid_actions)
         _, reward, done, _ = sim_env.step(action)
 
     if sim_env.reward == 0:
         return 0.0
 
-    # Xác định người thắng
-    # Người vừa đi (trước khi done=True) là người thắng
-    # Sau step() cuối, turn đã không đổi (vì done=True)
-    winner_turn = sim_env.turn  # Người đã thắng (done=True sau khi họ đi)
+    winner_turn = sim_env.turn  # Người đã thắng
     if winner_turn == root_turn:
         return 1.0
     return -1.0
 
 
 def mcts_agent(env: ConnectFourEnv, n_simulations: int = 800,
-               c: float = math.sqrt(2)) -> int:
+               c: float = math.sqrt(2), budget_ms: Optional[int] = None,
+               seed: Optional[int] = None) -> int:
     """
-    Cấp 6 - MCTS/UCT agent.
-    
-    Theo sách Liu (2024), Ch. 8, mcts_agent().
-    
-    Parameters
-    ----------
-    env : ConnectFourEnv
-    n_simulations : int
-        Số mô phỏng (rollout). Mặc định 800.
-    c : float
-        Hằng số khám phá trong UCT. Mặc định sqrt(2).
-    
-    Returns
-    -------
-    int : cột tốt nhất (1-7)
+    Cấp 6 - MCTS/UCT agent (đã tối ưu budget_ms, seed và last_stats).
     """
+    # Khởi tạo đối tượng random riêng theo seed (nếu có)
+    rng = random.Random(seed)
+
     root_turn = env.turn
     root = MCTSNode(env)
 
-    for _ in range(n_simulations):
+    start_time = time.time()
+    sims = 0
+    
+    # Chuyển đổi budget từ milliseconds sang giây
+    budget_sec = (budget_ms / 1000.0) if budget_ms is not None else None
+
+    while sims < n_simulations:
+        # Kiểm tra giới hạn thời gian nếu có budget_ms
+        if budget_sec is not None:
+            elapsed = time.time() - start_time
+            if elapsed >= budget_sec:
+                break
+
         node = root
 
         # 1. Selection
@@ -137,25 +136,36 @@ def mcts_agent(env: ConnectFourEnv, n_simulations: int = 800,
 
         # 2. Expansion
         if not node.is_terminal() and not node.is_fully_expanded():
-            node = node.expand()
+            node = node.expand(rng)
 
         # 3. Simulation
-        result = _simulate(node.env, root_turn)
+        result = _simulate(node.env, root_turn, rng)
 
         # 4. Backpropagation
         while node is not None:
-            # result từ góc nhìn root_turn
-            # Nếu node thuộc lượt root_turn → wins là tốt
-            # Nếu node thuộc lượt đối thủ → wins là xấu cho root
             if node.mover == root_turn:
                 node.update(result)
             else:
                 node.update(-result)
             node = node.parent
 
-    # Chọn nước đi tốt nhất (theo số lần thăm, không theo UCT score)
+        sims += 1
+
+    latency_ms = (time.time() - start_time) * 1000.0
+
+    # Ghi nhận thống kê vào last_stats theo quy ước
+    mcts_agent.last_stats = {
+        "sims": sims,
+        "latency_ms": round(latency_ms, 2)
+    }
+
+    # Chọn nước đi tốt nhất theo số lần thăm (visits)
     if not root.children:
         return env.sample()
 
     best = max(root.children, key=lambda n: n.visits)
     return best.action
+
+
+# Khởi tạo giá trị mặc định ban đầu cho last_stats
+mcts_agent.last_stats = {"sims": 0, "latency_ms": 0.0}
