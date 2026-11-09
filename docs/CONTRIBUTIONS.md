@@ -7,10 +7,11 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 |---|---|---|
 | | | |
 
-## Nguyễn Huỳnh Mai (@github-username)
+## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
-| | | |
+|09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
+|09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
 
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
