@@ -24,7 +24,7 @@ Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đ
 | 1 | Random | `agents/random_agent.py` | Đã có |
 | 2 | Rule-based (Think1–3) | `agents/heuristic_agent.py` | Đã có |
 | 3 | Alpha-Beta | `agents/alphabeta_agent.py` | Đã có; đang thêm cờ cắt tỉa, đếm nút, giới hạn thời gian |
-| 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; đang thêm seed, ngân sách thời gian |
+| 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; code đã có seed, ngân sách thời gian (`budget_ms`), `last_stats` |
 | 5 | Neural Network | `agents/nn_agent.py` | Đang thực hiện |
 | 6 | Reinforcement Learning | `training/train_rl.py` | Đang thực hiện |
 
