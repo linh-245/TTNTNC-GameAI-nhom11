@@ -42,11 +42,15 @@ def conn_think1(env: ConnectFourEnv) -> int:
 
 def conn_think2(env: ConnectFourEnv) -> int:
     """
-    Cấp 3 - Heuristic (Look 2 steps ahead):
+        Cấp 3 - Heuristic (nhìn 2 nước: nước của ta và phản hồi của đối thủ):
     1. Nếu có nước thắng ngay → đánh ngay.
-    2. Nếu đối thủ có nước thắng ngay → chặn.
-    3. Tránh các nước giúp đối thủ thắng ở bước tiếp theo.
-    4. Ngược lại, chọn ngẫu nhiên.
+    2. Với mỗi nước còn lại, thử xem đối thủ có thắng ngay ở lượt sau không;
+       nước nào để đối thủ thắng thì xếp vào nhóm "xấu". Nếu đối thủ sắp
+       thắng, các nước khác đều là "xấu" nên ta sẽ chọn đúng nước chặn.
+    3. Chọn nước đầu tiên (cột nhỏ nhất) trong nhóm không để đối thủ thắng.
+    4. Nếu mọi nước đều "xấu": chọn cột 4 nếu có, không thì nước "xấu" đầu tiên.
+       (env.sample() chỉ là dự phòng khi không còn nước hợp lệ, không phải
+       bước chọn ngẫu nhiên.)
     
     Theo sách Liu (2024), Ch. 3, conn_think2().
     """
