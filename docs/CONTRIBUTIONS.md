@@ -2,10 +2,13 @@
 
 Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần dùng bảng này cùng GitHub Insights để khai tỷ lệ đóng góp (tổng 100%).
 
-## Nguyễn Kiều Linh (@github-username)
+## Nguyễn Kiều Linh (@linh-245)
+
 | Ngày | Việc đã làm | Commit / PR / Issue |
-|---|---|---|
-| | | |
+|------|-------------|---------------------|
+| 09/11 | Xem xét và gộp Pull Request #1 đến #4 vào `main` bằng Merge commit, gồm PR #3 (`fix/bup-think3-block`, sửa docstring `heuristic_agent.py` cho khớp code) và PR #4 (`fix/mai-mcts-backprop`, `mcts_agent.py`) | PR #1, #2, #3, #4 (đã merge); commit merge `955e24d` (PR #3) |
+| 09/11 | Đối chiếu bản gốc với bản sửa lỗi, xác định thay đổi thật chỉ là docstring của `heuristic_agent.py` và phần `rng`, `seed`, `budget_ms`, `last_stats` của `mcts_agent.py`; viết lại `SUA_LOI.md` cho khớp | commit `Duan_GameAI/Sualoi` (điền mã commit) |
+| 09/11 | Tạo nhánh `dev` và đặt làm default branch; thống nhất quy trình: nhánh `feat/fix/test/docs` tách từ `dev`, Pull Request vào `dev`, khi xong mốc mới đưa `dev` vào `main` | nhánh `dev`; Settings > Default branch |
 
 ## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
