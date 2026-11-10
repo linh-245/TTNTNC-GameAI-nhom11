@@ -101,7 +101,7 @@ def _opponent_can_win_immediately(env: ConnectFourEnv) -> bool:
 
 def conn_think3(env: ConnectFourEnv) -> int:
     """
-    C    Cấp 4 - Heuristic (nhìn 2 nước, chặn đối thủ trước, ưu tiên cột giữa):
+    Cấp 4 - Heuristic (nhìn 2 nước, chặn đối thủ trước, ưu tiên cột giữa):
     1. Thắng ngay nếu có thể.
     2. Chặn: nếu đối thủ có nước thắng ngay thì chơi vào cột đó (nếu có nhiều
        cột thì lấy cột nhỏ nhất).
