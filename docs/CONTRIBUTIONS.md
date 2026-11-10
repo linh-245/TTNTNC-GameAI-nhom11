@@ -23,6 +23,9 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 09/11 | Sửa docstring `heuristic_agent.py` (đầu file, `conn_think2`, `conn_think3`) cho khớp code, bỏ mô tả "fork" không có trong code | commit `ff7fee0`, `b59a31a`, `a349ae7`, `0649aec`; PR #3 (đã merge), nhánh `fix/bup-think3-block` |
 | 09/11 | Viết `training/encode.py` (mã hóa trạng thái 3x6x7) và `training/__init__.py` | commit `d43ff13`, nhánh `feat/bup-encode-model` (chưa push) |
 | 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | commit `2a462ea`, `360b716`, `e43ef2e`, `e447b19`, `78e52ce`, `8f7bf26`; PR #6, nhánh `docs/bup-readme` |
+| 10/11 | Viết `training/model.py` (mạng CNN policy-value, 3 khối residual, đầu policy 7 cột và đầu value) và `tests/test_learning.py` (6 test mã hóa trạng thái) | commit `c750f6e`, `3f5bcf4`; PR #11 (đã merge vào `dev`), nhánh `feat/bup-encode-model` |
+| 10/11 | Viết `training/generate_data.py` (sinh ván tự chơi với giáo viên `conn_think3`, có khai cuộc ngẫu nhiên và exploration) và `training/dataset.py` (loại trùng thế, chia train/val/test theo ván) | commit `1ca0a72`, `a9b861f`; PR #12 (đã merge vào `dev`), nhánh `feat/bup-data-pipeline` |
+| 10/11 | Chạy thử: 200 ván (seed 0) ra 5269 thế, sau loại trùng còn 4194; chia train/val/test = 3247/518/429 thế (theo ván 159/20/20); `pytest` 13 passed | chạy trên máy, dữ liệu `.npz` không đẩy lên GitHub |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
