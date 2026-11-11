@@ -2,21 +2,33 @@
 
 Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần dùng bảng này cùng GitHub Insights để khai tỷ lệ đóng góp (tổng 100%).
 
-## Nguyễn Kiều Linh (@github-username)
+## Nguyễn Kiều Linh (@linh-245)
+
+| Ngày | Việc đã làm | Commit / PR / Issue |
+|------|-------------|---------------------|
+| 09/11 | Xem xét và gộp Pull Request #1 đến #4 vào `main` bằng Merge commit, gồm PR #3 (`fix/bup-think3-block`, sửa docstring `heuristic_agent.py` cho khớp code) và PR #4 (`fix/mai-mcts-backprop`, `mcts_agent.py`) | PR #1, #2, #3, #4 (đã merge); commit merge `955e24d` (PR #3) |
+| 09/11 | Đối chiếu bản gốc với bản sửa lỗi, xác định thay đổi thật chỉ là docstring của `heuristic_agent.py` và phần `rng`, `seed`, `budget_ms`, `last_stats` của `mcts_agent.py`; viết lại `SUA_LOI.md` cho khớp | commit `Duan_GameAI/Sualoi` (điền mã commit) |
+| 09/11 | Tạo nhánh `dev` và đặt làm default branch; thống nhất quy trình: nhánh `feat/fix/test/docs` tách từ `dev`, Pull Request vào `dev`, khi xong mốc mới đưa `dev` vào `main` | nhánh `dev`; Settings > Default branch |
+
+## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
-| | | |
-
-## Nguyễn Huỳnh Mai (@github-username)
-| Ngày | Việc đã làm | Commit / PR / Issue |
-|---|---|---|
-| | | |
-
+|09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
+|09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
+|10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
+| 09/11 | Đưa `agents/__init__.py`, `random_agent.py`, `heuristic_agent.py` vào repo (khung từ sách Liu) | commit `7b39fae`, `cde3d8c`, `612b8ad`; PR #1 (đã merge) |
+| 09/11 | Sửa docstring `heuristic_agent.py` (đầu file, `conn_think2`, `conn_think3`) cho khớp code, bỏ mô tả "fork" không có trong code | commit `ff7fee0`, `b59a31a`, `a349ae7`; PR #3 (đã merge); commit `0649aec` (bỏ ký tự thừa trong docstring `conn_think3`); PR #9 (đã merge vào `main`); nhánh `fix/bup-think3-block`
 | 09/11 | Viết `training/encode.py` (mã hóa trạng thái 3x6x7) và `training/__init__.py` | commit `d43ff13`, nhánh `feat/bup-encode-model` (chưa push) |
-| 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | PR #6, nhánh `docs/bup-readme` |
+| 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | commit `2a462ea`, `360b716`, `e43ef2e`, `e447b19`, `78e52ce`, `8f7bf26`; PR #6, nhánh `docs/bup-readme` |
+| 10/11 | Viết `training/model.py` (mạng CNN policy-value, 3 khối residual, đầu policy 7 cột và đầu value) và `tests/test_learning.py` (6 test mã hóa trạng thái) | commit `c750f6e`, `3f5bcf4`; PR #11 (đã merge vào `dev`), nhánh `feat/bup-encode-model` |
+| 10/11 | Viết `training/generate_data.py` (sinh ván tự chơi với giáo viên `conn_think3`, có khai cuộc ngẫu nhiên và exploration) và `training/dataset.py` (loại trùng thế, chia train/val/test theo ván) | commit `1ca0a72`, `a9b861f`; PR #12 (đã merge vào `dev`), nhánh `feat/bup-data-pipeline` |
+| 10/11 | Chạy thử: 200 ván (seed 0) ra 5269 thế, sau loại trùng còn 4194; chia train/val/test = 3247/518/429 thế (theo ván 159/20/20); `pytest` 13 passed | chạy trên máy, dữ liệu `.npz` không đẩy lên GitHub |
+| 11/11 | Viết `training/train_sl.py` (huấn luyện có giám sát: loss cross-entropy cho policy có che cột đầy cộng MSE cho value, chọn checkpoint theo loss tập val, lưu checkpoint và log .json gồm seed, thiết bị, thời gian) | commit `e1d702b`; PR #14, nhánh `feat/bup-train-sl` (đã mở, chờ review) |
+| 11/11 | Viết `agents/nn_agent.py` (agent cấp 5 chọn cột theo policy của mạng, có `last_stats`) và `tests/test_nn_agent.py` (5 test, tự bỏ qua khi thiếu torch) | commit `639683c`, `e092457`; PR #15, nhánh `feat/bup-nn-agent` (đã mở, chờ review) |
+| 11/11 | Chạy thử chức năng: 1000 ván giáo viên (seed 1) cho 26040 thế, train 5 epoch trên CPU 31,4 giây; nn_agent thắng Random 94/100. Chỉ để kiểm tra, chưa phải số liệu báo cáo | chạy trên máy; dữ liệu và checkpoint không đưa lên GitHub |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
