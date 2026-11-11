@@ -26,6 +26,9 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 10/11 | Viết `training/model.py` (mạng CNN policy-value, 3 khối residual, đầu policy 7 cột và đầu value) và `tests/test_learning.py` (6 test mã hóa trạng thái) | commit `c750f6e`, `3f5bcf4`; PR #11 (đã merge vào `dev`), nhánh `feat/bup-encode-model` |
 | 10/11 | Viết `training/generate_data.py` (sinh ván tự chơi với giáo viên `conn_think3`, có khai cuộc ngẫu nhiên và exploration) và `training/dataset.py` (loại trùng thế, chia train/val/test theo ván) | commit `1ca0a72`, `a9b861f`; PR #12 (đã merge vào `dev`), nhánh `feat/bup-data-pipeline` |
 | 10/11 | Chạy thử: 200 ván (seed 0) ra 5269 thế, sau loại trùng còn 4194; chia train/val/test = 3247/518/429 thế (theo ván 159/20/20); `pytest` 13 passed | chạy trên máy, dữ liệu `.npz` không đẩy lên GitHub |
+| 11/11 | Viết `training/train_sl.py` (huấn luyện có giám sát: loss cross-entropy cho policy có che cột đầy cộng MSE cho value, chọn checkpoint theo loss tập val, lưu checkpoint và log .json gồm seed, thiết bị, thời gian) | commit `e1d702b`; PR #14, nhánh `feat/bup-train-sl` (đã mở, chờ review) |
+| 11/11 | Viết `agents/nn_agent.py` (agent cấp 5 chọn cột theo policy của mạng, có `last_stats`) và `tests/test_nn_agent.py` (5 test, tự bỏ qua khi thiếu torch) | commit `639683c`, `e092457`; PR #15, nhánh `feat/bup-nn-agent` (đã mở, chờ review) |
+| 11/11 | Chạy thử chức năng: 1000 ván giáo viên (seed 1) cho 26040 thế, train 5 epoch trên CPU 31,4 giây; nn_agent thắng Random 94/100. Chỉ để kiểm tra, chưa phải số liệu báo cáo | chạy trên máy; dữ liệu và checkpoint không đưa lên GitHub |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
