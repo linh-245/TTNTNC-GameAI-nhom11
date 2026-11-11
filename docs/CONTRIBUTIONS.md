@@ -15,7 +15,7 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 |---|---|---|
 |09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
 |09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
-
+|10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
