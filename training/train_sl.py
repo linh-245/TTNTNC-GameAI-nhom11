@@ -14,6 +14,7 @@ Chạy thử (từ thư mục gốc repo):
     python -m training.train_sl --data data/teacher_think3.npz --epochs 5
 """
 import argparse
+import csv
 import json
 import os
 import platform
@@ -76,6 +77,7 @@ def main():
     ap = argparse.ArgumentParser(description="Huấn luyện SL cho mạng policy-value")
     ap.add_argument("--data", required=True, help="file .npz từ generate_data")
     ap.add_argument("--out", default="weights/sl.pt", help="đường dẫn checkpoint")
+    ap.add_argument("--log-csv", default="logs/training/sl_log.csv", help="log từng epoch dạng CSV")
     ap.add_argument("--epochs", type=int, default=20)
     ap.add_argument("--batch", type=int, default=128)
     ap.add_argument("--lr", type=float, default=1e-3)
@@ -137,6 +139,12 @@ def main():
     log_path = os.path.splitext(args.out)[0] + ".json"
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
+    if history:
+        os.makedirs(os.path.dirname(args.log_csv) or ".", exist_ok=True)
+        with open(args.log_csv, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=list(history[0].keys()))
+            w.writeheader()
+            w.writerows(history)
     print(f"Xong sau {seconds:.1f}s. Tốt nhất ở epoch {best_epoch}. "
           f"Đã lưu {args.out} và {log_path}")
 

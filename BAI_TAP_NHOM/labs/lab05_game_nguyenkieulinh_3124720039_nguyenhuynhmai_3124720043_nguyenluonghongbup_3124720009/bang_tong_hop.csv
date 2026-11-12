@@ -1,0 +1,11 @@
+Tác tử/Thuật toán,Đối thủ,Vai,Số ván,Thắng,Hòa,Thua,Thời gian TB/nước (ms)
+Heuristic Alpha-Beta (cutoff=2),Random,X,100,97,3,0,1.334
+Heuristic Alpha-Beta (cutoff=4),Random,X,100,99,1,0,14.698
+Pure Monte Carlo (N=10),Random,X,100,90,4,6,1.149
+Pure Monte Carlo (N=100),Random,X,100,99,1,0,12.635
+Pure Monte Carlo (N=1000),Random,X,100,98,2,0,125.240
+Heuristic Alpha-Beta (cutoff=2),Random,O,100,86,11,3,1.353
+Heuristic Alpha-Beta (cutoff=4),Random,O,100,80,20,0,10.350
+Pure Monte Carlo (N=10),Random,O,100,66,5,29,0.851
+Pure Monte Carlo (N=100),Random,O,100,90,5,5,11.434
+Pure Monte Carlo (N=1000),Random,O,100,92,7,1,105.122

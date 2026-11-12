@@ -9,6 +9,12 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 09/11 | Xem xét và gộp Pull Request #1 đến #4 vào `main` bằng Merge commit, gồm PR #3 (`fix/bup-think3-block`, sửa docstring `heuristic_agent.py` cho khớp code) và PR #4 (`fix/mai-mcts-backprop`, `mcts_agent.py`) | PR #1, #2, #3, #4 (đã merge); commit merge `955e24d` (PR #3) |
 | 09/11 | Đối chiếu bản gốc với bản sửa lỗi, xác định thay đổi thật chỉ là docstring của `heuristic_agent.py` và phần `rng`, `seed`, `budget_ms`, `last_stats` của `mcts_agent.py`; viết lại `SUA_LOI.md` cho khớp | commit `Duan_GameAI/Sualoi` (điền mã commit) |
 | 09/11 | Tạo nhánh `dev` và đặt làm default branch; thống nhất quy trình: nhánh `feat/fix/test/docs` tách từ `dev`, Pull Request vào `dev`, khi xong mốc mới đưa `dev` vào `main` | nhánh `dev`; Settings > Default branch |
+| 11/11 | Merge `dev` vào `main` (Đợt 1 đến Đợt 3), chạy `python -m pytest tests/test_regression.py` ra 7 passed | PR #16; commit merge `d7d04d9` |
+| 11/11 | Gắn tag mốc giữa kỳ `v0.1-fixed` trên `main` (xóa tag sai tên `v.01-fixed`, tạo lại đúng tên) | tag `v0.1-fixed` → `d7d04d9` |
+| 11/11 | Engine: thêm `legal_actions`, `is_terminal`, `result`, `clone`, `undo` vào `connect4_env.py` | PR #18, nhánh `feat/linh-engine-api` |
+| 11/11 | Test: chuyển test engine sang `.py`, thêm test hòa và đường chéo, xóa `test_engine.ipynb` | PR #17, nhánh `test/linh-engine-tests` |
+| 11/11 | Solver: sinh 500 thế chuẩn cố định theo seed (`make_positions.py`), đo độ chính xác tối ưu (`optimal_accuracy.py`) | PR #19, nhánh `feat/linh-solver-positions` |
+| 11/11 | UI: sửa emoji, hiển thị thống kê nút và mô phỏng, thêm menu MCTS theo ngân sách vào `pygame_ui.py` | PR #20, nhánh `feat/linh-ui-stats` |
 
 ## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
@@ -16,6 +22,7 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 |09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
 |09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
 |10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
+|11/11 | Tăng tốc `eval_payoff_conn` bằng cửa sổ tính trước, thêm `budget_ms` (deepening lặp) và tùy chọn bảng chuyển vị trong `alphabeta_agent.py` |PR #21, nhánh `feat/mai-alphabeta-budget`|
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
