@@ -1,0 +1,5 @@
+cấu hình,ván,thắng,hòa,thua,score,ci_lo,ci_hi,p95 ms/nước
+"prune=on, order=on",100,100,0,0,1.0,0.963,1.0,18.916
+"prune=on, order=off",100,100,0,0,1.0,0.963,1.0,22.083
+"prune=off, order=on",100,100,0,0,1.0,0.963,1.0,68.322
+"prune=off, order=off",100,100,0,0,1.0,0.963,1.0,69.974
