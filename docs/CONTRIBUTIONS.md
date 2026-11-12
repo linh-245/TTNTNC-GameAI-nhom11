@@ -15,6 +15,10 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 11/11 | Test: chuyển test engine sang `.py`, thêm test hòa và đường chéo, xóa `test_engine.ipynb` | PR #17, nhánh `test/linh-engine-tests` |
 | 11/11 | Solver: sinh 500 thế chuẩn cố định theo seed (`make_positions.py`), đo độ chính xác tối ưu (`optimal_accuracy.py`) | PR #19, nhánh `feat/linh-solver-positions` |
 | 11/11 | UI: sửa emoji, hiển thị thống kê nút và mô phỏng, thêm menu MCTS theo ngân sách vào `pygame_ui.py` | PR #20, nhánh `feat/linh-ui-stats` |
+| 12/11 | Khôi phục API engine bị ghi đè khi gộp giải đấu (`legal_actions`, `is_terminal`, `result`, `clone`, `undo`) và cập nhật README | PR #28, nhánh `fix/linh-restore-engine-api` |
+| 12/11 | Chạy `python -m eval.tournament`, ra bảng xếp hạng 6 agent (AlphaBeta, MCTS, Think3, Think2, Think1, Random) | log CSV, JSONL (lưu trên Drive) |
+| 12/11 | Merge `dev` vào `main` cho mốc agents | PR #29; commit merge `804ac26` |
+| 12/11 | Gắn tag mốc `v0.2-agents` trên `main` | tag `v0.2-agents` → `804ac26` |
 
 ## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
