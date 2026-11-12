@@ -1,0 +1,1801 @@
+member,task,algorithm,n,run_id,success,final_h,steps,evals,time_s,restarts,end_type
+TV2,Task 6,Steepest HC,4,1,0,1,0,13,0.000053,1,plateau
+TV2,Task 6,Steepest HC,4,2,1,0,2,25,0.000093,1,solution
+TV2,Task 6,Steepest HC,4,3,1,0,2,25,0.000077,1,solution
+TV2,Task 6,Steepest HC,4,4,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Steepest HC,4,5,0,1,1,25,0.000075,1,plateau
+TV2,Task 6,Steepest HC,4,6,1,0,3,37,0.000112,1,solution
+TV2,Task 6,Steepest HC,4,7,0,1,2,37,0.000128,1,plateau
+TV2,Task 6,Steepest HC,4,8,1,0,1,13,0.000041,1,solution
+TV2,Task 6,Steepest HC,4,9,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,10,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Steepest HC,4,11,1,0,1,13,0.000055,1,solution
+TV2,Task 6,Steepest HC,4,12,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Steepest HC,4,13,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,14,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,15,0,1,1,25,0.000083,1,plateau
+TV2,Task 6,Steepest HC,4,16,0,1,3,49,0.000144,1,plateau
+TV2,Task 6,Steepest HC,4,17,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,18,1,0,3,37,0.000119,1,solution
+TV2,Task 6,Steepest HC,4,19,0,1,2,37,0.000112,1,plateau
+TV2,Task 6,Steepest HC,4,20,0,1,2,37,0.000149,1,plateau
+TV2,Task 6,Steepest HC,4,21,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,22,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Steepest HC,4,23,1,0,3,37,0.000108,1,solution
+TV2,Task 6,Steepest HC,4,24,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,25,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,26,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,27,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,28,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,29,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,30,0,1,1,25,0.000076,1,plateau
+TV2,Task 6,Steepest HC,4,31,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,32,1,0,3,37,0.000108,1,solution
+TV2,Task 6,Steepest HC,4,33,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,34,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,35,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,36,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,37,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,38,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,39,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,40,1,0,2,25,0.000080,1,solution
+TV2,Task 6,Steepest HC,4,41,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,42,0,1,0,13,0.000038,1,plateau
+TV2,Task 6,Steepest HC,4,43,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,44,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,45,1,0,2,25,0.000086,1,solution
+TV2,Task 6,Steepest HC,4,46,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,47,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,48,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,49,1,0,3,37,0.000109,1,solution
+TV2,Task 6,Steepest HC,4,50,0,1,2,37,0.000114,1,plateau
+TV2,Task 6,Steepest HC,4,51,0,1,2,37,0.000110,1,plateau
+TV2,Task 6,Steepest HC,4,52,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Steepest HC,4,53,1,0,2,25,0.000109,1,solution
+TV2,Task 6,Steepest HC,4,54,1,0,2,25,0.000095,1,solution
+TV2,Task 6,Steepest HC,4,55,0,1,1,25,0.000092,1,plateau
+TV2,Task 6,Steepest HC,4,56,0,1,1,25,0.000104,1,plateau
+TV2,Task 6,Steepest HC,4,57,1,0,2,25,0.000141,1,solution
+TV2,Task 6,Steepest HC,4,58,1,0,2,25,0.000100,1,solution
+TV2,Task 6,Steepest HC,4,59,0,1,1,25,0.000092,1,plateau
+TV2,Task 6,Steepest HC,4,60,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,61,0,2,0,13,0.000054,1,plateau
+TV2,Task 6,Steepest HC,4,62,0,1,0,13,0.000048,1,plateau
+TV2,Task 6,Steepest HC,4,63,1,0,2,25,0.000099,1,solution
+TV2,Task 6,Steepest HC,4,64,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,65,1,0,2,25,0.000111,1,solution
+TV2,Task 6,Steepest HC,4,66,0,1,2,37,0.000141,1,plateau
+TV2,Task 6,Steepest HC,4,67,0,1,1,25,0.000098,1,plateau
+TV2,Task 6,Steepest HC,4,68,0,1,1,25,0.000099,1,plateau
+TV2,Task 6,Steepest HC,4,69,0,1,2,37,0.000147,1,plateau
+TV2,Task 6,Steepest HC,4,70,0,1,1,25,0.000099,1,plateau
+TV2,Task 6,Steepest HC,4,71,0,2,0,13,0.000050,1,plateau
+TV2,Task 6,Steepest HC,4,72,1,0,1,13,0.000054,1,solution
+TV2,Task 6,Steepest HC,4,73,0,1,2,37,0.000147,1,plateau
+TV2,Task 6,Steepest HC,4,74,0,1,2,37,0.000157,1,plateau
+TV2,Task 6,Steepest HC,4,75,0,1,2,37,0.000215,1,plateau
+TV2,Task 6,Steepest HC,4,76,0,1,2,37,0.000112,1,plateau
+TV2,Task 6,Steepest HC,4,77,0,1,2,37,0.000109,1,plateau
+TV2,Task 6,Steepest HC,4,78,0,1,2,37,0.000109,1,plateau
+TV2,Task 6,Steepest HC,4,79,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Steepest HC,4,80,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,81,0,1,1,25,0.000087,1,plateau
+TV2,Task 6,Steepest HC,4,82,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,83,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,84,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,85,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,86,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,87,0,1,1,25,0.000102,1,plateau
+TV2,Task 6,Steepest HC,4,88,1,0,3,37,0.000111,1,solution
+TV2,Task 6,Steepest HC,4,89,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,90,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,91,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,92,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,93,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,94,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,95,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,96,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,97,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,98,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,99,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,100,0,1,3,49,0.000142,1,plateau
+TV2,Task 6,Steepest HC,4,101,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,102,0,2,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,103,1,0,3,37,0.000108,1,solution
+TV2,Task 6,Steepest HC,4,104,1,0,3,37,0.000108,1,solution
+TV2,Task 6,Steepest HC,4,105,0,1,1,25,0.000095,1,plateau
+TV2,Task 6,Steepest HC,4,106,1,0,1,13,0.000061,1,solution
+TV2,Task 6,Steepest HC,4,107,0,2,2,37,0.000110,1,plateau
+TV2,Task 6,Steepest HC,4,108,0,1,2,37,0.000117,1,plateau
+TV2,Task 6,Steepest HC,4,109,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,110,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,111,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,112,0,1,1,25,0.000071,1,plateau
+TV2,Task 6,Steepest HC,4,113,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,114,0,2,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,115,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,116,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,117,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,118,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,119,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,120,0,1,1,25,0.000088,1,plateau
+TV2,Task 6,Steepest HC,4,121,0,1,2,37,0.000114,1,plateau
+TV2,Task 6,Steepest HC,4,122,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Steepest HC,4,123,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,124,0,1,1,25,0.000078,1,plateau
+TV2,Task 6,Steepest HC,4,125,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,126,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,127,1,0,2,25,0.000092,1,solution
+TV2,Task 6,Steepest HC,4,128,1,0,2,25,0.000094,1,solution
+TV2,Task 6,Steepest HC,4,129,0,1,2,37,0.000141,1,plateau
+TV2,Task 6,Steepest HC,4,130,1,0,0,1,0.000005,1,solution
+TV2,Task 6,Steepest HC,4,131,0,1,1,25,0.000108,1,plateau
+TV2,Task 6,Steepest HC,4,132,1,0,2,25,0.000111,1,solution
+TV2,Task 6,Steepest HC,4,133,1,0,3,37,0.000166,1,solution
+TV2,Task 6,Steepest HC,4,134,0,1,1,25,0.000117,1,plateau
+TV2,Task 6,Steepest HC,4,135,1,0,1,13,0.000062,1,solution
+TV2,Task 6,Steepest HC,4,136,0,1,2,37,0.000170,1,plateau
+TV2,Task 6,Steepest HC,4,137,0,1,1,25,0.000124,1,plateau
+TV2,Task 6,Steepest HC,4,138,0,1,1,25,0.000114,1,plateau
+TV2,Task 6,Steepest HC,4,139,0,1,2,37,0.000179,1,plateau
+TV2,Task 6,Steepest HC,4,140,1,0,3,37,0.000168,1,solution
+TV2,Task 6,Steepest HC,4,141,0,1,2,37,0.000162,1,plateau
+TV2,Task 6,Steepest HC,4,142,0,1,1,25,0.000118,1,plateau
+TV2,Task 6,Steepest HC,4,143,1,0,3,37,0.000165,1,solution
+TV2,Task 6,Steepest HC,4,144,0,1,1,25,0.000233,1,plateau
+TV2,Task 6,Steepest HC,4,145,1,0,1,13,0.000060,1,solution
+TV2,Task 6,Steepest HC,4,146,1,0,2,25,0.000113,1,solution
+TV2,Task 6,Steepest HC,4,147,0,2,0,13,0.000053,1,plateau
+TV2,Task 6,Steepest HC,4,148,1,0,1,13,0.000083,1,solution
+TV2,Task 6,Steepest HC,4,149,1,0,2,25,0.000127,1,solution
+TV2,Task 6,Steepest HC,4,150,0,1,2,37,0.000162,1,plateau
+TV2,Task 6,Steepest HC,4,151,0,1,1,25,0.000148,1,plateau
+TV2,Task 6,Steepest HC,4,152,1,0,2,25,0.000119,1,solution
+TV2,Task 6,Steepest HC,4,153,1,0,2,25,0.000120,1,solution
+TV2,Task 6,Steepest HC,4,154,0,1,1,25,0.000112,1,plateau
+TV2,Task 6,Steepest HC,4,155,0,1,2,37,0.000173,1,plateau
+TV2,Task 6,Steepest HC,4,156,0,1,1,25,0.000110,1,plateau
+TV2,Task 6,Steepest HC,4,157,0,2,0,13,0.000055,1,plateau
+TV2,Task 6,Steepest HC,4,158,0,1,2,37,0.000160,1,plateau
+TV2,Task 6,Steepest HC,4,159,0,1,2,37,0.000155,1,plateau
+TV2,Task 6,Steepest HC,4,160,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,161,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,162,0,1,1,25,0.000082,1,plateau
+TV2,Task 6,Steepest HC,4,163,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,164,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,165,0,2,1,25,0.000080,1,plateau
+TV2,Task 6,Steepest HC,4,166,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Steepest HC,4,167,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,168,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,169,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Steepest HC,4,170,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Steepest HC,4,171,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,172,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,173,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,174,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Steepest HC,4,175,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,176,0,1,1,25,0.000078,1,plateau
+TV2,Task 6,Steepest HC,4,177,0,2,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,178,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,179,1,0,2,25,0.000101,1,solution
+TV2,Task 6,Steepest HC,4,180,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Steepest HC,4,181,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Steepest HC,4,182,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,183,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,184,0,2,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,185,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,186,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Steepest HC,4,187,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Steepest HC,4,188,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,189,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Steepest HC,4,190,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,191,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,192,0,2,1,25,0.000073,1,plateau
+TV2,Task 6,Steepest HC,4,193,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Steepest HC,4,194,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Steepest HC,4,195,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Steepest HC,4,196,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,197,0,1,1,25,0.000076,1,plateau
+TV2,Task 6,Steepest HC,4,198,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Steepest HC,4,199,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Steepest HC,4,200,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,1,0,1,0,13,0.000040,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,2,0,1,2,37,0.000110,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,3,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,4,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,5,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,6,0,1,2,37,0.000111,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,7,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,8,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,9,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,10,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,11,1,0,1,13,0.000038,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,12,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,13,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,14,0,1,3,49,0.000143,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,15,1,0,3,37,0.000108,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,16,0,1,3,49,0.000143,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,17,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,18,0,1,2,37,0.000130,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,19,0,1,3,49,0.000147,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,20,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,21,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,22,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,23,1,0,3,37,0.000109,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,24,0,2,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,25,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,26,0,1,1,25,0.000071,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,27,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,28,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,29,1,0,3,37,0.000109,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,30,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,31,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,32,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,33,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,34,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,35,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,36,0,2,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,37,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,38,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,39,0,1,2,37,0.000121,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,40,1,0,2,25,0.000076,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,41,0,1,2,37,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,42,0,1,0,13,0.000038,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,43,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,44,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,45,1,0,3,37,0.000110,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,46,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,47,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,48,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,49,1,0,4,49,0.000143,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,50,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,51,1,0,3,37,0.000112,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,52,1,0,2,25,0.000082,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,53,0,2,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,54,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,55,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,56,0,1,1,25,0.000071,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,57,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,58,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,59,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,60,0,1,2,37,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,61,0,2,0,13,0.000038,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,62,0,1,0,13,0.000039,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,63,0,1,3,49,0.000144,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,64,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,65,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,66,0,1,3,49,0.000142,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,67,0,1,1,25,0.000104,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,68,0,1,1,25,0.000114,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,69,0,2,1,25,0.000142,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,70,0,1,1,25,0.000117,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,71,0,2,0,13,0.000055,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,72,1,0,1,13,0.000083,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,73,0,1,3,49,0.000222,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,74,0,1,2,37,0.000166,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,75,0,2,2,37,0.000155,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,76,0,1,2,37,0.000160,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,77,0,1,4,61,0.000264,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,78,0,1,3,49,0.000288,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,79,0,1,2,37,0.000159,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,80,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,81,0,1,1,25,0.000105,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,82,1,0,2,25,0.000107,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,83,0,2,1,25,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,84,1,0,3,37,0.000158,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,85,0,2,1,25,0.000104,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,86,0,1,1,25,0.000105,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,87,0,1,1,25,0.000105,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,88,0,1,3,49,0.000211,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,89,0,1,1,25,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,90,1,0,2,25,0.000107,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,91,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,92,0,1,2,37,0.000156,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,93,0,1,4,61,0.000262,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,94,0,1,2,37,0.000157,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,95,1,0,3,37,0.000161,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,96,1,0,3,37,0.000156,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,97,0,1,2,37,0.000159,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,98,1,0,1,13,0.000057,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,99,1,0,3,37,0.000171,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,100,1,0,2,25,0.000105,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,101,0,2,1,25,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,102,0,1,3,49,0.000228,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,103,1,0,4,49,0.000236,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,104,1,0,3,37,0.000172,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,105,0,2,1,25,0.000114,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,106,0,1,1,25,0.000154,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,107,0,1,3,49,0.000224,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,108,0,1,3,49,0.000219,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,109,0,1,2,37,0.000233,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,110,0,1,2,37,0.000171,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,111,0,1,1,25,0.000124,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,112,1,0,2,25,0.000117,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,113,0,1,2,37,0.000161,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,114,0,1,2,37,0.000161,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,115,0,1,2,37,0.000152,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,116,0,2,1,25,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,117,1,0,3,37,0.000169,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,118,0,1,2,37,0.000160,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,119,1,0,3,37,0.000223,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,120,0,1,1,25,0.000111,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,121,0,1,2,37,0.000163,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,122,0,2,1,25,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,123,1,0,1,13,0.000057,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,124,0,2,1,25,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,125,0,1,2,37,0.000162,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,126,0,1,1,25,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,127,0,1,2,37,0.000165,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,128,0,1,2,37,0.000152,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,129,0,1,2,37,0.000165,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,130,1,0,0,1,0.000005,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,131,0,1,2,37,0.000158,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,132,0,1,2,37,0.000160,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,133,0,1,2,37,0.000181,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,134,0,1,1,25,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,135,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,136,0,2,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,137,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,138,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,139,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,140,0,1,3,49,0.000183,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,141,0,2,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,142,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,143,1,0,4,49,0.000145,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,144,1,0,2,25,0.000112,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,145,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,146,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,147,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,148,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,149,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,150,0,1,2,37,0.000113,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,151,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,152,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,153,0,1,4,61,0.000177,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,154,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,155,0,2,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,156,0,1,1,25,0.000073,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,157,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,158,0,1,3,49,0.000150,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,159,0,1,3,49,0.000145,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,160,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,161,0,1,3,49,0.000145,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,162,0,1,2,37,0.000110,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,163,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,164,0,1,2,37,0.000151,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,165,0,1,2,37,0.000116,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,166,0,1,3,49,0.000144,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,167,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,168,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,169,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,170,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,171,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,172,1,0,2,25,0.000095,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,173,1,0,1,13,0.000039,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,174,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,175,0,2,2,37,0.000111,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,176,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,177,0,1,4,61,0.000202,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,178,1,0,2,25,0.000078,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,179,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,180,0,1,2,37,0.000106,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,181,0,1,2,37,0.000107,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,182,0,1,1,25,0.000071,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,183,0,1,1,25,0.000072,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,184,0,1,2,37,0.000114,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,185,1,0,2,25,0.000073,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,186,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,187,0,2,0,13,0.000037,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,188,0,2,2,37,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,189,1,0,1,13,0.000041,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,190,0,1,2,37,0.000110,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,191,1,0,2,25,0.000075,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,192,0,1,2,37,0.000109,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,193,0,1,2,37,0.000108,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,194,0,2,0,13,0.000043,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,195,1,0,2,25,0.000074,1,solution
+TV2,Task 6,Inefficient Stochastic HC,4,196,0,1,3,49,0.000142,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,197,0,1,1,25,0.000074,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,198,0,1,3,49,0.000146,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,199,0,1,1,25,0.000081,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,4,200,0,1,3,49,0.000144,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,1,0,1,0,57,0.000345,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,2,0,2,1,60,0.000349,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,3,1,0,2,6,0.000033,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,4,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,5,0,2,1,60,0.000329,1,improvable
+TV2,Task 6,Efficient Stochastic HC,4,6,0,2,2,60,0.000370,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,7,1,0,3,11,0.000073,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,8,1,0,1,3,0.000015,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,9,0,1,1,58,0.000373,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,10,0,1,3,61,0.000339,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,11,0,1,1,62,0.000344,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,12,0,2,0,57,0.000313,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,13,0,1,3,77,0.000430,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,14,0,2,3,65,0.000366,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,15,1,0,3,21,0.000116,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,16,1,0,4,20,0.000110,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,17,0,1,1,75,0.000438,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,18,1,0,3,14,0.000077,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,19,0,2,2,59,0.000323,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,20,0,1,3,62,0.000378,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,21,0,1,1,58,0.000377,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,22,1,0,0,1,0.000006,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,23,1,0,3,18,0.000099,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,24,0,2,2,59,0.000332,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,25,0,1,2,62,0.000341,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,26,0,1,1,59,0.000324,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,27,1,0,2,9,0.000049,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,28,0,1,2,89,0.000504,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,29,1,0,3,34,0.000187,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,30,0,1,1,58,0.000318,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,31,1,0,2,28,0.000155,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,32,1,0,3,8,0.000068,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,33,1,0,3,72,0.000404,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,34,0,1,1,60,0.000357,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,35,0,1,1,58,0.000327,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,36,1,0,3,11,0.000060,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,37,1,0,2,8,0.000044,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,38,1,0,3,7,0.000038,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,39,1,0,2,61,0.000390,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,40,0,1,2,59,0.000324,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,41,0,2,1,59,0.000335,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,42,0,1,0,57,0.000311,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,43,0,1,1,64,0.000361,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,44,0,2,0,57,0.000315,1,improvable
+TV2,Task 6,Efficient Stochastic HC,4,45,1,0,2,38,0.000208,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,46,1,0,3,47,0.000291,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,47,1,0,2,6,0.000032,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,48,0,1,2,66,0.000364,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,49,1,0,4,33,0.000207,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,50,0,1,2,63,0.000347,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,51,0,1,2,62,0.000342,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,52,0,1,2,65,0.000357,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,53,0,1,2,62,0.000341,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,54,0,1,2,66,0.000362,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,55,1,0,3,6,0.000032,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,56,1,0,2,6,0.000033,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,57,1,0,3,7,0.000038,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,58,1,0,2,9,0.000049,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,59,0,1,2,90,0.000544,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,60,0,1,1,60,0.000331,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,61,0,2,0,57,0.000332,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,62,0,1,0,57,0.000314,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,63,1,0,2,4,0.000021,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,64,0,1,1,58,0.000342,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,65,0,1,2,78,0.000455,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,66,0,1,2,61,0.000334,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,67,1,0,3,34,0.000187,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,68,0,1,1,79,0.000436,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,69,0,1,2,60,0.000328,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,70,0,1,1,58,0.000436,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,71,0,2,0,57,0.000446,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,72,1,0,2,7,0.000056,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,73,1,0,3,8,0.000064,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,74,0,1,3,99,0.000844,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,75,0,2,3,63,0.000507,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,76,0,2,1,58,0.000389,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,77,0,2,3,68,0.000386,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,78,0,2,1,60,0.000339,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,79,0,1,2,61,0.000344,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,80,0,1,1,74,0.000432,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,81,0,1,2,66,0.000378,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,82,1,0,2,37,0.000246,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,83,0,1,1,58,0.000319,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,84,1,0,3,12,0.000099,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,85,0,2,1,61,0.000340,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,86,0,1,1,58,0.000370,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,87,0,1,1,79,0.000438,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,88,0,1,3,72,0.000394,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,89,1,0,3,20,0.000109,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,90,1,0,2,18,0.000097,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,91,1,0,2,9,0.000048,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,92,0,2,2,68,0.000384,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,93,0,1,2,80,0.000464,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,94,1,0,2,7,0.000039,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,95,0,2,2,63,0.000355,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,96,0,1,2,69,0.000411,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,97,0,1,4,74,0.000455,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,98,0,1,1,62,0.000351,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,99,0,1,3,104,0.000580,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,100,0,1,3,90,0.000495,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,101,1,0,4,15,0.000082,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,102,0,1,2,65,0.000363,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,103,0,2,2,59,0.000332,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,104,1,0,3,17,0.000094,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,105,0,2,1,58,0.000317,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,106,0,1,1,70,0.000409,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,107,0,1,4,65,0.000357,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,108,0,1,2,59,0.000334,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,109,0,1,2,62,0.000344,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,110,0,1,2,75,0.000414,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,111,0,1,1,71,0.000418,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,112,1,0,2,10,0.000055,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,113,0,1,2,63,0.000355,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,114,0,1,2,69,0.000451,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,115,1,0,3,44,0.000243,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,116,1,0,3,17,0.000093,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,117,0,1,2,74,0.000429,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,118,0,2,1,60,0.000331,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,119,1,0,3,11,0.000060,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,120,0,1,1,73,0.000426,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,121,0,1,3,71,0.000413,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,122,0,1,1,58,0.000328,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,123,0,1,1,58,0.000319,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,124,0,1,1,61,0.000341,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,125,1,0,2,15,0.000082,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,126,0,1,1,74,0.000405,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,127,1,0,2,16,0.000089,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,128,0,1,2,66,0.000373,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,129,0,1,3,74,0.000407,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,130,1,0,0,1,0.000006,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,131,1,0,2,5,0.000041,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,132,0,1,3,69,0.000385,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,133,0,1,2,67,0.000395,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,134,0,1,2,76,0.000438,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,135,1,0,1,18,0.000109,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,136,0,1,2,63,0.000346,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,137,0,2,1,59,0.000323,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,138,1,0,2,15,0.000091,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,139,0,1,2,92,0.000516,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,140,0,2,2,60,0.000358,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,141,0,1,2,61,0.000340,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,142,1,0,2,3,0.000015,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,143,0,1,3,74,0.000420,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,144,0,1,1,69,0.000378,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,145,1,0,1,33,0.000207,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,146,0,1,1,66,0.000395,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,147,0,2,0,57,0.000314,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,148,0,1,2,67,0.000535,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,149,1,0,2,13,0.000074,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,150,0,2,2,59,0.000326,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,151,0,1,1,58,0.000317,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,152,0,1,2,63,0.000356,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,153,0,1,2,60,0.000336,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,154,0,1,1,60,0.000349,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,155,0,1,2,60,0.000329,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,156,0,1,1,61,0.000369,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,157,0,2,0,57,0.000316,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,158,1,0,3,21,0.000115,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,159,0,1,3,69,0.000385,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,160,0,1,1,61,0.000334,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,161,0,1,3,67,0.000367,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,162,0,1,1,60,0.000327,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,163,0,1,1,66,0.000370,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,164,0,1,2,72,0.000395,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,165,0,1,2,62,0.000442,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,166,0,1,4,88,0.000512,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,167,0,1,1,59,0.000329,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,168,1,0,2,8,0.000043,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,169,0,1,2,70,0.000384,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,170,1,0,0,1,0.000004,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,171,1,0,2,22,0.000120,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,172,0,1,1,59,0.000330,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,173,1,0,1,2,0.000010,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,174,0,1,1,78,0.000431,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,175,1,0,2,7,0.000037,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,176,1,0,2,4,0.000021,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,177,0,1,4,80,0.000476,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,178,1,0,2,14,0.000080,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,179,1,0,2,4,0.000021,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,180,0,2,1,58,0.000522,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,181,0,1,2,62,0.000368,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,182,0,1,1,58,0.000389,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,183,0,1,1,58,0.000329,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,184,0,2,1,60,0.000329,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,185,1,0,2,16,0.000099,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,186,0,2,0,57,0.000317,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,187,0,2,0,57,0.000322,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,188,0,1,3,65,0.000367,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,189,1,0,1,2,0.000011,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,190,0,1,2,63,0.000356,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,191,0,1,3,69,0.000387,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,192,0,1,3,73,0.000429,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,193,0,1,2,63,0.000464,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,194,0,2,0,57,0.000448,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,195,0,1,1,58,0.000430,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,196,0,1,2,59,0.000432,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,197,1,0,3,26,0.000213,1,solution
+TV2,Task 6,Efficient Stochastic HC,4,198,0,1,4,77,0.000559,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,199,0,1,1,58,0.000405,1,plateau
+TV2,Task 6,Efficient Stochastic HC,4,200,0,2,2,62,0.000337,1,plateau
+TV2,Task 6,Steepest HC,8,1,1,0,4,225,0.001139,1,solution
+TV2,Task 6,Steepest HC,8,2,0,1,4,281,0.001312,1,plateau
+TV2,Task 6,Steepest HC,8,3,1,0,4,225,0.001081,1,solution
+TV2,Task 6,Steepest HC,8,4,1,0,4,225,0.001095,1,solution
+TV2,Task 6,Steepest HC,8,5,0,3,3,225,0.001054,1,plateau
+TV2,Task 6,Steepest HC,8,6,0,2,0,57,0.000269,1,plateau
+TV2,Task 6,Steepest HC,8,7,0,2,4,281,0.001359,1,plateau
+TV2,Task 6,Steepest HC,8,8,0,1,2,169,0.000792,1,plateau
+TV2,Task 6,Steepest HC,8,9,0,1,3,225,0.001056,1,plateau
+TV2,Task 6,Steepest HC,8,10,0,1,4,281,0.001349,1,plateau
+TV2,Task 6,Steepest HC,8,11,0,2,3,225,0.001055,1,plateau
+TV2,Task 6,Steepest HC,8,12,0,2,2,169,0.000792,1,plateau
+TV2,Task 6,Steepest HC,8,13,0,1,3,225,0.001069,1,plateau
+TV2,Task 6,Steepest HC,8,14,0,1,2,169,0.000801,1,plateau
+TV2,Task 6,Steepest HC,8,15,1,0,4,225,0.001054,1,solution
+TV2,Task 6,Steepest HC,8,16,0,2,2,169,0.000807,1,plateau
+TV2,Task 6,Steepest HC,8,17,0,1,4,281,0.001374,1,plateau
+TV2,Task 6,Steepest HC,8,18,0,1,2,169,0.000800,1,plateau
+TV2,Task 6,Steepest HC,8,19,0,2,3,225,0.001069,1,plateau
+TV2,Task 6,Steepest HC,8,20,0,1,2,169,0.000815,1,plateau
+TV2,Task 6,Steepest HC,8,21,0,1,4,281,0.001315,1,plateau
+TV2,Task 6,Steepest HC,8,22,0,1,3,225,0.001072,1,plateau
+TV2,Task 6,Steepest HC,8,23,1,0,4,225,0.001112,1,solution
+TV2,Task 6,Steepest HC,8,24,0,1,2,169,0.000813,1,plateau
+TV2,Task 6,Steepest HC,8,25,1,0,5,281,0.001378,1,solution
+TV2,Task 6,Steepest HC,8,26,0,1,2,169,0.000793,1,plateau
+TV2,Task 6,Steepest HC,8,27,0,1,5,337,0.001684,1,plateau
+TV2,Task 6,Steepest HC,8,28,0,2,4,281,0.001329,1,plateau
+TV2,Task 6,Steepest HC,8,29,0,1,4,281,0.001352,1,plateau
+TV2,Task 6,Steepest HC,8,30,0,1,3,225,0.001057,1,plateau
+TV2,Task 6,Steepest HC,8,31,0,1,3,225,0.001083,1,plateau
+TV2,Task 6,Steepest HC,8,32,1,0,4,225,0.001104,1,solution
+TV2,Task 6,Steepest HC,8,33,0,2,3,225,0.001057,1,plateau
+TV2,Task 6,Steepest HC,8,34,0,1,4,281,0.001349,1,plateau
+TV2,Task 6,Steepest HC,8,35,0,2,4,281,0.002570,1,plateau
+TV2,Task 6,Steepest HC,8,36,0,1,3,225,0.001243,1,plateau
+TV2,Task 6,Steepest HC,8,37,0,1,4,281,0.001363,1,plateau
+TV2,Task 6,Steepest HC,8,38,0,1,3,225,0.001099,1,plateau
+TV2,Task 6,Steepest HC,8,39,0,1,3,225,0.001151,1,plateau
+TV2,Task 6,Steepest HC,8,40,0,1,4,281,0.001393,1,plateau
+TV2,Task 6,Steepest HC,8,41,0,1,3,225,0.001067,1,plateau
+TV2,Task 6,Steepest HC,8,42,0,1,2,169,0.000818,1,plateau
+TV2,Task 6,Steepest HC,8,43,0,2,1,113,0.000566,1,plateau
+TV2,Task 6,Steepest HC,8,44,0,2,2,169,0.000830,1,plateau
+TV2,Task 6,Steepest HC,8,45,1,0,4,225,0.001078,1,solution
+TV2,Task 6,Steepest HC,8,46,1,0,5,281,0.001379,1,solution
+TV2,Task 6,Steepest HC,8,47,0,1,2,169,0.000866,1,plateau
+TV2,Task 6,Steepest HC,8,48,0,2,2,169,0.000878,1,plateau
+TV2,Task 6,Steepest HC,8,49,0,2,3,225,0.001081,1,plateau
+TV2,Task 6,Steepest HC,8,50,0,1,3,225,0.001052,1,plateau
+TV2,Task 6,Steepest HC,8,51,0,1,2,169,0.000800,1,plateau
+TV2,Task 6,Steepest HC,8,52,0,2,3,225,0.001085,1,plateau
+TV2,Task 6,Steepest HC,8,53,0,2,3,225,0.001050,1,plateau
+TV2,Task 6,Steepest HC,8,54,0,1,4,281,0.001372,1,plateau
+TV2,Task 6,Steepest HC,8,55,0,1,3,225,0.001348,1,plateau
+TV2,Task 6,Steepest HC,8,56,0,1,4,281,0.001335,1,plateau
+TV2,Task 6,Steepest HC,8,57,0,2,3,225,0.001092,1,plateau
+TV2,Task 6,Steepest HC,8,58,1,0,5,281,0.001348,1,solution
+TV2,Task 6,Steepest HC,8,59,0,2,3,225,0.001074,1,plateau
+TV2,Task 6,Steepest HC,8,60,0,2,1,113,0.000534,1,plateau
+TV2,Task 6,Steepest HC,8,61,0,2,4,281,0.001374,1,plateau
+TV2,Task 6,Steepest HC,8,62,0,1,4,281,0.001328,1,strict_local_min
+TV2,Task 6,Steepest HC,8,63,1,0,4,225,0.001085,1,solution
+TV2,Task 6,Steepest HC,8,64,0,1,2,169,0.000795,1,plateau
+TV2,Task 6,Steepest HC,8,65,0,1,2,169,0.000792,1,plateau
+TV2,Task 6,Steepest HC,8,66,1,0,3,169,0.000912,1,solution
+TV2,Task 6,Steepest HC,8,67,0,2,4,281,0.001497,1,plateau
+TV2,Task 6,Steepest HC,8,68,0,2,3,225,0.001067,1,plateau
+TV2,Task 6,Steepest HC,8,69,1,0,3,169,0.001018,1,solution
+TV2,Task 6,Steepest HC,8,70,0,1,3,225,0.001077,1,plateau
+TV2,Task 6,Steepest HC,8,71,1,0,5,281,0.001378,1,solution
+TV2,Task 6,Steepest HC,8,72,0,3,2,169,0.000810,1,plateau
+TV2,Task 6,Steepest HC,8,73,1,0,3,169,0.000826,1,solution
+TV2,Task 6,Steepest HC,8,74,0,2,3,225,0.001055,1,plateau
+TV2,Task 6,Steepest HC,8,75,1,0,4,225,0.001076,1,solution
+TV2,Task 6,Steepest HC,8,76,0,1,3,225,0.001135,1,plateau
+TV2,Task 6,Steepest HC,8,77,0,3,1,113,0.000565,1,plateau
+TV2,Task 6,Steepest HC,8,78,0,1,3,225,0.001057,1,plateau
+TV2,Task 6,Steepest HC,8,79,0,1,2,169,0.000806,1,plateau
+TV2,Task 6,Steepest HC,8,80,0,2,4,281,0.001339,1,plateau
+TV2,Task 6,Steepest HC,8,81,0,1,4,281,0.001455,1,plateau
+TV2,Task 6,Steepest HC,8,82,0,2,3,225,0.001060,1,plateau
+TV2,Task 6,Steepest HC,8,83,0,1,2,169,0.000815,1,plateau
+TV2,Task 6,Steepest HC,8,84,0,1,3,225,0.001079,1,plateau
+TV2,Task 6,Steepest HC,8,85,0,1,3,225,0.001120,1,plateau
+TV2,Task 6,Steepest HC,8,86,1,0,5,281,0.001341,1,solution
+TV2,Task 6,Steepest HC,8,87,0,1,3,225,0.001059,1,plateau
+TV2,Task 6,Steepest HC,8,88,0,2,2,169,0.000809,1,plateau
+TV2,Task 6,Steepest HC,8,89,1,0,3,169,0.000821,1,solution
+TV2,Task 6,Steepest HC,8,90,0,2,3,225,0.001063,1,plateau
+TV2,Task 6,Steepest HC,8,91,1,0,3,169,0.000799,1,solution
+TV2,Task 6,Steepest HC,8,92,0,1,4,281,0.001326,1,plateau
+TV2,Task 6,Steepest HC,8,93,0,1,3,225,0.001129,1,plateau
+TV2,Task 6,Steepest HC,8,94,0,1,2,169,0.000801,1,plateau
+TV2,Task 6,Steepest HC,8,95,0,1,5,337,0.001616,1,plateau
+TV2,Task 6,Steepest HC,8,96,0,1,4,281,0.001322,1,strict_local_min
+TV2,Task 6,Steepest HC,8,97,0,2,3,225,0.001079,1,plateau
+TV2,Task 6,Steepest HC,8,98,0,2,3,225,0.001079,1,plateau
+TV2,Task 6,Steepest HC,8,99,0,1,2,169,0.000799,1,plateau
+TV2,Task 6,Steepest HC,8,100,0,1,3,225,0.001107,1,plateau
+TV2,Task 6,Steepest HC,8,101,0,1,2,169,0.000795,1,plateau
+TV2,Task 6,Steepest HC,8,102,0,1,3,225,0.001047,1,plateau
+TV2,Task 6,Steepest HC,8,103,0,1,4,281,0.001373,1,plateau
+TV2,Task 6,Steepest HC,8,104,0,1,4,281,0.001359,1,plateau
+TV2,Task 6,Steepest HC,8,105,0,1,4,281,0.001324,1,plateau
+TV2,Task 6,Steepest HC,8,106,1,0,4,225,0.001067,1,solution
+TV2,Task 6,Steepest HC,8,107,0,2,3,225,0.001108,1,plateau
+TV2,Task 6,Steepest HC,8,108,0,1,2,169,0.000795,1,plateau
+TV2,Task 6,Steepest HC,8,109,0,1,3,225,0.001070,1,plateau
+TV2,Task 6,Steepest HC,8,110,0,1,3,225,0.001075,1,plateau
+TV2,Task 6,Steepest HC,8,111,0,1,5,337,0.001712,1,plateau
+TV2,Task 6,Steepest HC,8,112,0,2,2,169,0.000807,1,plateau
+TV2,Task 6,Steepest HC,8,113,0,1,2,169,0.000835,1,plateau
+TV2,Task 6,Steepest HC,8,114,0,1,4,281,0.001355,1,plateau
+TV2,Task 6,Steepest HC,8,115,0,2,4,281,0.001406,1,plateau
+TV2,Task 6,Steepest HC,8,116,0,2,2,169,0.000798,1,plateau
+TV2,Task 6,Steepest HC,8,117,1,0,4,225,0.001056,1,solution
+TV2,Task 6,Steepest HC,8,118,0,2,1,113,0.000536,1,plateau
+TV2,Task 6,Steepest HC,8,119,0,1,3,225,0.001096,1,plateau
+TV2,Task 6,Steepest HC,8,120,0,1,4,281,0.001360,1,plateau
+TV2,Task 6,Steepest HC,8,121,0,2,3,225,0.001091,1,plateau
+TV2,Task 6,Steepest HC,8,122,0,1,4,281,0.001382,1,plateau
+TV2,Task 6,Steepest HC,8,123,0,1,4,281,0.001357,1,plateau
+TV2,Task 6,Steepest HC,8,124,0,1,4,281,0.001329,1,plateau
+TV2,Task 6,Steepest HC,8,125,0,2,3,225,0.001056,1,plateau
+TV2,Task 6,Steepest HC,8,126,0,1,2,169,0.000830,1,plateau
+TV2,Task 6,Steepest HC,8,127,0,1,4,281,0.001448,1,plateau
+TV2,Task 6,Steepest HC,8,128,0,2,3,225,0.001059,1,plateau
+TV2,Task 6,Steepest HC,8,129,0,1,4,281,0.001519,1,plateau
+TV2,Task 6,Steepest HC,8,130,0,1,2,169,0.000822,1,plateau
+TV2,Task 6,Steepest HC,8,131,1,0,4,225,0.002431,1,solution
+TV2,Task 6,Steepest HC,8,132,0,1,3,225,0.001493,1,plateau
+TV2,Task 6,Steepest HC,8,133,0,2,3,225,0.001096,1,plateau
+TV2,Task 6,Steepest HC,8,134,0,1,5,337,0.002146,1,plateau
+TV2,Task 6,Steepest HC,8,135,0,1,4,281,0.002268,1,plateau
+TV2,Task 6,Steepest HC,8,136,0,1,4,281,0.001366,1,plateau
+TV2,Task 6,Steepest HC,8,137,1,0,4,225,0.001085,1,solution
+TV2,Task 6,Steepest HC,8,138,0,1,3,225,0.001090,1,plateau
+TV2,Task 6,Steepest HC,8,139,0,2,3,225,0.001096,1,plateau
+TV2,Task 6,Steepest HC,8,140,0,2,3,225,0.001055,1,plateau
+TV2,Task 6,Steepest HC,8,141,0,2,2,169,0.000858,1,plateau
+TV2,Task 6,Steepest HC,8,142,0,1,3,225,0.001093,1,plateau
+TV2,Task 6,Steepest HC,8,143,0,4,1,113,0.000549,1,plateau
+TV2,Task 6,Steepest HC,8,144,0,2,3,225,0.001092,1,plateau
+TV2,Task 6,Steepest HC,8,145,0,1,4,281,0.001589,1,plateau
+TV2,Task 6,Steepest HC,8,146,0,2,3,225,0.001154,1,plateau
+TV2,Task 6,Steepest HC,8,147,0,2,4,281,0.001359,1,plateau
+TV2,Task 6,Steepest HC,8,148,0,1,5,337,0.003325,1,plateau
+TV2,Task 6,Steepest HC,8,149,0,1,3,225,0.001108,1,plateau
+TV2,Task 6,Steepest HC,8,150,0,1,3,225,0.001122,1,plateau
+TV2,Task 6,Steepest HC,8,151,0,1,5,337,0.001602,1,plateau
+TV2,Task 6,Steepest HC,8,152,1,0,3,169,0.000809,1,solution
+TV2,Task 6,Steepest HC,8,153,0,3,3,225,0.001053,1,plateau
+TV2,Task 6,Steepest HC,8,154,0,1,3,225,0.001109,1,plateau
+TV2,Task 6,Steepest HC,8,155,0,1,4,281,0.001342,1,plateau
+TV2,Task 6,Steepest HC,8,156,0,2,3,225,0.001054,1,plateau
+TV2,Task 6,Steepest HC,8,157,0,1,4,281,0.001332,1,plateau
+TV2,Task 6,Steepest HC,8,158,0,1,4,281,0.001345,1,plateau
+TV2,Task 6,Steepest HC,8,159,0,1,3,225,0.001124,1,plateau
+TV2,Task 6,Steepest HC,8,160,1,0,5,281,0.001418,1,solution
+TV2,Task 6,Steepest HC,8,161,0,2,4,281,0.001315,1,plateau
+TV2,Task 6,Steepest HC,8,162,1,0,5,281,0.001335,1,solution
+TV2,Task 6,Steepest HC,8,163,0,1,3,225,0.001082,1,plateau
+TV2,Task 6,Steepest HC,8,164,0,1,3,225,0.001056,1,plateau
+TV2,Task 6,Steepest HC,8,165,0,2,3,225,0.001062,1,plateau
+TV2,Task 6,Steepest HC,8,166,0,2,3,225,0.001103,1,plateau
+TV2,Task 6,Steepest HC,8,167,0,1,2,169,0.000798,1,plateau
+TV2,Task 6,Steepest HC,8,168,0,1,3,225,0.001108,1,strict_local_min
+TV2,Task 6,Steepest HC,8,169,0,1,5,337,0.001747,1,strict_local_min
+TV2,Task 6,Steepest HC,8,170,0,2,1,113,0.000572,1,plateau
+TV2,Task 6,Steepest HC,8,171,1,0,5,281,0.001328,1,solution
+TV2,Task 6,Steepest HC,8,172,0,1,5,337,0.001714,1,plateau
+TV2,Task 6,Steepest HC,8,173,0,1,3,225,0.001116,1,plateau
+TV2,Task 6,Steepest HC,8,174,0,1,2,169,0.000800,1,plateau
+TV2,Task 6,Steepest HC,8,175,0,1,4,281,0.001878,1,plateau
+TV2,Task 6,Steepest HC,8,176,0,1,2,169,0.000961,1,plateau
+TV2,Task 6,Steepest HC,8,177,0,3,2,169,0.000896,1,plateau
+TV2,Task 6,Steepest HC,8,178,0,2,2,169,0.000788,1,plateau
+TV2,Task 6,Steepest HC,8,179,0,1,5,337,0.001741,1,plateau
+TV2,Task 6,Steepest HC,8,180,0,2,2,169,0.000930,1,plateau
+TV2,Task 6,Steepest HC,8,181,0,2,3,225,0.002200,1,plateau
+TV2,Task 6,Steepest HC,8,182,0,1,4,281,0.001366,1,plateau
+TV2,Task 6,Steepest HC,8,183,0,1,3,225,0.001061,1,plateau
+TV2,Task 6,Steepest HC,8,184,0,2,3,225,0.001066,1,plateau
+TV2,Task 6,Steepest HC,8,185,1,0,4,225,0.001114,1,solution
+TV2,Task 6,Steepest HC,8,186,0,1,4,281,0.001345,1,plateau
+TV2,Task 6,Steepest HC,8,187,1,0,3,169,0.000805,1,solution
+TV2,Task 6,Steepest HC,8,188,1,0,5,281,0.001387,1,solution
+TV2,Task 6,Steepest HC,8,189,0,2,3,225,0.001080,1,plateau
+TV2,Task 6,Steepest HC,8,190,0,1,2,169,0.000811,1,plateau
+TV2,Task 6,Steepest HC,8,191,0,2,3,225,0.001114,1,plateau
+TV2,Task 6,Steepest HC,8,192,0,1,3,225,0.001128,1,plateau
+TV2,Task 6,Steepest HC,8,193,0,1,2,169,0.000864,1,plateau
+TV2,Task 6,Steepest HC,8,194,0,2,3,225,0.001207,1,plateau
+TV2,Task 6,Steepest HC,8,195,0,1,4,281,0.001336,1,plateau
+TV2,Task 6,Steepest HC,8,196,1,0,6,337,0.001836,1,solution
+TV2,Task 6,Steepest HC,8,197,1,0,5,281,0.001329,1,solution
+TV2,Task 6,Steepest HC,8,198,0,3,0,57,0.000462,1,plateau
+TV2,Task 6,Steepest HC,8,199,0,2,2,169,0.000820,1,plateau
+TV2,Task 6,Steepest HC,8,200,0,2,3,225,0.001081,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,1,0,2,3,225,0.001173,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,2,0,2,5,337,0.001680,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,3,0,2,5,337,0.001607,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,4,1,0,6,337,0.001601,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,5,0,1,8,505,0.002414,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,6,0,2,0,57,0.000267,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,7,0,1,7,449,0.002317,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,8,0,1,4,281,0.001361,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,9,0,1,3,225,0.001144,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,10,0,1,6,393,0.001870,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,11,0,1,6,393,0.001894,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,12,0,2,3,225,0.001057,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,13,0,2,4,281,0.001337,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,14,0,1,4,281,0.001327,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,15,1,0,7,393,0.001865,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,16,0,2,4,281,0.001371,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,17,0,1,6,393,0.001853,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,18,0,1,2,169,0.000864,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,19,0,1,4,281,0.001569,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,20,1,0,3,169,0.000799,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,21,0,1,6,393,0.002164,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,22,0,2,4,281,0.001367,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,23,0,2,3,225,0.001100,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,24,0,1,3,225,0.001080,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,25,0,2,5,337,0.001742,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,26,0,2,5,337,0.001602,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,27,0,1,9,561,0.002890,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,28,0,1,6,393,0.001866,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,29,0,2,6,393,0.001886,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,30,0,2,3,225,0.001089,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,31,0,2,4,281,0.001398,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,32,0,2,4,281,0.001322,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,33,0,2,6,393,0.001910,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,34,0,1,7,449,0.002126,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,35,0,2,7,449,0.002181,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,36,0,2,5,337,0.001626,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,37,0,1,5,337,0.001690,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,38,0,1,2,169,0.000845,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,39,0,1,8,505,0.002417,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,40,0,2,4,281,0.001308,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,41,0,3,4,281,0.001407,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,42,0,1,2,169,0.000824,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,43,0,2,1,113,0.000605,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,44,0,2,4,281,0.001460,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,45,1,0,4,225,0.001221,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,46,0,1,5,337,0.002466,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,47,1,0,5,281,0.001925,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,48,0,2,4,281,0.001485,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,49,0,1,5,337,0.001801,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,50,0,1,3,225,0.001195,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,51,0,2,2,169,0.001140,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,52,0,3,3,225,0.001062,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,53,0,1,6,393,0.001978,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,54,0,3,4,281,0.001400,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,55,0,2,4,281,0.001341,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,56,0,1,6,393,0.002014,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,57,0,1,5,337,0.001653,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,58,0,1,5,337,0.001733,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,59,0,1,6,393,0.002067,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,60,0,1,3,225,0.001481,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,61,1,0,8,449,0.002456,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,62,0,1,4,281,0.001434,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,63,0,1,4,281,0.001653,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,64,0,2,1,113,0.000552,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,65,0,2,3,225,0.001243,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,66,1,0,5,281,0.001431,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,67,0,1,7,449,0.003989,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,68,0,1,7,449,0.002278,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,69,0,2,3,225,0.001225,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,70,0,1,5,337,0.001790,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,71,0,2,5,337,0.001782,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,72,0,3,3,225,0.001334,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,73,0,2,3,225,0.001358,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,74,0,1,7,449,0.002426,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,75,1,0,5,281,0.001445,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,76,0,1,6,393,0.002093,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,77,0,1,3,225,0.001186,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,78,0,1,4,281,0.001497,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,79,0,1,3,225,0.001341,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,80,0,2,5,337,0.001783,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,81,0,2,6,393,0.002025,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,82,0,2,4,281,0.001789,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,83,1,0,6,337,0.001750,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,84,0,2,5,337,0.001799,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,85,1,0,8,449,0.002410,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,86,0,2,4,281,0.001323,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,87,0,1,3,225,0.001116,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,88,0,2,2,169,0.000854,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,89,0,1,4,281,0.001527,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,90,0,2,5,337,0.001738,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,91,0,1,4,281,0.001324,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,92,0,1,6,393,0.002075,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,93,0,1,4,281,0.001716,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,94,0,1,5,337,0.001672,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,95,0,1,8,505,0.002493,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,96,0,1,6,393,0.001935,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,97,0,2,8,505,0.002566,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,98,0,2,5,337,0.001685,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,99,0,2,4,281,0.001504,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,100,0,1,5,337,0.001625,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,101,0,1,3,225,0.001141,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,102,0,1,4,281,0.001338,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,103,1,0,5,281,0.001500,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,104,0,2,5,337,0.001666,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,105,1,0,5,281,0.001587,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,106,1,0,9,505,0.002616,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,107,0,3,4,281,0.001330,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,108,0,1,3,225,0.001226,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,109,0,2,5,337,0.001817,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,110,0,1,5,337,0.001613,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,111,1,0,9,505,0.002550,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,112,0,1,6,393,0.002123,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,113,0,1,3,225,0.001191,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,114,0,2,7,449,0.002218,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,115,0,1,6,393,0.002027,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,116,0,2,3,225,0.001211,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,117,0,1,5,337,0.001980,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,118,0,3,1,113,0.000641,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,119,0,1,6,393,0.002068,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,120,0,2,4,281,0.001450,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,121,0,1,6,393,0.002163,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,122,0,2,6,393,0.002198,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,123,0,2,4,281,0.001573,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,124,0,1,6,393,0.002119,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,125,0,1,5,337,0.001750,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,126,0,1,5,337,0.001637,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,127,0,1,7,449,0.002326,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,128,0,1,5,337,0.001682,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,129,0,1,6,393,0.001898,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,130,0,1,4,281,0.001407,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,131,0,1,5,337,0.001616,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,132,0,2,5,337,0.001689,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,133,0,1,6,393,0.001947,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,134,1,0,8,449,0.002164,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,135,0,2,5,337,0.001715,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,136,0,1,7,449,0.002194,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,137,0,3,1,113,0.000553,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,138,0,1,5,337,0.001585,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,139,0,3,3,225,0.001094,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,140,0,2,6,393,0.001979,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,141,1,0,5,281,0.001488,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,142,0,1,4,281,0.001447,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,143,0,1,4,281,0.001635,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,144,1,0,6,337,0.001862,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,145,0,2,4,281,0.001325,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,146,0,2,4,281,0.001466,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,147,0,1,8,505,0.002511,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,148,0,1,4,281,0.001385,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,149,0,3,3,225,0.001096,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,150,0,1,6,393,0.001884,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,151,1,0,9,505,0.002426,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,152,0,2,5,337,0.001657,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,153,0,1,7,449,0.002158,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,154,0,3,4,281,0.001431,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,155,0,2,6,393,0.001880,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,156,0,1,5,337,0.001631,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,157,0,2,4,281,0.001509,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,158,0,1,5,337,0.001638,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,159,0,3,3,225,0.001087,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,160,0,1,5,337,0.001613,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,161,1,0,7,393,0.002037,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,162,0,3,3,225,0.001178,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,163,1,0,6,337,0.001677,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,164,0,1,4,281,0.001449,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,165,0,1,6,393,0.001924,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,166,0,1,6,393,0.001906,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,167,0,1,4,281,0.001334,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,168,0,1,4,281,0.001363,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,169,0,2,6,393,0.001872,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,170,0,2,2,169,0.001052,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,171,0,1,6,393,0.002123,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,172,0,2,6,393,0.002167,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,173,1,0,5,281,0.001433,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,174,0,1,6,393,0.002143,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,175,0,1,7,449,0.002270,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,176,0,1,3,225,0.001084,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,177,0,1,4,281,0.001439,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,178,1,0,4,225,0.001234,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,179,0,2,5,337,0.001631,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,180,0,2,4,281,0.001471,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,181,0,2,4,281,0.001323,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,182,0,2,6,393,0.001856,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,183,0,1,4,281,0.001317,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,184,0,2,4,281,0.001991,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,185,1,0,5,281,0.012521,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,186,1,0,7,393,0.001854,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,187,1,0,5,281,0.001348,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,188,1,0,7,393,0.001863,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,189,0,1,5,337,0.001639,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,190,1,0,6,337,0.001594,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,191,1,0,9,505,0.010441,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,192,0,2,2,169,0.000854,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,193,0,1,5,337,0.001620,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,194,0,1,6,393,0.001878,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,195,0,2,4,281,0.001332,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,196,1,0,7,393,0.001877,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,197,0,2,4,281,0.001373,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,198,0,3,0,57,0.000276,1,plateau
+TV2,Task 6,Inefficient Stochastic HC,8,199,1,0,6,337,0.001625,1,solution
+TV2,Task 6,Inefficient Stochastic HC,8,200,0,1,4,281,0.001383,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,1,0,1,5,308,0.002365,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,2,0,2,7,301,0.002300,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,3,1,0,6,80,0.000643,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,4,0,1,6,295,0.002235,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,5,0,2,5,307,0.002344,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,6,0,2,0,259,0.002036,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,7,1,0,8,277,0.002080,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,8,0,1,4,278,0.002174,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,9,0,1,4,401,0.003301,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,10,0,1,8,420,0.003273,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,11,0,2,7,300,0.002309,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,12,0,2,3,317,0.002693,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,13,0,1,4,341,0.002615,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,14,0,1,4,284,0.002197,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,15,1,0,6,103,0.000791,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,16,1,0,5,51,0.000397,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,17,0,2,8,291,0.002211,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,18,0,1,2,310,0.002359,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,19,1,0,7,53,0.000397,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,20,0,1,3,525,0.004001,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,21,1,0,7,223,0.001680,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,22,0,1,5,316,0.002394,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,23,0,3,4,293,0.002222,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,24,0,1,2,351,0.002684,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,25,1,0,6,52,0.000409,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,26,0,1,4,391,0.003206,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,27,0,2,6,317,0.002407,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,28,0,1,7,466,0.003559,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,29,0,1,7,312,0.002390,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,30,0,1,4,305,0.002360,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,31,0,2,4,284,0.002284,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,32,0,2,2,263,0.002020,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,33,0,2,5,285,0.002181,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,34,0,1,7,389,0.003013,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,35,1,0,11,91,0.000688,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,36,0,2,5,294,0.002264,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,37,0,2,6,317,0.002615,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,38,0,1,2,308,0.002890,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,39,1,0,6,50,0.000374,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,40,0,2,5,360,0.002724,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,41,0,1,3,273,0.002110,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,42,0,1,3,298,0.002702,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,43,0,2,2,311,0.002358,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,44,0,1,5,341,0.002764,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,45,0,1,5,298,0.002382,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,46,0,2,4,365,0.002815,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,47,0,1,5,279,0.002105,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,48,0,2,5,288,0.002277,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,49,0,2,3,266,0.002254,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,50,0,1,5,298,0.004265,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,51,0,1,3,347,0.002739,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,52,0,1,6,443,0.003430,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,53,0,1,6,304,0.002346,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,54,1,0,7,118,0.000921,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,55,0,1,6,335,0.002730,1,strict_local_min
+TV2,Task 6,Efficient Stochastic HC,8,56,0,2,5,282,0.002368,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,57,0,2,6,286,0.002339,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,58,0,1,6,335,0.002649,1,strict_local_min
+TV2,Task 6,Efficient Stochastic HC,8,59,0,1,6,357,0.002931,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,60,0,2,1,262,0.002027,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,61,0,2,8,317,0.002456,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,62,1,0,5,53,0.000398,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,63,0,2,4,266,0.002150,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,64,0,2,1,278,0.002202,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,65,0,2,4,274,0.002397,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,66,0,2,3,271,0.002185,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,67,0,3,7,306,0.002487,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,68,0,2,5,306,0.002369,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,69,1,0,4,36,0.000269,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,70,0,2,5,358,0.002755,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,71,0,1,7,383,0.002909,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,72,0,3,5,334,0.002618,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,73,1,0,4,111,0.000861,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,74,0,1,6,374,0.002825,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,75,0,2,6,286,0.002252,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,76,1,0,6,183,0.001383,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,77,0,2,3,324,0.002507,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,78,0,2,6,377,0.002973,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,79,0,2,2,275,0.002236,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,80,0,2,5,383,0.003196,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,81,0,1,6,324,0.002857,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,82,0,2,5,344,0.002972,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,83,0,3,3,275,0.002250,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,84,0,1,5,309,0.002490,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,85,0,2,5,312,0.002550,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,86,0,2,4,290,0.002342,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,87,0,2,2,266,0.002108,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,88,0,2,3,280,0.002152,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,89,0,2,4,310,0.002425,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,90,0,2,5,297,0.002617,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,91,1,0,4,179,0.001378,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,92,1,0,7,68,0.000623,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,93,1,0,6,47,0.000355,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,94,0,1,4,336,0.002555,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,95,0,1,9,315,0.002523,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,96,0,1,7,447,0.003607,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,97,0,3,6,331,0.002637,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,98,0,3,4,290,0.002285,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,99,0,1,3,270,0.002135,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,100,1,0,7,178,0.001361,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,101,0,1,2,265,0.002216,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,102,0,2,3,315,0.002429,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,103,0,1,5,300,0.002359,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,104,0,1,6,285,0.002205,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,105,0,2,3,282,0.002187,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,106,0,2,5,277,0.002097,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,107,0,2,7,291,0.002256,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,108,0,1,3,309,0.002341,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,109,0,1,5,318,0.002433,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,110,0,2,7,309,0.002379,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,111,0,2,6,288,0.002194,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,112,0,1,5,352,0.002675,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,113,0,1,5,372,0.002961,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,114,0,1,6,322,0.002509,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,115,0,1,8,315,0.002403,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,116,0,2,3,305,0.002321,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,117,0,1,5,306,0.002539,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,118,0,3,1,263,0.001993,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,119,0,1,5,283,0.002191,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,120,0,1,6,313,0.002417,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,121,0,2,4,309,0.002376,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,122,0,1,5,471,0.003760,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,123,0,1,6,301,0.002318,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,124,0,1,7,321,0.002446,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,125,0,1,4,354,0.002790,1,strict_local_min
+TV2,Task 6,Efficient Stochastic HC,8,126,0,1,5,331,0.002489,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,127,0,2,4,281,0.002119,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,128,0,1,4,310,0.002332,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,129,0,2,4,331,0.002559,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,130,0,2,3,278,0.002090,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,131,0,1,6,403,0.003030,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,132,0,1,4,331,0.002541,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,133,0,2,3,267,0.002077,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,134,0,2,7,392,0.002980,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,135,0,2,5,329,0.002503,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,136,0,1,5,418,0.003163,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,137,0,3,1,260,0.001948,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,138,1,0,6,141,0.001052,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,139,0,1,5,320,0.002391,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,140,1,0,6,183,0.001414,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,141,1,0,4,24,0.000179,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,142,0,1,3,305,0.002301,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,143,0,2,4,346,0.002607,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,144,1,0,7,79,0.000599,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,145,0,3,4,279,0.002179,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,146,0,2,3,274,0.002055,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,147,0,2,8,388,0.002996,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,148,0,1,8,310,0.002354,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,149,0,1,5,320,0.002440,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,150,0,1,6,271,0.002084,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,151,0,2,7,374,0.002823,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,152,1,0,7,133,0.001018,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,153,0,1,7,306,0.002357,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,154,0,1,6,301,0.002273,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,155,0,2,7,441,0.003294,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,156,1,0,5,116,0.000869,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,157,0,1,5,292,0.002208,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,158,0,2,5,344,0.002600,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,159,0,1,5,347,0.002835,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,160,0,3,3,265,0.002062,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,161,0,2,5,314,0.002377,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,162,1,0,5,51,0.000394,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,163,0,2,3,278,0.002152,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,164,0,1,3,280,0.002183,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,165,0,3,2,274,0.002072,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,166,0,2,6,318,0.002457,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,167,0,1,3,323,0.002453,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,168,0,1,4,398,0.003016,1,strict_local_min
+TV2,Task 6,Efficient Stochastic HC,8,169,0,1,5,280,0.002124,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,170,0,2,3,265,0.002006,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,171,0,2,6,320,0.002473,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,172,0,2,9,325,0.002482,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,173,0,2,4,284,0.002188,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,174,0,2,3,270,0.002084,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,175,0,2,6,278,0.002115,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,176,0,1,3,324,0.002430,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,177,0,2,4,275,0.002074,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,178,0,3,1,261,0.002121,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,179,1,0,7,129,0.001014,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,180,1,0,5,86,0.000640,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,181,0,1,5,347,0.002593,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,182,0,1,4,304,0.002270,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,183,0,1,3,287,0.002202,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,184,0,1,5,304,0.002385,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,185,0,2,6,329,0.002502,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,186,0,2,4,272,0.002066,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,187,1,0,4,40,0.000304,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,188,0,1,5,360,0.002703,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,189,0,2,3,294,0.002291,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,190,0,2,4,317,0.002442,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,191,0,1,7,297,0.002222,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,192,0,1,3,274,0.002036,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,193,0,1,4,468,0.003545,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,194,0,1,5,328,0.002524,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,195,1,0,4,37,0.000280,1,solution
+TV2,Task 6,Efficient Stochastic HC,8,196,0,1,8,312,0.002354,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,197,0,1,5,296,0.002309,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,198,0,3,0,259,0.002019,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,199,0,1,5,374,0.002817,1,plateau
+TV2,Task 6,Efficient Stochastic HC,8,200,0,1,4,309,0.002322,1,plateau
+TV2,Task 4,Random Restart (Steepest HC),4,1,1,0,4,62,0.000250,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,2,1,0,2,25,0.000083,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,3,1,0,4,62,0.000195,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,4,1,0,3,50,0.000156,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,5,1,0,3,63,0.000272,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,6,1,0,6,112,0.000357,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,7,1,0,10,199,0.000619,7,solution
+TV2,Task 4,Random Restart (Steepest HC),4,8,1,0,2,25,0.000081,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,9,1,0,1,13,0.000045,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,10,1,0,2,25,0.000081,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,11,1,0,3,63,0.000201,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,12,1,0,6,99,0.000308,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,13,1,0,2,38,0.000121,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,14,1,0,2,38,0.000122,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,15,1,0,5,74,0.000229,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,16,1,0,2,25,0.000079,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,17,1,0,3,50,0.000235,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,18,1,0,2,25,0.000079,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,19,1,0,3,50,0.000156,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,20,1,0,2,25,0.000080,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,21,1,0,5,87,0.000268,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,22,1,0,2,38,0.000119,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,23,1,0,3,50,0.000154,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,24,1,0,5,74,0.000225,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,25,1,0,1,13,0.000043,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,26,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,27,1,0,2,25,0.000106,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,28,1,0,5,74,0.000231,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,29,1,0,2,25,0.000080,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,30,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,31,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,32,1,0,3,50,0.000154,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,33,1,0,2,38,0.000119,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,34,1,0,1,13,0.000043,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,35,1,0,5,87,0.000263,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,36,1,0,4,62,0.000187,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,37,1,0,4,75,0.000231,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,38,1,0,3,37,0.000172,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,39,1,0,3,50,0.000160,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,40,1,0,4,62,0.000198,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,41,1,0,7,137,0.000421,5,solution
+TV2,Task 4,Random Restart (Steepest HC),4,42,1,0,3,37,0.000137,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,43,1,0,4,62,0.000192,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,44,1,0,4,62,0.000188,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,45,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,46,1,0,3,63,0.000195,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,47,1,0,3,50,0.000153,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,48,1,0,4,75,0.000234,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,49,1,0,3,37,0.000115,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,50,1,0,3,50,0.000182,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,51,1,0,6,112,0.000353,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,52,1,0,2,25,0.000079,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,53,1,0,2,25,0.000079,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,54,1,0,4,75,0.000233,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,55,1,0,4,88,0.000285,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,56,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,57,1,0,6,112,0.000344,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,58,1,0,8,149,0.000456,5,solution
+TV2,Task 4,Random Restart (Steepest HC),4,59,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,60,1,0,1,13,0.000043,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,61,1,0,4,62,0.000187,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,62,1,0,3,50,0.000153,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,63,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,64,1,0,2,25,0.000085,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,65,1,0,9,161,0.000492,5,solution
+TV2,Task 4,Random Restart (Steepest HC),4,66,1,0,4,88,0.000273,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,67,1,0,19,385,0.001239,13,solution
+TV2,Task 4,Random Restart (Steepest HC),4,68,1,0,7,124,0.000383,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,69,1,0,5,74,0.000225,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,70,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,71,1,0,12,236,0.000719,8,solution
+TV2,Task 4,Random Restart (Steepest HC),4,72,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,73,1,0,8,136,0.000415,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,74,1,0,1,13,0.000053,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,75,1,0,2,25,0.000080,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,76,1,0,9,187,0.000573,7,solution
+TV2,Task 4,Random Restart (Steepest HC),4,77,1,0,4,62,0.000192,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,78,1,0,3,50,0.000156,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,79,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,80,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,81,1,0,4,75,0.000255,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,82,1,0,4,75,0.000238,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,83,1,0,5,87,0.000265,3,solution
+TV2,Task 4,Random Restart (Steepest HC),4,84,1,0,2,38,0.000118,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,85,1,0,11,237,0.000715,9,solution
+TV2,Task 4,Random Restart (Steepest HC),4,86,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,87,1,0,4,62,0.000189,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,88,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,89,1,0,6,112,0.000340,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,90,1,0,7,124,0.000375,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,91,1,0,6,112,0.000355,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,92,1,0,5,100,0.000306,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,93,1,0,5,100,0.000307,4,solution
+TV2,Task 4,Random Restart (Steepest HC),4,94,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,95,1,0,3,50,0.000155,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,96,1,0,3,50,0.000154,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,97,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,98,1,0,4,62,0.000228,2,solution
+TV2,Task 4,Random Restart (Steepest HC),4,99,1,0,3,37,0.000122,1,solution
+TV2,Task 4,Random Restart (Steepest HC),4,100,1,0,7,124,0.000376,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,1,1,0,7,111,0.000344,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,2,1,0,4,49,0.000151,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,3,1,0,6,86,0.000266,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,4,1,0,3,50,0.000155,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,5,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,6,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,7,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,8,1,0,6,86,0.000260,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,9,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,10,1,0,5,74,0.000227,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,11,1,0,1,13,0.000043,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,12,1,0,10,147,0.000496,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,13,1,0,10,186,0.000575,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,14,1,0,4,62,0.000191,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,15,1,0,11,185,0.000592,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,16,1,0,10,160,0.000491,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,17,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,18,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,19,1,0,3,37,0.000112,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,20,1,0,8,123,0.000369,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,21,1,0,6,99,0.000298,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,22,1,0,17,309,0.000980,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,23,1,0,5,87,0.000266,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,24,1,0,7,124,0.000378,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,25,1,0,4,75,0.000228,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,26,1,0,8,136,0.000441,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,27,1,0,2,25,0.000082,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,28,1,0,10,173,0.000518,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,29,1,0,3,37,0.000117,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,30,1,0,3,37,0.000112,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,31,1,0,4,62,0.000187,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,32,1,0,6,138,0.000421,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,33,1,0,8,149,0.000452,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,34,1,0,6,125,0.000381,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,35,1,0,4,49,0.000149,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,36,1,0,8,136,0.000421,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,37,1,0,1,13,0.000043,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,38,1,0,13,235,0.000707,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,39,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,40,1,0,4,88,0.000304,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,41,1,0,4,62,0.000187,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,42,1,0,6,86,0.000296,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,43,1,0,3,37,0.000115,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,44,1,0,5,74,0.000228,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,45,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,46,1,0,3,37,0.000112,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,47,1,0,4,62,0.000187,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,48,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,49,1,0,5,87,0.000262,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,50,1,0,20,384,0.001232,12,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,51,1,0,7,111,0.000339,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,52,1,0,6,112,0.000356,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,53,1,0,7,111,0.000446,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,54,1,0,7,111,0.000340,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,55,1,0,3,63,0.000194,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,56,1,0,6,86,0.000259,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,57,1,0,2,38,0.000120,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,58,1,0,25,483,0.001449,15,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,59,1,0,4,62,0.000199,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,60,1,0,1,13,0.000046,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,61,1,0,7,111,0.000386,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,62,1,0,2,25,0.000078,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,63,1,0,2,38,0.000124,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,64,1,0,2,25,0.000077,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,65,1,0,2,38,0.000116,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,66,1,0,5,74,0.000220,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,67,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,68,1,0,16,284,0.000948,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,69,1,0,21,409,0.001228,13,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,70,1,0,4,75,0.000228,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,71,1,0,6,86,0.000258,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,72,1,0,18,321,0.001015,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,73,1,0,7,111,0.000333,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,74,1,0,20,384,0.001181,12,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,75,1,0,8,136,0.000408,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,76,1,0,4,75,0.000229,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,77,1,0,5,74,0.000224,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,78,1,0,4,62,0.000188,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,79,1,0,3,37,0.000112,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,80,1,0,8,149,0.000458,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,81,1,0,7,124,0.000375,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,82,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,83,1,0,11,185,0.000553,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,84,1,0,4,62,0.000189,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,85,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,86,1,0,11,211,0.000665,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,87,1,0,2,38,0.000118,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,88,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,89,1,0,5,87,0.000293,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,90,1,0,4,62,0.000188,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,91,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,92,1,0,3,50,0.000153,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,93,1,0,7,98,0.000294,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,94,1,0,3,37,0.000113,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,95,1,0,11,211,0.000644,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,96,1,0,5,74,0.000224,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,97,1,0,2,38,0.000118,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,98,1,0,1,13,0.000042,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,99,1,0,2,25,0.000076,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),4,100,1,0,10,160,0.000516,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,1,1,0,3,101,0.000617,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,2,1,0,4,18,0.000301,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,3,1,0,2,11,0.000078,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,4,1,0,8,275,0.001573,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,5,1,0,9,183,0.001037,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,6,1,0,2,11,0.000064,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,7,1,0,8,357,0.002022,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,8,1,0,4,32,0.000178,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,9,1,0,14,509,0.002938,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,10,1,0,1,19,0.000111,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,11,1,0,4,129,0.000727,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,12,1,0,3,63,0.000355,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,13,1,0,5,195,0.001155,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,14,1,0,10,305,0.001728,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,15,1,0,7,220,0.001277,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,16,1,0,2,5,0.000031,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,17,1,0,7,281,0.001570,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,18,1,0,14,523,0.002934,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,19,1,0,3,97,0.000551,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,20,1,0,9,210,0.001199,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,21,1,0,3,8,0.000048,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,22,1,0,12,347,0.001969,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,23,1,0,3,64,0.000367,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,24,1,0,6,80,0.000468,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,25,1,0,7,205,0.001178,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,26,1,0,5,73,0.000408,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,27,1,0,6,261,0.001454,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,28,1,0,4,19,0.000107,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,29,1,0,3,36,0.000198,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,30,1,0,10,312,0.001827,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,31,1,0,5,74,0.000430,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,32,1,0,3,12,0.000073,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,33,1,0,4,18,0.000107,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,34,1,0,4,73,0.000429,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,35,1,0,3,14,0.000082,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,36,1,0,8,212,0.001291,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,37,1,0,5,76,0.000422,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,38,1,0,7,145,0.000797,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,39,1,0,3,78,0.000464,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,40,1,0,2,15,0.000086,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,41,1,0,6,245,0.001353,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,42,1,0,1,3,0.000019,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,43,1,0,1,8,0.000046,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,44,1,0,3,12,0.000068,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,45,1,0,1,11,0.000063,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,46,1,0,2,6,0.000035,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,47,1,0,8,215,0.001195,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,48,1,0,6,200,0.001132,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,49,1,0,4,13,0.000075,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,50,1,0,1,6,0.000036,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,51,1,0,8,174,0.000956,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,52,1,0,2,11,0.000063,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,53,1,0,4,126,0.000694,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,54,1,0,13,344,0.001959,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,55,1,0,8,270,0.001540,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,56,1,0,10,225,0.001328,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,57,1,0,8,207,0.001245,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,58,1,0,2,35,0.000197,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,59,1,0,9,274,0.001525,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,60,1,0,2,12,0.000069,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,61,1,0,2,15,0.000085,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,62,1,0,17,660,0.003678,11,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,63,1,0,12,214,0.001238,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,64,1,0,4,85,0.000468,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,65,1,0,11,301,0.001688,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,66,1,0,7,248,0.001663,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,67,1,0,2,67,0.000377,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,68,1,0,3,7,0.000041,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,69,1,0,2,39,0.000216,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,70,1,0,8,202,0.001148,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,71,1,0,2,15,0.000085,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,72,1,0,10,282,0.001543,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,73,1,0,3,17,0.000095,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,74,1,0,4,250,0.001398,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,75,1,0,14,394,0.002241,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,76,1,0,2,8,0.000047,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,77,1,0,4,71,0.000414,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,78,1,0,3,79,0.000455,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,79,1,0,3,14,0.000080,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,80,1,0,5,8,0.000047,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,81,1,0,2,27,0.000150,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,82,1,0,12,465,0.002591,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,83,1,0,2,6,0.000037,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,84,1,0,3,10,0.000058,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,85,1,0,2,16,0.000090,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,86,1,0,2,3,0.000019,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,87,1,0,1,8,0.000045,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,88,1,0,9,212,0.001180,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,89,1,0,11,335,0.001880,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,90,1,0,16,547,0.003070,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,91,1,0,5,201,0.001111,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,92,1,0,1,12,0.000068,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,93,1,0,5,127,0.000755,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,94,1,0,5,93,0.000524,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,95,1,0,11,365,0.002078,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,96,1,0,5,94,0.000575,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,97,1,0,9,205,0.001148,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,98,1,0,2,10,0.000057,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,99,1,0,3,187,0.001026,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),4,100,1,0,17,413,0.002408,7,solution
+TV2,Task 4,Random Restart (Steepest HC),8,1,1,0,135,9898,0.051744,42,solution
+TV2,Task 4,Random Restart (Steepest HC),8,2,1,0,53,3824,0.018610,16,solution
+TV2,Task 4,Random Restart (Steepest HC),8,3,1,0,27,1912,0.009412,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,4,1,0,52,3825,0.018510,17,solution
+TV2,Task 4,Random Restart (Steepest HC),8,5,1,0,41,3038,0.014700,14,solution
+TV2,Task 4,Random Restart (Steepest HC),8,6,1,0,25,1800,0.008601,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,7,1,0,30,2080,0.009962,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,8,1,0,6,337,0.001588,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,9,1,0,101,7538,0.036879,34,solution
+TV2,Task 4,Random Restart (Steepest HC),8,10,1,0,40,2925,0.013943,13,solution
+TV2,Task 4,Random Restart (Steepest HC),8,11,1,0,42,3151,0.016783,15,solution
+TV2,Task 4,Random Restart (Steepest HC),8,12,1,0,14,956,0.004743,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,13,1,0,26,1856,0.008982,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,14,1,0,24,1687,0.008039,7,solution
+TV2,Task 4,Random Restart (Steepest HC),8,15,1,0,10,732,0.003543,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,16,1,0,7,450,0.002158,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,17,1,0,51,3826,0.018942,18,solution
+TV2,Task 4,Random Restart (Steepest HC),8,18,1,0,26,1856,0.009106,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,19,1,0,5,281,0.001359,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,20,1,0,3,169,0.000822,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,21,1,0,4,225,0.001063,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,22,1,0,17,1238,0.005884,6,solution
+TV2,Task 4,Random Restart (Steepest HC),8,23,1,0,6,337,0.001663,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,24,1,0,4,225,0.001110,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,25,1,0,12,844,0.004008,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,26,1,0,14,956,0.004625,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,27,1,0,33,2419,0.011662,11,solution
+TV2,Task 4,Random Restart (Steepest HC),8,28,1,0,5,281,0.001387,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,29,1,0,30,2251,0.012121,11,solution
+TV2,Task 4,Random Restart (Steepest HC),8,30,1,0,52,3882,0.018697,18,solution
+TV2,Task 4,Random Restart (Steepest HC),8,31,1,0,28,2025,0.009803,9,solution
+TV2,Task 4,Random Restart (Steepest HC),8,32,1,0,7,450,0.002203,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,33,1,0,48,3487,0.016927,15,solution
+TV2,Task 4,Random Restart (Steepest HC),8,34,1,0,3,169,0.000800,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,35,1,0,28,1968,0.009630,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,36,1,0,5,281,0.001336,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,37,1,0,37,2757,0.013241,13,solution
+TV2,Task 4,Random Restart (Steepest HC),8,38,1,0,27,1912,0.009142,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,39,1,0,11,788,0.003842,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,40,1,0,8,506,0.002474,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,41,1,0,64,4554,0.021879,18,solution
+TV2,Task 4,Random Restart (Steepest HC),8,42,1,0,39,2869,0.014114,13,solution
+TV2,Task 4,Random Restart (Steepest HC),8,43,1,0,18,1237,0.006027,5,solution
+TV2,Task 4,Random Restart (Steepest HC),8,44,1,0,29,2024,0.009735,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,45,1,0,107,7874,0.038735,34,solution
+TV2,Task 4,Random Restart (Steepest HC),8,46,1,0,39,2869,0.014137,13,solution
+TV2,Task 4,Random Restart (Steepest HC),8,47,1,0,4,225,0.001079,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,48,1,0,41,2981,0.014456,13,solution
+TV2,Task 4,Random Restart (Steepest HC),8,49,1,0,33,2362,0.011386,10,solution
+TV2,Task 4,Random Restart (Steepest HC),8,50,1,0,21,1462,0.006957,6,solution
+TV2,Task 4,Random Restart (Steepest HC),8,51,1,0,55,3936,0.018928,16,solution
+TV2,Task 4,Random Restart (Steepest HC),8,52,1,0,16,1182,0.005675,6,solution
+TV2,Task 4,Random Restart (Steepest HC),8,53,1,0,26,1856,0.008954,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,54,1,0,3,169,0.000806,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,55,1,0,10,675,0.003274,3,solution
+TV2,Task 4,Random Restart (Steepest HC),8,56,1,0,21,1576,0.007564,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,57,1,0,10,675,0.003194,3,solution
+TV2,Task 4,Random Restart (Steepest HC),8,58,1,0,19,1350,0.006522,6,solution
+TV2,Task 4,Random Restart (Steepest HC),8,59,1,0,10,618,0.003030,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,60,1,0,4,225,0.001082,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,61,1,0,7,450,0.002196,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,62,1,0,8,506,0.002524,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,63,1,0,4,225,0.001089,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,64,1,0,14,956,0.004560,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,65,1,0,7,450,0.002115,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,66,1,0,9,619,0.002956,3,solution
+TV2,Task 4,Random Restart (Steepest HC),8,67,1,0,5,281,0.001352,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,68,1,0,47,3431,0.016590,15,solution
+TV2,Task 4,Random Restart (Steepest HC),8,69,1,0,3,169,0.000837,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,70,1,0,24,1687,0.008149,7,solution
+TV2,Task 4,Random Restart (Steepest HC),8,71,1,0,9,562,0.002665,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,72,1,0,6,394,0.001919,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,73,1,0,39,2812,0.013797,12,solution
+TV2,Task 4,Random Restart (Steepest HC),8,74,1,0,59,4331,0.020991,19,solution
+TV2,Task 4,Random Restart (Steepest HC),8,75,1,0,56,4106,0.019790,18,solution
+TV2,Task 4,Random Restart (Steepest HC),8,76,1,0,36,2587,0.012903,11,solution
+TV2,Task 4,Random Restart (Steepest HC),8,77,1,0,92,6806,0.032607,30,solution
+TV2,Task 4,Random Restart (Steepest HC),8,78,1,0,9,562,0.002678,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,79,1,0,5,281,0.001343,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,80,1,0,52,3768,0.018303,16,solution
+TV2,Task 4,Random Restart (Steepest HC),8,81,1,0,4,225,0.001118,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,82,1,0,6,337,0.001600,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,83,1,0,5,281,0.001335,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,84,1,0,18,1237,0.005938,5,solution
+TV2,Task 4,Random Restart (Steepest HC),8,85,1,0,15,1069,0.005083,5,solution
+TV2,Task 4,Random Restart (Steepest HC),8,86,1,0,38,2642,0.012729,10,solution
+TV2,Task 4,Random Restart (Steepest HC),8,87,1,0,20,1349,0.006448,5,solution
+TV2,Task 4,Random Restart (Steepest HC),8,88,1,0,5,281,0.001378,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,89,1,0,12,787,0.003777,3,solution
+TV2,Task 4,Random Restart (Steepest HC),8,90,1,0,26,1913,0.009163,9,solution
+TV2,Task 4,Random Restart (Steepest HC),8,91,1,0,26,1856,0.008855,8,solution
+TV2,Task 4,Random Restart (Steepest HC),8,92,1,0,13,900,0.004283,4,solution
+TV2,Task 4,Random Restart (Steepest HC),8,93,1,0,16,1125,0.005364,5,solution
+TV2,Task 4,Random Restart (Steepest HC),8,94,1,0,31,2307,0.011069,11,solution
+TV2,Task 4,Random Restart (Steepest HC),8,95,1,0,37,2700,0.013086,12,solution
+TV2,Task 4,Random Restart (Steepest HC),8,96,1,0,5,281,0.001352,1,solution
+TV2,Task 4,Random Restart (Steepest HC),8,97,1,0,99,7198,0.034933,30,solution
+TV2,Task 4,Random Restart (Steepest HC),8,98,1,0,6,394,0.001944,2,solution
+TV2,Task 4,Random Restart (Steepest HC),8,99,1,0,49,3543,0.017093,15,solution
+TV2,Task 4,Random Restart (Steepest HC),8,100,1,0,17,1238,0.005981,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,1,1,0,91,6009,0.028777,17,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,2,1,0,41,2696,0.012959,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,3,1,0,37,2529,0.012585,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,4,1,0,44,2978,0.014221,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,5,1,0,62,4214,0.020146,14,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,6,1,0,59,3818,0.018397,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,7,1,0,24,1573,0.007839,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,8,1,0,98,6515,0.031591,19,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,9,1,0,74,5000,0.025363,16,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,10,1,0,115,7695,0.037750,23,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,11,1,0,9,562,0.002729,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,12,1,0,15,955,0.004541,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,13,1,0,6,337,0.001803,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,14,1,0,9,505,0.002402,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,15,1,0,36,2359,0.011241,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,16,1,0,43,2865,0.014190,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,17,1,0,24,1573,0.007544,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,18,1,0,16,1068,0.005124,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,19,1,0,28,1854,0.008874,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,20,1,0,45,2977,0.014226,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,21,1,0,37,2415,0.011544,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,22,1,0,28,1797,0.009016,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,23,1,0,42,2809,0.013673,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,24,1,0,21,1348,0.006465,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,25,1,0,27,1741,0.008585,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,26,1,0,38,2414,0.012080,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,27,1,0,45,2977,0.015057,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,28,1,0,177,11851,0.057579,35,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,29,1,0,29,1796,0.008518,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,30,1,0,61,3987,0.019094,11,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,31,1,0,80,5279,0.025203,15,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,32,1,0,6,337,0.001604,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,33,1,0,45,2920,0.013993,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,34,1,0,82,5562,0.026465,18,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,35,1,0,30,1966,0.009419,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,36,1,0,30,2023,0.009660,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,37,1,0,109,7302,0.038610,22,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,38,1,0,41,2696,0.015361,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,39,1,0,13,843,0.004253,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,40,1,0,50,3200,0.015731,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,41,1,0,23,1631,0.007859,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,42,1,0,17,1124,0.005354,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,43,1,0,19,1236,0.006090,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,44,1,0,62,4157,0.020157,13,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,45,1,0,19,1293,0.006259,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,46,1,0,35,2474,0.011978,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,47,1,0,30,1852,0.009026,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,48,1,0,55,3651,0.017752,11,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,49,1,0,26,1742,0.008356,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,50,1,0,24,1573,0.007683,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,51,1,0,29,1853,0.008908,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,52,1,0,5,281,0.001327,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,53,1,0,12,787,0.003910,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,54,1,0,60,3874,0.018607,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,55,1,0,77,5168,0.027521,16,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,56,1,0,85,5730,0.027872,18,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,57,1,0,11,731,0.003562,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,58,1,0,22,1404,0.006817,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,59,1,0,19,1179,0.005655,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,60,1,0,10,618,0.002996,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,61,1,0,78,5224,0.025149,16,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,62,1,0,14,842,0.004117,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,63,1,0,15,955,0.004601,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,64,1,0,7,393,0.001908,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,65,1,0,11,674,0.003204,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,66,1,0,48,3202,0.015326,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,67,1,0,24,1516,0.007227,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,68,1,0,8,506,0.002391,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,69,1,0,19,1236,0.005882,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,70,1,0,5,281,0.001350,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,71,1,0,7,450,0.002196,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,72,1,0,15,1012,0.004934,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,73,1,0,31,2022,0.009843,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,74,1,0,13,786,0.003786,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,75,1,0,49,3201,0.015506,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,76,1,0,10,618,0.002989,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,77,1,0,21,1348,0.006481,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,78,1,0,31,2079,0.010074,7,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,79,1,0,33,2077,0.009898,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,80,1,0,8,506,0.002455,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,81,1,0,28,1854,0.009440,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,82,1,0,21,1348,0.006650,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,83,1,0,70,4662,0.022957,14,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,84,1,0,97,6573,0.031986,21,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,85,1,0,44,2864,0.013998,8,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,86,1,0,50,3314,0.015916,10,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,87,1,0,75,4942,0.024419,14,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,88,1,0,14,842,0.004038,2,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,89,1,0,8,449,0.002231,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,90,1,0,52,3483,0.016751,11,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,91,1,0,46,3033,0.014517,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,92,1,0,24,1516,0.007428,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,93,1,0,8,449,0.002267,1,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,94,1,0,23,1460,0.007165,4,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,95,1,0,56,3707,0.017682,11,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,96,1,0,27,1798,0.008783,6,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,97,1,0,16,1011,0.004973,3,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,98,1,0,25,1629,0.007960,5,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,99,1,0,50,3257,0.016233,9,solution
+TV2,Task 4,Random Restart (Inefficient Stochastic HC),8,100,1,0,6,337,0.001783,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,1,1,0,24,1060,0.008506,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,2,1,0,23,1736,0.013497,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,3,1,0,30,2116,0.016734,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,4,1,0,23,1414,0.011157,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,5,1,0,37,2376,0.018114,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,6,1,0,6,144,0.001114,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,7,1,0,5,128,0.000986,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,8,1,0,8,395,0.003033,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,9,1,0,41,2335,0.017873,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,10,1,0,99,5751,0.044318,18,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,11,1,0,23,1094,0.008402,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,12,1,0,43,2710,0.020638,10,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,13,1,0,10,408,0.003098,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,14,1,0,46,3399,0.026920,11,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,15,1,0,35,2091,0.016497,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,16,1,0,10,860,0.006640,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,17,1,0,3,218,0.001697,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,18,1,0,5,299,0.002235,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,19,1,0,35,2491,0.019673,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,20,1,0,11,362,0.002934,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,21,1,0,74,4921,0.039518,15,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,22,1,0,43,2410,0.018906,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,23,1,0,14,383,0.002912,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,24,1,0,7,407,0.003150,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,25,1,0,42,2560,0.020173,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,26,1,0,14,392,0.003031,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,27,1,0,9,327,0.002602,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,28,1,0,27,1250,0.009935,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,29,1,0,65,3553,0.027810,12,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,30,1,0,9,341,0.002780,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,31,1,0,30,1713,0.013899,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,32,1,0,9,593,0.004707,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,33,1,0,32,2170,0.017129,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,34,1,0,83,4542,0.036248,16,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,35,1,0,14,1042,0.008262,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,36,1,0,37,2271,0.018147,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,37,1,0,7,55,0.000433,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,38,1,0,58,3451,0.027275,11,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,39,1,0,4,60,0.000459,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,40,1,0,5,146,0.001120,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,41,1,0,9,470,0.003596,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,42,1,0,45,2660,0.020363,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,43,1,0,18,868,0.006580,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,44,1,0,21,1346,0.010408,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,45,1,0,4,38,0.000292,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,46,1,0,48,2452,0.024735,9,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,47,1,0,41,2278,0.026598,8,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,48,1,0,34,2074,0.022861,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,49,1,0,103,6191,0.068051,21,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,50,1,0,6,47,0.000562,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,51,1,0,60,3764,0.035732,12,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,52,1,0,107,6532,0.058428,21,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,53,1,0,17,1110,0.008409,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,54,1,0,10,376,0.002844,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,55,1,0,5,51,0.000391,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,56,1,0,10,500,0.003765,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,57,1,0,19,1267,0.009649,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,58,1,0,16,1084,0.008211,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,59,1,0,83,4024,0.030676,13,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,60,1,0,56,3225,0.024681,10,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,61,1,0,33,1987,0.015199,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,62,1,0,7,119,0.000925,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,63,1,0,28,1906,0.014717,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,64,1,0,77,4711,0.036326,15,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,65,1,0,57,2970,0.023071,10,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,66,1,0,67,4273,0.032951,13,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,67,1,0,10,407,0.003112,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,68,1,0,6,185,0.001429,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,69,1,0,31,1929,0.017811,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,70,1,0,10,77,0.000726,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,71,1,0,5,59,0.000624,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,72,1,0,10,459,0.004629,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,73,1,0,28,1403,0.013830,5,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,74,1,0,13,559,0.004424,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,75,1,0,28,1565,0.012327,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,76,1,0,4,193,0.001476,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,77,1,0,100,5728,0.046807,20,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,78,1,0,53,3264,0.025554,10,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,79,1,0,22,1076,0.008213,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,80,1,0,31,2110,0.016324,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,81,1,0,10,374,0.002907,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,82,1,0,15,544,0.004123,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,83,1,0,128,7652,0.060015,25,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,84,1,0,18,1237,0.011946,4,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,85,1,0,4,29,0.000238,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,86,1,0,37,2088,0.018687,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,87,1,0,63,3938,0.031106,13,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,88,1,0,9,405,0.003058,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,89,1,0,16,793,0.006347,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,90,1,0,11,392,0.003018,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,91,1,0,7,475,0.003586,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,92,1,0,11,329,0.002535,2,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,93,1,0,52,2887,0.022293,10,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,94,1,0,18,817,0.006286,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,95,1,0,28,1552,0.011804,6,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,96,1,0,18,680,0.005184,3,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,97,1,0,128,7291,0.056923,23,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,98,1,0,32,2105,0.016348,7,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,99,1,0,7,167,0.001316,1,solution
+TV2,Task 4,Random Restart (Efficient Stochastic HC),8,100,1,0,96,6007,0.049229,20,solution
