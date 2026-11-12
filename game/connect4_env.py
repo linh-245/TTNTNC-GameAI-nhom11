@@ -68,6 +68,7 @@ class ConnectFourEnv:
         self.done: bool = False
         self.info: str = ''
         self.validinputs: List[int] = list(range(1, self.COLS + 1))
+        self._history: List[Tuple[int, int]] = []  # (col, row) từng nước, phục vụ undo()
 
     # ------------------------------------------------------------------
     # Core API (theo sách)
@@ -81,6 +82,7 @@ class ConnectFourEnv:
         self.done = False
         self.info = ''
         self.validinputs = list(range(1, self.COLS + 1))
+        self._history = []
         return self.state.copy()
 
     def step(self, action: int) -> Tuple[np.ndarray, float, bool, str]:
@@ -110,6 +112,7 @@ class ConnectFourEnv:
         # Tìm hàng thấp nhất còn trống trong cột
         row = self._find_empty_row(col)
         self.state[col][row] = piece
+        self._history.append((col, row))
 
         # Cập nhật danh sách cột hợp lệ
         if row == self.ROWS - 1:
@@ -225,6 +228,7 @@ class ConnectFourEnv:
         new_env.done = self.done
         new_env.info = self.info
         new_env.validinputs = self.validinputs.copy()
+        new_env._history = self._history.copy()
         return new_env
 
     def is_valid_action(self, action: int) -> bool:
@@ -234,6 +238,56 @@ class ConnectFourEnv:
     def get_valid_actions(self) -> List[int]:
         """Trả về danh sách cột hợp lệ."""
         return self.validinputs.copy()
+
+    # ------------------------------------------------------------------
+    # API bổ sung theo đề bài (không đổi hành vi các hàm cũ)
+    # ------------------------------------------------------------------
+
+    def legal_actions(self) -> List[int]:
+        """Danh sách cột hợp lệ (1..7). Giống validinputs nhưng là bản sao."""
+        return self.validinputs.copy()
+
+    def is_terminal(self) -> bool:
+        """True nếu ván đã kết thúc (có người thắng hoặc hòa)."""
+        return self.done
+
+    def result(self, player: str) -> int:
+        """
+        Kết quả của ván theo góc nhìn `player` ('red' hoặc 'yellow').
+
+        +1 nếu player thắng, -1 nếu player thua, 0 nếu hòa hoặc ván đang chơi.
+        Khi ván kết thúc do có người thắng, `turn` giữ nguyên là người vừa đi,
+        tức người thắng.
+        """
+        if player not in ('red', 'yellow'):
+            raise ValueError(f"player phải là 'red' hoặc 'yellow', nhận {player!r}")
+        if not self.done or self.reward == 0:
+            return 0
+        return 1 if self.turn == player else -1
+
+    def clone(self) -> 'ConnectFourEnv':
+        """Bản sao độc lập của môi trường (giống copy())."""
+        return self.copy()
+
+    def undo(self) -> None:
+        """
+        Hoàn tác nước đi cuối cùng, khôi phục ô, lượt, done, reward, info và
+        danh sách cột hợp lệ (giữ thứ tự tăng dần).
+        """
+        if not self._history:
+            raise ValueError("Không có nước nào để hoàn tác.")
+        col, row = self._history.pop()
+        piece = int(self.state[col][row])
+        self.state[col][row] = 0
+        # Người vừa đi là người sở hữu quân này, nên đến lượt họ đi lại
+        self.turn = 'red' if piece == 1 else 'yellow'
+        self.done = False
+        self.reward = 0
+        self.info = ''
+        action = col + 1
+        if action not in self.validinputs:
+            self.validinputs.append(action)
+            self.validinputs.sort()
 
     def __repr__(self) -> str:
         return self._board_str()
