@@ -230,7 +230,7 @@ Hậu tố `_tournament` trong tên file là nhãn của giải đấu trong `TO
 
 ## 8. Quản lý dung lượng
 
-Log thô (`*_games.jsonl`) lớn nên để trên Drive; chỉ đưa các `summary_*.csv`, `<tên>_matrix.csv`, `ablation.jsonl` và hình trong `results/figures/` lên GitHub (tổng dưới 50 MB).
+Log thô (`*_games.jsonl`) lớn nên để trên Drive(đường dẫn:https://drive.google.com/file/d/1oY4uesRlc2iGbDTfjyQQui3D8_8xZgZO/view?usp=sharing); chỉ đưa các `summary_*.csv`, `<tên>_matrix.csv`, `ablation.jsonl` và hình trong `results/figures/` lên GitHub (tổng dưới 50 MB).
 
 ## 9. Xử lý sự cố
 
