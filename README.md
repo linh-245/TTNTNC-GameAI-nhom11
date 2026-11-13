@@ -1,6 +1,6 @@
 # Connect Four 7×6 – Game AI đa cấp độ
 
-![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg)
+[![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg?branch=dev)](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml)
 
 Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 11 – GVHD: TS. Đỗ Như Tài.
 Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Beta, MCTS và mạng nơ-ron, sau đó so sánh bằng giải đấu có kiểm soát ngân sách tính toán.
@@ -15,7 +15,7 @@ Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Bet
 | Nguyễn Huỳnh Mai | 3124720043 | chloestudy0043-stack | Alpha-Beta, MCTS, giải đấu, ablation |
 | Nguyễn Lương Hồng Búp | 3124720009 | bupnguyen-19 | Dữ liệu, Neural Network, RL |
 
-Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
+Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
 ## Các cấp tác tử
 
@@ -25,10 +25,9 @@ Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đ
 | 2 | Rule-based (Think1–3) | `agents/heuristic_agent.py` | Đã có |
 | 3 | Alpha-Beta | `agents/alphabeta_agent.py` | Đã có; cờ cắt tỉa, đếm nút, giới hạn thời gian |
 | 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; code đã có seed, ngân sách thời gian (`budget_ms`), `last_stats` |
-| 5 | Neural Network | `agents/nn_agent.py` | Đang thực hiện |
-| 6 | Reinforcement Learning | `training/train_rl.py` | Đang thực hiện |
+| 5 | Neural Network | agents/nn_agent.py | Đã có bản học có giám sát (weights/sl.pt, có test); chưa đo sức mạnh thi đấu
+| 6 | Reinforcement Learning | training/train_rl.py | Mới có bộ khung tự chơi, chưa huấn luyện, chưa có weights/rl.pt
 
-> Cập nhật cột "Trạng thái" mỗi khi hoàn thành một cấp. Chỉ ghi "Đã có" khi đã có test hoặc đã chạy thật.
 
 ## Cấu trúc thư mục
 
@@ -55,16 +54,18 @@ python -m pytest tests -q       # chạy kiểm thử
 # giải đấu: mở eval/tournament.ipynb (chưa có bản .py)
 ```
 
-Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (thêm khi hoàn thành). Ghi rõ seed, số ván, cấu hình máy trong các file này.
+Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (đã thêm). Ghi rõ seed, số ván, cấu hình máy trong các file này.
 
 ## Kết quả
 
 Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
 
-| Nội dung | Link |
+| Nội dung | Link / Số liệu |
 |---|---|
-| Ma trận đối đầu | _chờ số liệu_ |
-| Ablation | _chờ số liệu_ |
+| Ma trận đối đầu | [Xem hình](results/figures/fig4_winscore_matrix_tournament.png) |
+| RQ1 (AB vs MCTS) | 200ms: score 0.490; 1000ms: score 0.545 (100 ván/mức, seed 42) |
+| Ablation A1 | Đã chạy xong (xem `logs/summary_a1_cost.csv`, `summary_a1_budget.csv`) |
+| Ablation A2 | Đã chạy xong (xem `logs/summary_a2.csv`) |
 | Learning curve | _chờ số liệu_ |
 
 ## Phần kế thừa và phần nhóm tự làm
@@ -74,7 +75,7 @@ Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại
 
 ## Quy ước làm việc nhóm
 
-- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
+- Commit message của đề tài cuối kỳ: `Duan_GameAI/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Lab??/Làm gì`.)
 - Mỗi việc là một Issue; làm trên nhánh `feat/<tên>-<việc>`; gộp bằng Pull Request có người review.
 - Chi tiết: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md).
 

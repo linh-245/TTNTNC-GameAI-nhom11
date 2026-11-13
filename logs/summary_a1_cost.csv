@@ -1,0 +1,5 @@
+cấu hình,depth,nút TB,nút trung vị,ms/nước TB,ms/nước p95
+"prune=on, order=on",4,344.3,347.5,11.376,21.327
+"prune=on, order=off",4,605.7,507.5,12.859,23.69
+"prune=off, order=on",4,2155.1,2436.5,49.402,70.271
+"prune=off, order=off",4,2155.1,2436.5,69.823,131.861
