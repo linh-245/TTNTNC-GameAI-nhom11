@@ -2,21 +2,51 @@
 
 Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần dùng bảng này cùng GitHub Insights để khai tỷ lệ đóng góp (tổng 100%).
 
-## Nguyễn Kiều Linh (@github-username)
-| Ngày | Việc đã làm | Commit / PR / Issue |
-|---|---|---|
-| | | |
+## Nguyễn Kiều Linh (@linh-245)
 
-## Nguyễn Huỳnh Mai (@github-username)
+| Ngày | Việc đã làm | Commit / PR / Issue |
+|------|-------------|---------------------|
+| 09/11 | Xem xét và gộp Pull Request #1 đến #4 vào `main` bằng Merge commit, gồm PR #3 (`fix/bup-think3-block`, sửa docstring `heuristic_agent.py` cho khớp code) và PR #4 (`fix/mai-mcts-backprop`, `mcts_agent.py`) | PR #1, #2, #3, #4 (đã merge); commit merge `955e24d` (PR #3) |
+| 09/11 | Đối chiếu bản gốc với bản sửa lỗi, xác định thay đổi thật chỉ là docstring của `heuristic_agent.py` và phần `rng`, `seed`, `budget_ms`, `last_stats` của `mcts_agent.py`; viết lại `SUA_LOI.md` cho khớp | commit `Duan_GameAI/Sualoi` (điền mã commit) |
+| 09/11 | Tạo nhánh `dev` và đặt làm default branch; thống nhất quy trình: nhánh `feat/fix/test/docs` tách từ `dev`, Pull Request vào `dev`, khi xong mốc mới đưa `dev` vào `main` | nhánh `dev`; Settings > Default branch |
+| 11/11 | Merge `dev` vào `main` (Đợt 1 đến Đợt 3), chạy `python -m pytest tests/test_regression.py` ra 7 passed | PR #16; commit merge `d7d04d9` |
+| 11/11 | Gắn tag mốc giữa kỳ `v0.1-fixed` trên `main` (xóa tag sai tên `v.01-fixed`, tạo lại đúng tên) | tag `v0.1-fixed` → `d7d04d9` |
+| 11/11 | Engine: thêm `legal_actions`, `is_terminal`, `result`, `clone`, `undo` vào `connect4_env.py` | PR #18, nhánh `feat/linh-engine-api` |
+| 11/11 | Test: chuyển test engine sang `.py`, thêm test hòa và đường chéo, xóa `test_engine.ipynb` | PR #17, nhánh `test/linh-engine-tests` |
+| 11/11 | Solver: sinh 500 thế chuẩn cố định theo seed (`make_positions.py`), đo độ chính xác tối ưu (`optimal_accuracy.py`) | PR #19, nhánh `feat/linh-solver-positions` |
+| 11/11 | UI: sửa emoji, hiển thị thống kê nút và mô phỏng, thêm menu MCTS theo ngân sách vào `pygame_ui.py` | PR #20, nhánh `feat/linh-ui-stats` |
+| 12/11 | Khôi phục API engine bị ghi đè khi gộp giải đấu (`legal_actions`, `is_terminal`, `result`, `clone`, `undo`) và cập nhật README | PR #28, nhánh `fix/linh-restore-engine-api` |
+| 12/11 | Chạy `python -m eval.tournament`, ra bảng xếp hạng 6 agent (AlphaBeta, MCTS, Think3, Think2, Think1, Random) | log CSV, JSONL (lưu trên Drive) |
+| 12/11 | Merge `dev` vào `main` cho mốc agents | PR #29; commit merge `804ac26` |
+| 12/11 | Gắn tag mốc `v0.2-agents` trên `main` | tag `v0.2-agents` → `804ac26` |
+
+## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
-| | | |
+|09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
+|09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
+|10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
+|11/11 | Tăng tốc `eval_payoff_conn` bằng cửa sổ tính trước, thêm `budget_ms` (deepening lặp) và tùy chọn bảng chuyển vị trong `alphabeta_agent.py` |PR #21, nhánh `feat/mai-alphabeta-budget`|
+
 
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
+| 09/11 | Đưa `agents/__init__.py`, `random_agent.py`, `heuristic_agent.py` vào repo (khung từ sách Liu) | commit `7b39fae`, `cde3d8c`, `612b8ad`; PR #1 (đã merge) |
+| 09/11 | Sửa docstring `heuristic_agent.py` (đầu file, `conn_think2`, `conn_think3`) cho khớp code, bỏ mô tả "fork" không có trong code | commit `ff7fee0`, `b59a31a`, `a349ae7`; PR #3 (đã merge); commit `0649aec` (bỏ ký tự thừa trong docstring `conn_think3`); PR #9 (đã merge vào `main`); nhánh `fix/bup-think3-block`
 | 09/11 | Viết `training/encode.py` (mã hóa trạng thái 3x6x7) và `training/__init__.py` | commit `d43ff13`, nhánh `feat/bup-encode-model` (chưa push) |
-| 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | PR #6, nhánh `docs/bup-readme` |
+| 09/11 | Sửa README (badge, Nhóm 11, GitHub thành viên, ghi chú thư mục chưa có, trạng thái Cấp 4) và thêm pytest vào `requirements.txt` | commit `2a462ea`, `360b716`, `e43ef2e`, `e447b19`, `78e52ce`, `8f7bf26`; PR #6, nhánh `docs/bup-readme` |
+| 10/11 | Viết `training/model.py` (mạng CNN policy-value, 3 khối residual, đầu policy 7 cột và đầu value) và `tests/test_learning.py` (6 test mã hóa trạng thái) | commit `c750f6e`, `3f5bcf4`; PR #11 (đã merge vào `dev`), nhánh `feat/bup-encode-model` |
+| 10/11 | Viết `training/generate_data.py` (sinh ván tự chơi với giáo viên `conn_think3`, có khai cuộc ngẫu nhiên và exploration) và `training/dataset.py` (loại trùng thế, chia train/val/test theo ván) | commit `1ca0a72`, `a9b861f`; PR #12 (đã merge vào `dev`), nhánh `feat/bup-data-pipeline` |
+| 10/11 | Chạy thử: 200 ván (seed 0) ra 5269 thế, sau loại trùng còn 4194; chia train/val/test = 3247/518/429 thế (theo ván 159/20/20); `pytest` 13 passed | chạy trên máy, dữ liệu `.npz` không đẩy lên GitHub |
+| 11/11 | Viết `training/train_sl.py` (huấn luyện có giám sát: loss cross-entropy cho policy có che cột đầy cộng MSE cho value, chọn checkpoint theo loss tập val, lưu checkpoint và log .json gồm seed, thiết bị, thời gian) | commit `e1d702b`; PR #14, nhánh `feat/bup-train-sl` (đã mở, Linh đã merge vào dev) |
+| 11/11 | Viết `agents/nn_agent.py` (agent cấp 5 chọn cột theo policy của mạng, có `last_stats`) và `tests/test_nn_agent.py` (5 test, tự bỏ qua khi thiếu torch) | commit `639683c`, `e092457`; PR #15, nhánh `feat/bup-nn-agent` (đã mở, Linh đã merge vào dev) |
+| 11/11 | Chạy thử chức năng: 1000 ván giáo viên (seed 1) cho 26040 thế, train 5 epoch trên CPU 31,4 giây; nn_agent thắng Random 94/100. Chỉ để kiểm tra, chưa phải số liệu báo cáo | chạy trên máy; dữ liệu và checkpoint không đưa lên GitHub |
+| 12/11 | Huấn luyện thật: sinh 5000 ván giáo viên Think3, chạy `train_sl.py`, lưu checkpoint tốt nhất `weights/sl.pt` (khoảng 0,93 MB), `weights/sl.json` (tham số chạy) và log `logs/training/sl_log.csv` | commit `b0aa1d9`; PR #23, nhánh `feat/bup-sl-checkpoint` (Linh đã merge vào `dev`) |
+| 12/11 | Viết `training/plot_curves.py` vẽ đường học (loss tổng, policy, value theo epoch) ra `docs/images/sl_curves.png`; viết `docs/README_learning.md` (cách sinh dữ liệu, huấn luyện, đánh giá) | commit `c229e43`, `b0aa1d9`; PR #23 |
+| 12/11 | Chạy thử `pytest`: 18 passed | chạy trên máy |
+| 13/11 | Sửa lỗi tích hợp: đổi tên tham số `nn_agent` từ `checkpoint` thành `ckpt` cho khớp chỗ gọi trong `ui/pygame_ui.py` và `solver/optimal_accuracy.py` (trước đó gọi sẽ báo `TypeError`); cập nhật 5 chỗ gọi trong `tests/test_nn_agent.py`; `pytest`: 98 passed | PR #NN, nhánh `fix/bup-nn-ckpt-name` (đã mở, chờ review) |
+| 13/11 | Viết `training/train_rl.py`: khung huấn luyện tăng cường bằng tự chơi (policy gradient có baseline), khởi tạo từ `weights/sl.pt`; mới chạy thử nhỏ 2 vòng x 4 ván để kiểm tra chạy được, chưa huấn luyện thật, chưa có `weights/rl.pt` | PR #NN, nhánh `feat/bup-train-rl` (đã mở, chờ review) |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |

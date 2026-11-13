@@ -1,5 +1,7 @@
 import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import math
 import random
 import time
@@ -19,9 +21,13 @@ Bốn pha:
   2. Expansion: mở rộng node chưa được thăm hết
   3. Simulation: rollout ngẫu nhiên đến kết thúc
   4. Backpropagation: cập nhật W, N ngược lên root
-"""
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+Tùy chọn:
+  - seed      : dùng random.Random(seed) riêng, không đụng random toàn cục
+  - budget_ms : có giá trị thì lặp mô phỏng đến hết giờ (bỏ qua n_simulations);
+                None thì chạy đủ n_simulations
+  - mcts_agent.last_stats = {"sims", "latency_ms"}
+"""
 
 
 class MCTSNode:
@@ -31,8 +37,10 @@ class MCTSNode:
                  'untried_actions', 'wins', 'visits', 'turn', 'mover']
 
     def __init__(self, env: ConnectFourEnv, parent: Optional['MCTSNode'] = None,
-                 action: Optional[int] = None, mover: Optional[str] = None):
-        self.env = env.copy()
+                 action: Optional[int] = None, mover: Optional[str] = None,
+                 copy_env: bool = True):
+        # copy_env=False: node nhận quyền sở hữu env (env vừa được copy ở nơi gọi)
+        self.env = env.copy() if copy_env else env
         self.mover = mover  # người đã đi nước dẫn tới node này
         self.parent = parent
         self.action = action  # hành động dẫn đến node này
@@ -67,7 +75,9 @@ class MCTSNode:
         new_env = self.env.copy()
         mover = new_env.turn
         new_env.step(action)
-        child = MCTSNode(new_env, parent=self, action=action, mover=mover)
+        # new_env đã là bản copy riêng -> giao thẳng cho node con, không copy lần nữa
+        child = MCTSNode(new_env, parent=self, action=action, mover=mover,
+                         copy_env=False)
         self.children.append(child)
         return child
 
@@ -85,7 +95,8 @@ def _simulate(env: ConnectFourEnv, root_turn: str, rng: random.Random) -> float:
     -------
     float : +1 nếu root_turn thắng, -1 nếu thua, 0 nếu hòa.
     """
-    sim_env = env.copy()
+    # Node đã kết thúc thì không cần copy: vòng lặp bên dưới không chạy, env không bị sửa
+    sim_env = env if env.done else env.copy()
     while not sim_env.done:
         # Lấy danh sách action hợp lệ từ env và chọn ngẫu nhiên bằng rng riêng
         valid_actions = sim_env.get_valid_actions()
@@ -107,7 +118,18 @@ def mcts_agent(env: ConnectFourEnv, n_simulations: int = 800,
                c: float = math.sqrt(2), budget_ms: Optional[int] = None,
                seed: Optional[int] = None) -> int:
     """
-    Cấp 6 - MCTS/UCT agent (đã tối ưu budget_ms, seed và last_stats).
+    Cấp 6 - MCTS/UCT agent.
+
+    Parameters
+    ----------
+    n_simulations : số mô phỏng khi budget_ms=None.
+    budget_ms     : có giá trị -> lặp mô phỏng đến hết giờ (không giới hạn bởi
+                    n_simulations). Kết quả khi đó phụ thuộc tốc độ máy.
+    seed          : cùng seed + cùng n_simulations (không budget) -> cùng nước đi.
+
+    Side effect
+    -----------
+    mcts_agent.last_stats = {"sims": số mô phỏng đã chạy, "latency_ms": thời gian}
     """
     # Khởi tạo đối tượng random riêng theo seed (nếu có)
     rng = random.Random(seed)
@@ -115,18 +137,16 @@ def mcts_agent(env: ConnectFourEnv, n_simulations: int = 800,
     root_turn = env.turn
     root = MCTSNode(env)
 
-    start_time = time.time()
+    start_time = time.perf_counter()
+    deadline = None if budget_ms is None else start_time + budget_ms / 1000.0
     sims = 0
-    
-    # Chuyển đổi budget từ milliseconds sang giây
-    budget_sec = (budget_ms / 1000.0) if budget_ms is not None else None
 
-    while sims < n_simulations:
-        # Kiểm tra giới hạn thời gian nếu có budget_ms
-        if budget_sec is not None:
-            elapsed = time.time() - start_time
-            if elapsed >= budget_sec:
+    while True:
+        if deadline is None:
+            if sims >= n_simulations:
                 break
+        elif time.perf_counter() >= deadline:
+            break
 
         node = root
 
@@ -151,20 +171,19 @@ def mcts_agent(env: ConnectFourEnv, n_simulations: int = 800,
 
         sims += 1
 
-    latency_ms = (time.time() - start_time) * 1000.0
+    # Chọn nước đi tốt nhất theo số lần thăm (visits)
+    if root.children:
+        move = max(root.children, key=lambda n: n.visits).action
+    elif root.untried_actions:          # hết giờ trước khi kịp chạy mô phỏng nào
+        move = rng.choice(root.untried_actions)
+    else:                               # ván đã kết thúc
+        move = env.sample()
 
-    # Ghi nhận thống kê vào last_stats theo quy ước
     mcts_agent.last_stats = {
         "sims": sims,
-        "latency_ms": round(latency_ms, 2)
+        "latency_ms": round((time.perf_counter() - start_time) * 1000.0, 2),
     }
-
-    # Chọn nước đi tốt nhất theo số lần thăm (visits)
-    if not root.children:
-        return env.sample()
-
-    best = max(root.children, key=lambda n: n.visits)
-    return best.action
+    return move
 
 
 # Khởi tạo giá trị mặc định ban đầu cho last_stats

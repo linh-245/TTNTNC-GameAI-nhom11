@@ -85,7 +85,35 @@ AGENTS = {
     'MCTS-200':    partial(mcts_agent, n_simulations=200),
     'MCTS-500':    partial(mcts_agent, n_simulations=500),
 }
+
+
+def _register_optional_agents():
+    """Thêm các agent có thể chưa xong vào menu. Agent nào lỗi import thì bỏ qua."""
+    import inspect
+    # MCTS theo ngân sách thời gian (cần mcts_agent có tham số budget_ms)
+    try:
+        if 'budget_ms' in inspect.signature(mcts_agent).parameters:
+            AGENTS['MCTS-50ms'] = partial(mcts_agent, n_simulations=100000, budget_ms=50)
+            AGENTS['MCTS-200ms'] = partial(mcts_agent, n_simulations=100000, budget_ms=200)
+    except Exception:
+        pass
+    # Tác tử học được: Cấp 5 (SL) và Cấp 6 (RL), dùng chung nn_agent với checkpoint khác nhau
+    try:
+        from agents.nn_agent import nn_agent
+        AGENTS['NN (SL)'] = partial(nn_agent, ckpt='weights/sl.pt')
+        AGENTS['RL'] = partial(nn_agent, ckpt='weights/rl.pt')
+    except Exception:
+        pass
+
+
+_register_optional_agents()
 AGENT_NAMES = list(AGENTS.keys())
+
+
+def get_stats(fn):
+    """Đọc last_stats của agent; nếu fn là functools.partial thì đọc fn.func.last_stats."""
+    base = fn.func if isinstance(fn, partial) else fn
+    return getattr(base, 'last_stats', None)
 
 
 def draw_gradient_rect(surface, rect, color1, color2, vertical=True):
@@ -167,11 +195,13 @@ class Connect4UI:
         self.move_history = []
         self.thinking_start = 0.0
         self.thinking_time_ms = 0.0
+        self.last_stats = None     # thống kê của AI ở nước vừa đi (từ last_stats)
+        self.status_msg = ''       # thông báo lỗi tác tử (nếu có)
         self.win_cells = []
         self.mode_screen = True  # True = menu, False = game
 
         # Buttons (mode screen)
-        bx, by = WINDOW_W//2 - 120, WINDOW_H//2 - 80
+        bx, by = WINDOW_W//2 - 120, WINDOW_H - 90   # dưới danh sách, không đè bộ chọn Vàng
         self.btn_start = Button((bx, by, 240, 50), 'START GAME',
                                  self.font_medium, ACCENT)
         self.btn_restart = Button((BOARD_WIDTH + 20, WINDOW_H - 70, 240, 44),
@@ -212,9 +242,10 @@ class Connect4UI:
             "• Random: Ngẫu nhiên (Ch.3)",
             "• Think1: Nhìn 1 bước (Ch.3)",
             "• Think2: Nhìn 2 bước (Ch.3)",
-            "• Think3: Nhìn 3 bước (Ch.3)",
+            "• Think3: thắng/chặn, ưu tiên cột giữa (Ch.3)",
             "• Minimax: Alpha-Beta (Ch.5-7)",
-            "• MCTS: Monte Carlo (Ch.8)",
+            "• MCTS: Monte Carlo (Ch.8), -50ms/-200ms: theo ngân sách",
+            "• NN (SL) / RL: mạng học được (nếu đã có checkpoint)",
         ]
         for i, line in enumerate(info_lines):
             col = ACCENT if i == 0 else GRAY
@@ -255,7 +286,7 @@ class Connect4UI:
             color = RED_COLOR if turn == 'red' else YELLOW_COLOR
             agent_name = AGENT_NAMES[self.red_agent_idx if turn == 'red'
                                      else self.yellow_agent_idx]
-            txt = f"{'🔴' if turn == 'red' else '🟡'} {turn.upper()} — {agent_name}"
+            txt = f"{turn.upper()} — {agent_name}"
             t = self.font_title.render(txt, True, color)
             s.blit(t, t.get_rect(center=(BOARD_WIDTH//2, 35)))
             # Thinking
@@ -265,8 +296,11 @@ class Connect4UI:
                 s.blit(th, th.get_rect(center=(BOARD_WIDTH//2, 70)))
             else:
                 t2 = self.font_small.render(
-                    f"Nhấn 1-7 để đặt quân | {self.thinking_time_ms:.0f}ms", True, GRAY)
+                    f"Nhấn 1-7 để đặt quân | {self._stats_text()}", True, GRAY)
                 s.blit(t2, t2.get_rect(center=(BOARD_WIDTH//2, 70)))
+            if self.status_msg:
+                er = self.font_small.render(self.status_msg, True, RED_COLOR)
+                s.blit(er, er.get_rect(center=(BOARD_WIDTH//2, 95)))
         else:
             wt = self.font_big.render(self.winner_msg, True, WIN_GLOW)
             s.blit(wt, wt.get_rect(center=(BOARD_WIDTH//2, 50)))
@@ -343,18 +377,20 @@ class Connect4UI:
         # Players
         red_name = AGENT_NAMES[self.red_agent_idx]
         yel_name = AGENT_NAMES[self.yellow_agent_idx]
-        self._sidebar_label(s, sx, y, "🔴 ĐỎ:", red_name, RED_COLOR); y += 30
-        self._sidebar_label(s, sx, y, "🟡 VÀNG:", yel_name, YELLOW_COLOR); y += 40
+        pygame.draw.circle(s, RED_COLOR, (sx + 26, y + 9), 6)
+        self._sidebar_label(s, sx + 20, y, "ĐỎ:", red_name, RED_COLOR); y += 30
+        pygame.draw.circle(s, YELLOW_COLOR, (sx + 26, y + 9), 6)
+        self._sidebar_label(s, sx + 20, y, "VÀNG:", yel_name, YELLOW_COLOR); y += 40
 
         # Move history
         hist_label = self.font_medium.render("Lịch sử nước đi:", True, GRAY)
         s.blit(hist_label, (sx + 20, y)); y += 25
 
         recent_moves = self.move_history[-12:]
-        for i, (turn, col, t_ms) in enumerate(recent_moves):
+        for i, (turn, col, t_ms, extra) in enumerate(recent_moves):
             color = RED_COLOR if turn == 'red' else YELLOW_COLOR
-            mv_t = self.font_small.render(f"  {turn[:3].upper()} → cột {col}  ({t_ms:.0f}ms)",
-                                           True, color)
+            mv_t = self.font_small.render(
+                f"  {turn[:3].upper()} → cột {col}  ({t_ms:.0f}ms{extra})", True, color)
             s.blit(mv_t, (sx + 20, y)); y += 18
 
         y = WINDOW_H - 160
@@ -383,15 +419,35 @@ class Connect4UI:
         fn = self.get_current_agent_fn()
         return fn is None
 
+    def _stats_text(self, stats=None, short=False) -> str:
+        """Chuỗi thời gian nghĩ + số nút/mô phỏng từ last_stats."""
+        stats = self.last_stats if stats is None else stats
+        parts = [] if short else [f"{self.thinking_time_ms:.0f}ms"]
+        if stats:
+            if stats.get('nodes'):
+                parts.append(f"{int(stats['nodes'])} nút")
+            if stats.get('sims'):
+                parts.append(f"{int(stats['sims'])} mô phỏng")
+        return " | ".join(parts)
+
     def trigger_ai_move(self):
         fn = self.get_current_agent_fn()
         if fn is None:
             return
         self.ai_thinking = True
+        self.status_msg = ''
         self.thinking_start = time.perf_counter()
+        env_snapshot = self.env.copy()   # AI nghĩ trên bản sao, không đụng bàn đang vẽ
 
         def run_ai():
-            self.ai_move = fn(self.env)
+            try:
+                move = fn(env_snapshot)
+                self.last_stats = get_stats(fn)
+            except Exception as e:   # vd: thiếu checkpoint -> không để UI treo
+                self.last_stats = None
+                self.status_msg = f"Lỗi tác tử: {e}"
+                move = env_snapshot.sample()
+            self.ai_move = move
 
         t = threading.Thread(target=run_ai, daemon=True)
         t.start()
@@ -402,13 +458,13 @@ class Connect4UI:
         _, reward, done, _ = self.env.step(col)
         elapsed = (time.perf_counter() - t0) * 1000
         self.thinking_time_ms = elapsed
-        self.move_history.append((turn, col, elapsed))
+        self.move_history.append((turn, col, elapsed, ""))
 
         if done:
             self.game_over = True
             if reward != 0:
                 winner = turn.upper()
-                self.winner_msg = f"{'🔴' if turn == 'red' else '🟡'} {winner} THẮNG!"
+                self.winner_msg = f"{winner} THẮNG!"
                 self._find_win_cells(col, turn)
             else:
                 self.winner_msg = "HÒA!"
@@ -438,6 +494,8 @@ class Connect4UI:
         self.move_history = []
         self.win_cells = []
         self.thinking_time_ms = 0.0
+        self.last_stats = None
+        self.status_msg = ''
 
     # ── Main Loop ─────────────────────────────────────────────────────────────
 
@@ -537,7 +595,13 @@ class Connect4UI:
                     ai_triggered = False
                     self.thinking_time_ms = (time.perf_counter() - self.thinking_start) * 1000
                     if col in self.env.validinputs:
+                        think_ms = self.thinking_time_ms
                         self.apply_move(col)
+                        extra = self._stats_text(short=True)
+                        t, c, _, _ = self.move_history[-1]
+                        self.move_history[-1] = (t, c, think_ms,
+                                                 f", {extra}" if extra else "")
+                        self.thinking_time_ms = think_ms
                 elif not self.ai_thinking:
                     ai_triggered = False
 
