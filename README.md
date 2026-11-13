@@ -1,6 +1,6 @@
 # Connect Four 7×6 – Game AI đa cấp độ
 
-![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml)
+[![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg?branch=dev)](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml)
 
 Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 11 – GVHD: TS. Đỗ Như Tài.
 Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Beta, MCTS và mạng nơ-ron, sau đó so sánh bằng giải đấu có kiểm soát ngân sách tính toán.
