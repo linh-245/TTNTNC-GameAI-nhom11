@@ -15,7 +15,7 @@ Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Bet
 | Nguyễn Huỳnh Mai | 3124720043 | chloestudy0043-stack | Alpha-Beta, MCTS, giải đấu, ablation |
 | Nguyễn Lương Hồng Búp | 3124720009 | bupnguyen-19 | Dữ liệu, Neural Network, RL |
 
-Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
+Nhật ký đóng góp: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
 ## Các cấp tác tử
 
