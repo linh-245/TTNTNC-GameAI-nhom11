@@ -25,10 +25,9 @@ Tiến độ và phân công: xem tab **Projects** và **Issues**. Nhật ký đ
 | 2 | Rule-based (Think1–3) | `agents/heuristic_agent.py` | Đã có |
 | 3 | Alpha-Beta | `agents/alphabeta_agent.py` | Đã có; cờ cắt tỉa, đếm nút, giới hạn thời gian |
 | 4 | MCTS (UCT) | `agents/mcts_agent.py` | Đã có; code đã có seed, ngân sách thời gian (`budget_ms`), `last_stats` |
-| 5 | Neural Network | `agents/nn_agent.py` | Đang thực hiện |
-| 6 | Reinforcement Learning | `training/train_rl.py` | Đang thực hiện |
+| 5 | Neural Network | agents/nn_agent.py | Đã có bản học có giám sát (weights/sl.pt, có test); chưa đo sức mạnh thi đấu
+| 6 | Reinforcement Learning | training/train_rl.py | Mới có bộ khung tự chơi, chưa huấn luyện, chưa có weights/rl.pt
 
-> Cập nhật cột "Trạng thái" mỗi khi hoàn thành một cấp. Chỉ ghi "Đã có" khi đã có test hoặc đã chạy thật.
 
 ## Cấu trúc thư mục
 
@@ -76,7 +75,7 @@ Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại
 
 ## Quy ước làm việc nhóm
 
-- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Tuan??/Bai??/Làm gì`.)
+- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Lab??/Làm gì`.)
 - Mỗi việc là một Issue; làm trên nhánh `feat/<tên>-<việc>`; gộp bằng Pull Request có người review.
 - Chi tiết: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md).
 
