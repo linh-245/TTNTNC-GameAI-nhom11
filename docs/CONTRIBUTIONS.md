@@ -46,6 +46,7 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 12/11 | Viết `training/plot_curves.py` vẽ đường học (loss tổng, policy, value theo epoch) ra `docs/images/sl_curves.png`; viết `docs/README_learning.md` (cách sinh dữ liệu, huấn luyện, đánh giá) | commit `c229e43`, `b0aa1d9`; PR #23 |
 | 12/11 | Chạy thử `pytest`: 18 passed | chạy trên máy |
 | 13/11 | Sửa lỗi tích hợp: đổi tên tham số `nn_agent` từ `checkpoint` thành `ckpt` cho khớp chỗ gọi trong `ui/pygame_ui.py` và `solver/optimal_accuracy.py` (trước đó gọi sẽ báo `TypeError`); cập nhật 5 chỗ gọi trong `tests/test_nn_agent.py`; `pytest`: 98 passed | PR #NN, nhánh `fix/bup-nn-ckpt-name` (đã mở, chờ review) |
+| 13/11 | Viết `training/train_rl.py`: khung huấn luyện tăng cường bằng tự chơi (policy gradient có baseline), khởi tạo từ `weights/sl.pt`; mới chạy thử nhỏ 2 vòng x 4 ván để kiểm tra chạy được, chưa huấn luyện thật, chưa có `weights/rl.pt` | PR #NN, nhánh `feat/bup-train-rl` (đã mở, chờ review) |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
