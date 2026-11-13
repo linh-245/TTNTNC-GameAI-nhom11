@@ -1,6 +1,6 @@
 # Connect Four 7×6 – Game AI đa cấp độ
 
-![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml/badge.svg)
+![tests](https://github.com/linh-245/TTNTNC-GameAI-nhom11/actions/workflows/test.yml)
 
 Đề tài cuối kỳ môn **Trí tuệ nhân tạo nâng cao** – Nhóm 11 – GVHD: TS. Đỗ Như Tài.
 Xây dựng game Connect Four và các tác tử AI từ Random đến Alpha-Beta, MCTS và mạng nơ-ron, sau đó so sánh bằng giải đấu có kiểm soát ngân sách tính toán.
@@ -75,7 +75,7 @@ Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại
 
 ## Quy ước làm việc nhóm
 
-- Commit message của đề tài cuối kỳ: `Duan_GameAl/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Lab??/Làm gì`.)
+- Commit message của đề tài cuối kỳ: `Duan_GameAI/<Khu vực>: <việc đã làm>`, ví dụ `Duan_GameAl/Engine: thêm undo()`. (Bài tập nhóm khác trong môn dùng `Lab??/Làm gì`.)
 - Mỗi việc là một Issue; làm trên nhánh `feat/<tên>-<việc>`; gộp bằng Pull Request có người review.
 - Chi tiết: [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md).
 
