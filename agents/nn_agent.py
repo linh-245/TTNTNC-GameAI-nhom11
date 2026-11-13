@@ -7,7 +7,7 @@ nhất trong các cột còn đánh được. Chưa kết hợp tìm kiếm MCTS
 Giao diện giống các agent khác: hàm nhận ConnectFourEnv, trả về cột 1..7.
 
     from functools import partial
-    agent = partial(nn_agent, checkpoint="weights/sl.pt")
+    agent = partial(nn_agent, ckpt="weights/sl.pt")
 
 Lưu ý: torch được import trễ (bên trong hàm) để máy không có torch vẫn import được
 module này, ví dụ khi chạy CI.
@@ -39,7 +39,7 @@ def load_model(path=DEFAULT_CHECKPOINT):
     if not os.path.exists(path):
         raise FileNotFoundError(
             f"Không thấy checkpoint: {path}. Chạy training/train_sl.py trước "
-            f"hoặc truyền checkpoint=... cho nn_agent.")
+            f"hoặc truyền ckpt=... cho nn_agent.")
     # File do nhóm tự lưu nên tin cậy; weights_only=False vì checkpoint có dict số liệu
     ckpt = torch.load(path, map_location="cpu", weights_only=False)
     cfg = ckpt["config"]
@@ -50,7 +50,7 @@ def load_model(path=DEFAULT_CHECKPOINT):
     return model
 
 
-def nn_agent(env: ConnectFourEnv, checkpoint: str = DEFAULT_CHECKPOINT) -> int:
+def nn_agent(env: ConnectFourEnv, ckpt: str = DEFAULT_CHECKPOINT) -> int:
     """
     Cấp 5 - chọn cột có xác suất policy cao nhất (cột đầy đã bị che).
 
@@ -64,7 +64,7 @@ def nn_agent(env: ConnectFourEnv, checkpoint: str = DEFAULT_CHECKPOINT) -> int:
     """
     from training.model import predict
 
-    model = load_model(checkpoint)
+    model = load_model(ckpt)
     start = time.time()
     probs, value = predict(model, env)
     nn_agent.last_stats = {

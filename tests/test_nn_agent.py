@@ -37,7 +37,7 @@ def new_env():
 
 
 def test_returns_column_in_range(ckpt):
-    move = nn_agent(new_env(), checkpoint=ckpt)
+    move = nn_agent(new_env(), ckpt=ckpt)
     assert isinstance(move, int)
     assert 1 <= move <= 7
 
@@ -47,7 +47,7 @@ def test_never_picks_full_column(ckpt):
     for _ in range(6):          # xen kẽ hai màu trong cột 1 nên không ai thắng, cột đầy
         env.step(1)
     assert 1 not in env.validinputs
-    assert nn_agent(env, checkpoint=ckpt) != 1
+    assert nn_agent(env, ckpt=ckpt) != 1
 
 
 def test_plays_only_legal_moves_in_full_games(ckpt):
@@ -57,7 +57,7 @@ def test_plays_only_legal_moves_in_full_games(ckpt):
         agent_turn = "red" if g % 2 == 0 else "yellow"
         while not env.done:
             if env.turn == agent_turn:
-                move = nn_agent(env, checkpoint=ckpt)
+                move = nn_agent(env, ckpt=ckpt)
             else:
                 move = rng.choice(env.validinputs)
             assert move in env.validinputs
@@ -65,7 +65,7 @@ def test_plays_only_legal_moves_in_full_games(ckpt):
 
 
 def test_last_stats_updated(ckpt):
-    nn_agent(new_env(), checkpoint=ckpt)
+    nn_agent(new_env(), ckpt=ckpt)
     stats = nn_agent.last_stats
     assert "latency_ms" in stats and "value" in stats
     assert -1.0 <= stats["value"] <= 1.0
@@ -73,4 +73,4 @@ def test_last_stats_updated(ckpt):
 
 def test_missing_checkpoint_raises(tmp_path):
     with pytest.raises(FileNotFoundError):
-        nn_agent(new_env(), checkpoint=str(tmp_path / "khong_co.pt"))
+        nn_agent(new_env(), ckpt=str(tmp_path / "khong_co.pt"))
