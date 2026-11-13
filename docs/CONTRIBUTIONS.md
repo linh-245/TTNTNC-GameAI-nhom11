@@ -27,6 +27,8 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 |09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
 |10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
 |11/11 | Tăng tốc `eval_payoff_conn` bằng cửa sổ tính trước, thêm `budget_ms` (deepening lặp) và tùy chọn bảng chuyển vị trong `alphabeta_agent.py` |PR #21, nhánh `feat/mai-alphabeta-budget`|
+
+
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
@@ -43,6 +45,7 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 12/11 | Huấn luyện thật: sinh 5000 ván giáo viên Think3, chạy `train_sl.py`, lưu checkpoint tốt nhất `weights/sl.pt` (khoảng 0,93 MB), `weights/sl.json` (tham số chạy) và log `logs/training/sl_log.csv` | commit `b0aa1d9`; PR #23, nhánh `feat/bup-sl-checkpoint` (Linh đã merge vào `dev`) |
 | 12/11 | Viết `training/plot_curves.py` vẽ đường học (loss tổng, policy, value theo epoch) ra `docs/images/sl_curves.png`; viết `docs/README_learning.md` (cách sinh dữ liệu, huấn luyện, đánh giá) | commit `c229e43`, `b0aa1d9`; PR #23 |
 | 12/11 | Chạy thử `pytest`: 18 passed | chạy trên máy |
+| 13/11 | Sửa lỗi tích hợp: đổi tên tham số `nn_agent` từ `checkpoint` thành `ckpt` cho khớp chỗ gọi trong `ui/pygame_ui.py` và `solver/optimal_accuracy.py` (trước đó gọi sẽ báo `TypeError`); cập nhật 5 chỗ gọi trong `tests/test_nn_agent.py`; `pytest`: 98 passed | PR #NN, nhánh `fix/bup-nn-ckpt-name` (đã mở, chờ review) |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
