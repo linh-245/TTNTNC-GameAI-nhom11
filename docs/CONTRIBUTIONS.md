@@ -40,6 +40,9 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 11/11 | Viết `training/train_sl.py` (huấn luyện có giám sát: loss cross-entropy cho policy có che cột đầy cộng MSE cho value, chọn checkpoint theo loss tập val, lưu checkpoint và log .json gồm seed, thiết bị, thời gian) | commit `e1d702b`; PR #14, nhánh `feat/bup-train-sl` (đã mở, chờ review) |
 | 11/11 | Viết `agents/nn_agent.py` (agent cấp 5 chọn cột theo policy của mạng, có `last_stats`) và `tests/test_nn_agent.py` (5 test, tự bỏ qua khi thiếu torch) | commit `639683c`, `e092457`; PR #15, nhánh `feat/bup-nn-agent` (đã mở, chờ review) |
 | 11/11 | Chạy thử chức năng: 1000 ván giáo viên (seed 1) cho 26040 thế, train 5 epoch trên CPU 31,4 giây; nn_agent thắng Random 94/100. Chỉ để kiểm tra, chưa phải số liệu báo cáo | chạy trên máy; dữ liệu và checkpoint không đưa lên GitHub |
+| 12/11 | Huấn luyện thật: sinh 5000 ván giáo viên Think3, chạy `train_sl.py`, lưu checkpoint tốt nhất `weights/sl.pt` (khoảng 0,93 MB), `weights/sl.json` (tham số chạy) và log `logs/training/sl_log.csv` | commit `b0aa1d9`; PR #23, nhánh `feat/bup-sl-checkpoint` (Linh đã merge vào `dev`) |
+| 12/11 | Viết `training/plot_curves.py` vẽ đường học (loss tổng, policy, value theo epoch) ra `docs/images/sl_curves.png`; viết `docs/README_learning.md` (cách sinh dữ liệu, huấn luyện, đánh giá) | commit `c229e43`, `b0aa1d9`; PR #23 |
+| 12/11 | Chạy thử `pytest`: 18 passed | chạy trên máy |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
