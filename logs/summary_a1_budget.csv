@@ -1,0 +1,9 @@
+cấu hình,budget_ms,độ sâu TB,độ sâu min,độ sâu max,tỷ lệ hết giờ
+"prune=on, order=on",50,5.5,4.0,8.0,1.0
+"prune=on, order=on",200,6.75,5.0,10.0,1.0
+"prune=on, order=off",50,4.75,4.0,6.0,1.0
+"prune=on, order=off",200,6.0,5.0,8.0,1.0
+"prune=off, order=on",50,3.3,3.0,5.0,1.0
+"prune=off, order=on",200,4.15,4.0,5.0,1.0
+"prune=off, order=off",50,3.25,3.0,5.0,1.0
+"prune=off, order=off",200,4.25,4.0,6.0,1.0
