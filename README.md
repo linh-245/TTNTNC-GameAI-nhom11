@@ -55,16 +55,18 @@ python -m pytest tests -q       # chạy kiểm thử
 # giải đấu: mở eval/tournament.ipynb (chưa có bản .py)
 ```
 
-Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (thêm khi hoàn thành). Ghi rõ seed, số ván, cấu hình máy trong các file này.
+Huấn luyện và giải đấu: xem `docs/README_learning.md` và `docs/README_eval.md` (đã thêm). Ghi rõ seed, số ván, cấu hình máy trong các file này.
 
 ## Kết quả
 
 Bảng và hình sẽ nằm trong `results/` (chưa có) và được sinh lại từ `notebooks/`. Chỉ đưa vào README các số đã chạy thật (kèm seed, số ván, cấu hình).
 
-| Nội dung | Link |
+| Nội dung | Link / Số liệu |
 |---|---|
-| Ma trận đối đầu | _chờ số liệu_ |
-| Ablation | _chờ số liệu_ |
+| Ma trận đối đầu | [Xem hình](results/figures/fig4_winscore_matrix_tournament.png) |
+| RQ1 (AB vs MCTS) | 200ms: score 0.490; 1000ms: score 0.545 (100 ván/mức, seed 42) |
+| Ablation A1 | Đã chạy xong (xem `logs/summary_a1_cost.csv`, `summary_a1_budget.csv`) |
+| Ablation A2 | Đã chạy xong (xem `logs/summary_a2.csv`) |
 | Learning curve | _chờ số liệu_ |
 
 ## Phần kế thừa và phần nhóm tự làm

@@ -23,16 +23,20 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 ## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
 |---|---|---|
-|09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2, nhánh `feat/mai`|
-|09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4, nhánh `fix/mai-mcts-backprop`|
-|10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13, nhánh `feat/mai-alphabeta-pruning`|
-|11/11 | Tăng tốc `eval_payoff_conn` bằng cửa sổ tính trước, thêm `budget_ms` (deepening lặp) và tùy chọn bảng chuyển vị trong `alphabeta_agent.py` |PR #21, nhánh `feat/mai-alphabeta-budget`|
-|12/11 | Thêm `random.Random(seed)` riêng, `budget_ms` và `last_stats` cho MCTS trong `mcts_agent.py` |PR #24, nhánh `feat/mai-mcts-budget`|
-|12/11 | Thêm `tests/test_search.py`: kiểm thử Alpha-Beta và MCTS |PR #25, nhánh `test/mai-search-tests`|
-|12/11 | Viết `eval/tournament.py`: giải đấu round-robin đa tiến trình, đổi bên đi trước, khai cuộc ngẫu nhiên; ghi log JSONL, tính Wilson CI và p95 |PR #26, nhánh `feat/mai-tournament`|
-|13/11 | Thêm `eval/ablation.py`: ablation A1 (bật/tắt cắt tỉa và sắp xếp nước) và A2 (MCTS theo `n_simulations` × `c`) |PR #27, nhánh `feat/mai-ablation`|
-|13/11 | Chạy giải đấu chế độ 1 và RQ1 (`eval/rq1.py`), thêm bảng tóm tắt `logs/summary_*.csv` và hình `results/figures/fig4_*.png` |PR #30, nhánh `feat/mai-tournament-results`|
-|13/11 | Viết `notebooks/01_search_results.ipynb`: ma trận Win Score + Wilson CI, thắng/hòa/thua, độ trễ p95, nút/giây, A1, A2 |PR #31, nhánh `docs/mai-search-notebook`|
+|09/11 | Viết `alphabeta_agent.py`, `mcts_agent.py` và tạo file eval gồm 2 notebook `_init_.py` và `tournament.ipynb` |PR #2(đã merge), nhánh `feat/mai`|
+|09/11 | Sửa dấu lan truyền ngược MCTS bằng mover trong `mcts_agent.py` |PR #4(đã merge), nhánh `fix/mai-mcts-backprop`|
+|10/11 | Thêm cờ use_pruning, use_ordering và thêm bộ đếm nút trong `alphabeta_agent.py` |PR #13(đã merge), nhánh `feat/mai-alphabeta-pruning`|
+|11/11 | Tăng tốc `eval_payoff_conn` bằng cửa sổ tính trước, thêm `budget_ms` (deepening lặp) và tùy chọn bảng chuyển vị trong `alphabeta_agent.py` |PR #21(đã merge), nhánh `feat/mai-alphabeta-budget`|
+|12/11 | Thêm `random.Random(seed)` riêng, `budget_ms` và `last_stats` cho MCTS trong `mcts_agent.py` |PR #24(đã merge), nhánh `feat/mai-mcts-budget`|
+|12/11 | Thêm `tests/test_search.py`: kiểm thử Alpha-Beta và MCTS |PR #25(đã merge), nhánh `test/mai-search-tests`|
+|12/11 | Viết `eval/tournament.py`: giải đấu round-robin đa tiến trình, đổi bên đi trước, khai cuộc ngẫu nhiên; ghi log JSONL, tính Wilson CI và p95 |PR #26(đã merge), nhánh `feat/mai-tournament`|
+|13/11 | Thêm `eval/ablation.py`: ablation A1 (bật/tắt cắt tỉa và sắp xếp nước) và A2 (MCTS theo `n_simulations` × `c`) |PR #27(đã merge), nhánh `feat/mai-ablation`|
+|13/11 | Chạy giải đấu chế độ 1 và RQ1 (`eval/rq1.py`), thêm bảng tóm tắt `logs/summary_*.csv` và hình `results/figures/fig4_*.png` |PR #30(đã merge), nhánh `feat/mai-tournament-results`|
+|13/11 | Viết `notebooks/01_search_results.ipynb`: ma trận Win Score + Wilson CI, thắng/hòa/thua, độ trễ p95, nút/giây, A1, A2 |PR #31(đã merge), nhánh `docs/mai-search-notebook`|
+| 13/11 | Chạy thực nghiệm Ablation (A1: bật/tắt cắt tỉa, sắp xếp nước; A2: MCTS theo `n_simulations` x `c`) và cập nhật kết quả vào notebook. | PR #32 (đã merge), nhánh `feat/mai-ablation-results` |
+| 13/11 | Di chuyển `01_search_results.ipynb` từ `notebooks/` sang `eval/`, sửa lỗi hàm `spec_budget` và bộ lọc trùng lặp để tổng hợp đúng dữ liệu RQ1 cả 2 mức 200ms và 1000ms. Cập nhật lại bảng tóm tắt `logs/summary_rq1.csv`. | PR #36 (đã merge), nhánh `fix/mai-move-notebook` |
+| 13/11 | Viết tài liệu `docs/README_eval.md` hướng dẫn chi tiết cách chạy giải đấu, RQ1 và Ablation (cờ dòng lệnh, cách đọc kết quả). Cập nhật `README.md` và `docs/CONTRIBUTIONS.md` | PR #37 (đã mở chờ review), nhánh `docs/mai-report` |
+
 
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
