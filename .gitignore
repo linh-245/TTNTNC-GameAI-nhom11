@@ -21,3 +21,6 @@ data/
 
 # Checkpoint: chỉ commit file nhỏ (< 50 MB). File lớn để trên Drive và ghi link trong README.
 # weights/*.pt   <- bỏ dấu # nếu muốn chặn hẳn
+
+# Checkpoint RL trung gian (chỉ để đo đường cong, không commit)
+weights/rl_ckpt/
