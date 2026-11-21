@@ -120,6 +120,9 @@ def main():
     ap.add_argument("--value-weight", type=float, default=1.0)
     ap.add_argument("--temperature", type=float, default=1.0)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--save-every", type=int, default=0,
+                    help="lưu checkpoint trung gian mỗi N vòng vào --ckpt-dir (0 = không lưu); dùng để đo đường cong sức mạnh")
+    ap.add_argument("--ckpt-dir", default="weights/rl_ckpt", help="thư mục checkpoint trung gian")
     args = ap.parse_args()
 
     set_seed(args.seed)
@@ -144,6 +147,10 @@ def main():
         history.append(row)
         print(f"vòng {it}/{args.iterations} | thế {row['positions']} | "
               f"p {p_loss:.4f} | v {v_loss:.4f} | đỏ/vàng/hòa {n_red}/{n_yellow}/{n_draw}")
+        if args.save_every and it % args.save_every == 0:
+            os.makedirs(args.ckpt_dir, exist_ok=True)
+            snap = os.path.join(args.ckpt_dir, f"rl_it{it:04d}.pt")
+            torch.save({"model": model.state_dict(), "config": cfg, "iterations": it}, snap)
 
     seconds = time.time() - t0
     torch.save({"model": model.state_dict(), "config": cfg, "iterations": args.iterations}, args.out)
