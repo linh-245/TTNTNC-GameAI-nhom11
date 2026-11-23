@@ -33,12 +33,14 @@ import random
 import time
 from concurrent.futures import ProcessPoolExecutor
 from typing import Dict, List, Optional, Tuple
+from functools import partial
 
 import numpy as np
 
 from game.connect4_env import ConnectFourEnv
 
-DEFAULT_AGENTS = ['Random', 'Think1', 'Think2', 'Think3', 'AlphaBeta', 'MCTS']
+# LƯU Ý: Đã sửa AlphaBeta-d7 thành AlphaBeta-7 và giảm MCTS-5000 xuống MCTS-200
+DEFAULT_AGENTS = ['Random', 'Think1', 'Think2', 'Think3', 'AlphaBeta-7', 'MCTS-200', 'NN (SL)', 'RL', 'AZ-MCTS']
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -46,19 +48,6 @@ DEFAULT_AGENTS = ['Random', 'Think1', 'Think2', 'Think3', 'AlphaBeta', 'MCTS']
 # ─────────────────────────────────────────────────────────────────────────────
 
 def wilson_ci(wins: float, n: int, z: float = 1.96) -> Tuple[float, float]:
-    """
-    Wilson score confidence interval cho tỷ lệ thắng.
-
-    Parameters
-    ----------
-    wins : số ván thắng (có thể là wins + 0.5 * draws khi tính theo Win Score)
-    n : tổng số ván
-    z : 1.96 = 95% CI
-
-    Returns
-    -------
-    (lower, upper)
-    """
     if n == 0:
         return (0.0, 1.0)
     p = wins / n
@@ -74,32 +63,48 @@ def wilson_ci(wins: float, n: int, z: float = 1.96) -> Tuple[float, float]:
 
 def spec_from_name(name: str, budget_ms: Optional[float] = None,
                    depth: int = 5, n_sims: int = 200, max_depth: int = 12) -> dict:
-    """
-    'Random', 'Think1..3', 'AlphaBeta' / 'AlphaBeta-<depth>', 'MCTS' / 'MCTS-<n_sims>'.
-    Có budget_ms: AlphaBeta dùng deepening lặp (tới max_depth), MCTS lặp đến hết giờ.
-    """
     base, _, arg = name.partition('-')
     key = base.lower()
+    
     if key == 'random':
         return {'kind': 'random'}
     if key in ('think1', 'think2', 'think3'):
         return {'kind': key}
     if key == 'alphabeta':
-        d = int(arg) if arg else depth
+        # Kiểm tra xem arg có phải là số không (tránh lỗi nếu người dùng gõ d5)
+        if arg:
+            try:
+                d = int(arg)
+            except ValueError:
+                raise ValueError(f"Độ sâu AlphaBeta phải là số (ví dụ AlphaBeta-7), bạn gõ: {name}")
+        else:
+            d = depth
         if budget_ms is not None:
             return {'kind': 'alphabeta',
                     'kwargs': {'depth': max_depth, 'budget_ms': budget_ms}}
         return {'kind': 'alphabeta', 'kwargs': {'depth': d}}
     if key == 'mcts':
-        n = int(arg) if arg else n_sims
+        if arg:
+            try:
+                n = int(arg)
+            except ValueError:
+                raise ValueError(f"Số mô phỏng MCTS phải là số (ví dụ MCTS-200), bạn gõ: {name}")
+        else:
+            n = n_sims
         if budget_ms is not None:
             return {'kind': 'mcts', 'kwargs': {'budget_ms': budget_ms}}
         return {'kind': 'mcts', 'kwargs': {'n_simulations': n}}
+    if key in ('nn (sl)', 'nn', 'sl'):
+        return {'kind': 'nn', 'kwargs': {'ckpt': 'weights/sl.pt'}}
+    if key == 'rl':
+        return {'kind': 'nn', 'kwargs': {'ckpt': 'weights/rl.pt'}}
+    if key == 'az':
+        # AZ-MCTS mặc định dùng mạng sl.pt và 200 mô phỏng
+        return {'kind': 'az', 'kwargs': {'n_simulations': 200, 'ckpt': 'weights/sl.pt'}}
     raise ValueError(f"Agent không hợp lệ: {name}")
 
 
 def build_agent(spec: dict):
-    """Trả về (fn(env, seed) -> cột, owner) ; owner có .last_stats (hoặc None)."""
     kind = spec['kind']
     kw = dict(spec.get('kwargs', {}))
     if kind == 'random':
@@ -115,11 +120,16 @@ def build_agent(spec: dict):
     if kind == 'mcts':
         from agents.mcts_agent import mcts_agent
         return (lambda env, seed: mcts_agent(env, seed=seed, **kw)), mcts_agent
+    if kind == 'nn':
+        from agents.nn_agent import nn_agent
+        return (lambda env, seed: partial(nn_agent, **kw)(env)), nn_agent
+    if kind == 'az':
+        from agents.az_mcts_agent import az_mcts_agent
+        return (lambda env, seed: az_mcts_agent(env, **kw)), az_mcts_agent
     raise ValueError(f"Loại agent không hợp lệ: {kind}")
 
 
 def _work(owner) -> dict:
-    """Số nút / độ sâu (Alpha-Beta) hoặc số mô phỏng (MCTS) của nước vừa đi."""
     stats = getattr(owner, 'last_stats', None) if owner is not None else None
     if not stats:
         return {}
@@ -131,20 +141,15 @@ def _work(owner) -> dict:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def play_game(task: dict) -> dict:
-    """
-    Chơi một ván theo `task` và trả về bản ghi JSON-able.
-    Kết quả tính theo góc nhìn agent 1 (pair[0]). Nước sai luật hoặc agent báo lỗi
-    thì agent đó bị xử thua và ghi vào 'forfeit' / 'error'.
-    """
     name1, name2 = task['pair']
     names = [name1, name2]
     a_first = task['a_first']
     seed = task['seed']
 
-    random.seed(seed)                       # cho agent dùng random toàn cục
+    random.seed(seed)
     np.random.seed(seed % (2**32))
     built = [build_agent(task['spec1']), build_agent(task['spec2'])]
-    order = [0, 1] if a_first else [1, 0]   # order[ply % 2] = agent đi ở lượt đó
+    order = [0, 1] if a_first else [1, 0]
 
     env = ConnectFourEnv()
     openers = []
@@ -158,7 +163,7 @@ def play_game(task: dict) -> dict:
 
     ply = len(openers)
     moves = []
-    winner = None        # chỉ số agent thắng (0/1) hoặc None
+    winner = None
     forfeit = None
     error = None
 
@@ -168,7 +173,7 @@ def play_game(task: dict) -> dict:
         t0 = time.perf_counter()
         try:
             col = int(fn(env.copy(), seed * 131 + ply))
-        except Exception as exc:            # agent lỗi -> xử thua, ghi lại nguyên nhân
+        except Exception as exc:
             forfeit, error = idx, f"{type(exc).__name__}: {exc}"
             break
         ms = (time.perf_counter() - t0) * 1000.0
@@ -198,7 +203,7 @@ def play_game(task: dict) -> dict:
         'pair': [name1, name2],
         'first': names[order[0]],
         'a_first': a_first,
-        'result': result,                    # theo góc nhìn agent 1
+        'result': result,
         'score1': score1,
         'winner': None if winner is None else names[winner],
         'forfeit': None if forfeit is None else names[forfeit],
@@ -215,10 +220,6 @@ def play_game(task: dict) -> dict:
     }
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Tạo và chạy các ván
-# ─────────────────────────────────────────────────────────────────────────────
-
 def _derive(seed: int, pair_idx: int, game_idx: int, salt: int = 0) -> int:
     return seed * 1_000_003 + pair_idx * 10_007 + game_idx + salt
 
@@ -226,11 +227,6 @@ def _derive(seed: int, pair_idx: int, game_idx: int, salt: int = 0) -> int:
 def make_match_tasks(name1: str, spec1: dict, name2: str, spec2: dict,
                      n_games: int, seed: int = 42, pair_index: int = 0,
                      n_random_openers: int = 0, tag: Optional[dict] = None) -> List[dict]:
-    """
-    n_games ván giữa hai agent. Ván chẵn: agent 1 đi trước; ván lẻ: agent 2 đi trước.
-    Ván 2j và 2j+1 dùng chung khai cuộc (cùng opener_seed) nên mỗi agent đều chơi
-    cả hai phía của cùng một khai cuộc.
-    """
     tasks = []
     for g in range(n_games):
         tasks.append({
@@ -249,7 +245,6 @@ def make_match_tasks(name1: str, spec1: dict, name2: str, spec2: dict,
 
 def run_tasks(tasks: List[dict], workers: int = 1, log_fh=None,
               verbose: bool = True) -> List[dict]:
-    """Chạy các ván (song song nếu workers > 1), ghi JSONL ngay khi có kết quả."""
     records = []
     total = len(tasks)
 
@@ -271,17 +266,12 @@ def run_tasks(tasks: List[dict], workers: int = 1, log_fh=None,
     return records
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Tổng hợp kết quả từ log
-# ─────────────────────────────────────────────────────────────────────────────
-
 def load_jsonl(path: str) -> List[dict]:
     with open(path, encoding='utf-8') as f:
         return [json.loads(line) for line in f if line.strip()]
 
 
 def move_latency_stats(records: List[dict], agent_name: str) -> dict:
-    """Độ trễ TỪNG NƯỚC của agent (gom mọi nước đi của agent trong các ván)."""
     ms = [m['ms'] for r in records for m in r['moves'] if m['agent'] == agent_name]
     if not ms:
         return {'moves': 0, 'avg_ms': None, 'p95_ms': None}
@@ -291,7 +281,6 @@ def move_latency_stats(records: List[dict], agent_name: str) -> dict:
 
 
 def summarize_match(records: List[dict]) -> dict:
-    """Tổng hợp các ván của MỘT cặp (theo góc nhìn agent 1)."""
     n1, n2 = records[0]['pair']
     n = len(records)
     wins = sum(r['result'] == 'win' for r in records)
@@ -313,14 +302,12 @@ def summarize_match(records: List[dict]) -> dict:
 def play_match(name1: str, spec1: dict, name2: str, spec2: dict,
                n_games: int = 200, seed: int = 42, n_random_openers: int = 0,
                workers: int = 1, log_fh=None, verbose: bool = False) -> dict:
-    """Chạy một cặp và trả về summarize_match(...)."""
     tasks = make_match_tasks(name1, spec1, name2, spec2, n_games, seed,
                              n_random_openers=n_random_openers)
     return summarize_match(run_tasks(tasks, workers, log_fh, verbose))
 
 
 def write_matrix_csv(path: str, names: List[str], results: Dict[Tuple[str, str], dict]):
-    """Ma trận Win Score: ô (hàng, cột) = điểm của agent ở hàng khi gặp agent ở cột."""
     cell = {}
     for (a, b), res in results.items():
         cell[(a, b)] = res['score']
@@ -338,10 +325,6 @@ def round_robin(agents: Dict[str, dict], n_games_per_pair: int = 200, seed: int 
                 n_random_openers: int = 2, workers: int = 1,
                 out_file: Optional[str] = None, csv_file: Optional[str] = None,
                 verbose: bool = True) -> Dict:
-    """
-    Round-robin giữa các agent. agents = {tên: spec}. Mọi ván của mọi cặp được dồn
-    vào một pool tiến trình chung.
-    """
     names = list(agents.keys())
     pairs = [(i, j) for i in range(len(names)) for j in range(i + 1, len(names))]
     if n_games_per_pair % 2:
@@ -369,7 +352,6 @@ def round_robin(agents: Dict[str, dict], n_games_per_pair: int = 200, seed: int 
             log_fh.close()
     elapsed = time.perf_counter() - t0
 
-    # Tổng hợp lại từ log (đúng yêu cầu: số liệu lấy từ log)
     by_pair: Dict[Tuple[str, str], List[dict]] = {}
     for r in records:
         by_pair.setdefault(tuple(r['pair']), []).append(r)
@@ -417,7 +399,7 @@ def main(argv=None):
     ap.add_argument('--out', default=os.path.join('logs', 'tournament_games.jsonl'),
                     help="file log JSONL; ma trận CSV ghi cạnh đó (<out>_matrix.csv)")
     ap.add_argument('--agents', nargs='+', default=DEFAULT_AGENTS,
-                    help="Random Think1 Think2 Think3 AlphaBeta[-d] MCTS[-n]")
+                    help="Random Think1 Think2 Think3 AlphaBeta[-depth] MCTS[-sims] ...")
     ap.add_argument('--openers', type=int, default=2,
                     help="số nước đầu ngẫu nhiên theo seed (n_random_openers, 0-4)")
     ap.add_argument('--workers', type=int, default=max(1, (os.cpu_count() or 2) // 2))
@@ -425,8 +407,13 @@ def main(argv=None):
     ap.add_argument('--sims', type=int, default=200, help="n_simulations MCTS khi không có budget")
     args = ap.parse_args(argv)
 
-    agents = {n: spec_from_name(n, args.budget_ms, args.depth, args.sims)
-              for n in args.agents}
+    try:
+        agents = {n: spec_from_name(n, args.budget_ms, args.depth, args.sims)
+                  for n in args.agents}
+    except ValueError as e:
+        print(f"LỖI CẤU HÌNH TÁC TỬ: {e}")
+        return
+        
     stem, _ = os.path.splitext(args.out)
     round_robin(agents, n_games_per_pair=args.games, seed=args.seed,
                 n_random_openers=args.openers, workers=args.workers,
