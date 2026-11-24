@@ -1,0 +1,11 @@
+agent,optimal_accuracy.n,optimal_accuracy.hits,optimal_accuracy.accuracy,optimal_accuracy.ci_low,optimal_accuracy.ci_high,optimal_accuracy.invalid,optimal_accuracy.errors,optimal_accuracy.mean_ms,optimal_accuracy.p95_ms,summary_first_second_tournament.went_first,summary_first_second_tournament.n,summary_first_second_tournament.score,summary_first_second_tournament.ci_lo,summary_first_second_tournament.ci_hi,summary_latency_tournament.moves,summary_latency_tournament.avg_ms,summary_latency_tournament.p95_ms,summary_latency_tournament.max_ms,summary_throughput_tournament.đơn vị,summary_throughput_tournament.nước,summary_throughput_tournament.tổng (gộp),summary_throughput_tournament.trung vị mỗi nước,summary_throughput_tournament.nodes TB/nước,summary_throughput_tournament.sims TB/nước,tournament_games_matrix.Random,tournament_games_matrix.Think1,tournament_games_matrix.Think2,tournament_games_matrix.Think3,tournament_games_matrix.AlphaBeta,tournament_games_matrix.MCTS,tournament_games_matrix.total
+Random,500,123,0.246,0.2103,0.2856,0,0,0,0,True,250,0.092,0.0621,0.1343,2794,0.02,0.02,5.54,,,,,,,,0.27,0.11,0,0,0,0.38
+Think1,500,245,0.49,0.4464,0.5337,0,0,0.04,0.07,True,250,0.172,0.1303,0.2237,2772,0.14,0.32,7.41,,,,,,,0.73,,0.08,0.05,0,0,0.86
+Think2,500,310,0.62,0.5767,0.6615,0,0,0.27,0.41,True,250,0.392,0.3336,0.4537,4162,0.66,1.61,39.03,,,,,,,0.89,0.92,,0.03,0,0,1.84
+Think3,500,374,0.748,0.7082,0.7841,0,0,0.27,0.76,True,250,0.702,0.6426,0.7553,4871,0.81,2.31,59.46,,,,,,,1,0.95,0.97,,0.23,0.415,3.565
+AlphaBeta d5,500,433,0.866,0.8333,0.8931,0,0,20.12,60.39,,,,,,,,,,,,,,,,,,,,,,
+MCTS-200,500,400,0.8,0.7627,0.8327,0,0,10.47,18.84,,,,,,,,,,,,,,,,,,,,,,
+NN (SL),500,250,0.5,0.4563,0.5437,0,0,18.39,2.37,,,,,,,,,,,,,,,,,,,,,,
+RL,500,247,0.494,0.4504,0.5377,0,0,1.35,2.43,,,,,,,,,,,,,,,,,,,,,,
+AlphaBeta,,,,,,,,,,True,250,0.894,0.8497,0.9264,4174,50.11,149.82,624.97,nút/s,4174,22265.4,28236,1115.8,,1,1,1,0.77,,0.745,4.515
+MCTS,,,,,,,,,,True,250,0.748,0.6907,0.7978,4561,29.25,64.37,347.52,mô phỏng/s,4561,6838,7526.2,,200,1,1,1,0.585,0.255,,3.84

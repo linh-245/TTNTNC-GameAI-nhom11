@@ -1,0 +1,4 @@
+agent,Random,AZ-MCTS,AlphaBeta-5,total
+Random,,0.8,0,0.8
+AZ-MCTS,0.2,,0.1,0.3
+AlphaBeta-5,1,0.9,,1.9
