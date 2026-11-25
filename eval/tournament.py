@@ -98,6 +98,10 @@ def spec_from_name(name: str, budget_ms: Optional[float] = None,
         return {'kind': 'nn', 'kwargs': {'ckpt': 'weights/sl.pt'}}
     if key == 'rl':
         return {'kind': 'nn', 'kwargs': {'ckpt': 'weights/rl.pt'}}
+    if key == 'az8':
+        # Cấp 8: AZ-MCTS dùng checkpoint sau tự chơi, ví dụ AZ8-10 -> weights/az_iter_10.pt
+        it = int(arg) if arg else 10
+        return {'kind': 'az', 'kwargs': {'n_simulations': 200, 'ckpt': f'weights/az_iter_{it}.pt'}}
     if key == 'az':
         # AZ-MCTS mặc định dùng mạng sl.pt và 200 mô phỏng
         return {'kind': 'az', 'kwargs': {'n_simulations': 200, 'ckpt': 'weights/sl.pt'}}
