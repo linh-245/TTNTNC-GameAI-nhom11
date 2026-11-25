@@ -19,7 +19,7 @@ class AZNode:
         self.env = env.copy()
         self.parent = parent
         self.action = action
-        self.children = {}  # action -> AZNode
+        self.children = {}  
         self.priors = prior
         self.visits = 0
         self.value_sum = 0.0
@@ -33,7 +33,6 @@ class AZNode:
         for a in valid_actions:
             new_env = self.env.copy()
             new_env.step(a)
-            # Lưu ý: probs index 0..6 tương ứng cột 1..7
             self.children[a] = AZNode(new_env, parent=self, action=a, prior=probs[a-1])
             
     def select_child(self, c_puct=1.0):
@@ -41,7 +40,7 @@ class AZNode:
         best_score = -float('inf')
         best_child = None
         for child in self.children.values():
-            q_value = child.value_sum / child.visits if child.visits > 0 else 0.0
+            q_value = -(child.value_sum / child.visits) if child.visits > 0 else 0.0
             u_value = c_puct * child.priors * math.sqrt(self.visits) / (1 + child.visits)
             score = q_value + u_value
             if score > best_score:
@@ -51,6 +50,7 @@ class AZNode:
 
 def az_mcts_agent(env: ConnectFourEnv, n_simulations: int = 200, c_puct: float = 1.0, ckpt: str = 'weights/sl.pt') -> int:
     """Cấp 7: MCTS dùng mạng Policy-Value."""
+    start_time = time.perf_counter()
     model = load_model(ckpt)
     root = AZNode(env)
     
@@ -87,7 +87,8 @@ def az_mcts_agent(env: ConnectFourEnv, n_simulations: int = 200, c_puct: float =
             
     # Chọn nước đi tốt nhất dựa trên số lần thăm (visits)
     best_action = max(root.children.items(), key=lambda x: x[1].visits)[0]
-    az_mcts_agent.last_stats = {"sims": n_simulations, "latency_ms": 0}
+    latency = (time.perf_counter() - start_time) * 1000.0
+    az_mcts_agent.last_stats = {"sims": n_simulations, "latency_ms": round(latency, 2)}
     return best_action
 
 az_mcts_agent.last_stats = {"sims": 0, "latency_ms": 0}
