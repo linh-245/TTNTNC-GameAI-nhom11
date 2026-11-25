@@ -1,0 +1,481 @@
+Bắt đầu vòng lặp AlphaZero Self-Play... {'init': 'weights/sl.pt', 'iterations': 10, 'games': 40, 'sims': 50, 'epochs': 3, 'temp_plies': 10, 'lr': 0.001, 'seed': 0, 'out_prefix': 'weights/az_iter'}
+
+--- Vòng lặp 1/10 ---
+  Ván 1/40 xong. Số trạng thái: 37
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 18
+  Ván 7/40 xong. Số trạng thái: 37
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 39
+  Ván 10/40 xong. Số trạng thái: 39
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 37
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 37
+  Ván 15/40 xong. Số trạng thái: 42
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 37
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 39
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 31
+  Ván 25/40 xong. Số trạng thái: 39
+  Ván 26/40 xong. Số trạng thái: 37
+  Ván 27/40 xong. Số trạng thái: 36
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 37
+  Ván 33/40 xong. Số trạng thái: 18
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 37
+  Ván 38/40 xong. Số trạng thái: 39
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1560 trạng thái trong 91.0s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 1.2645
+  Epoch 2: Loss = 0.5479
+  Epoch 3: Loss = 0.4403
+Đã lưu weights/az_iter_1.pt
+
+--- Vòng lặp 2/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 33
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 39
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 39
+  Ván 24/40 xong. Số trạng thái: 23
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 34
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 9
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 38
+Thu thập 1601 trạng thái trong 94.1s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.4833
+  Epoch 2: Loss = 0.3885
+  Epoch 3: Loss = 0.3453
+Đã lưu weights/az_iter_2.pt
+
+--- Vòng lặp 3/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 27
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 33
+  Ván 7/40 xong. Số trạng thái: 40
+  Ván 8/40 xong. Số trạng thái: 27
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 15
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 35
+  Ván 21/40 xong. Số trạng thái: 38
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 23
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1582 trạng thái trong 94.1s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.4080
+  Epoch 2: Loss = 0.3456
+  Epoch 3: Loss = 0.3158
+Đã lưu weights/az_iter_3.pt
+
+--- Vòng lặp 4/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 39
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 42
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 26
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1661 trạng thái trong 102.0s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.2298
+  Epoch 2: Loss = 0.2044
+  Epoch 3: Loss = 0.1961
+Đã lưu weights/az_iter_4.pt
+
+--- Vòng lặp 5/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 29
+  Ván 15/40 xong. Số trạng thái: 42
+  Ván 16/40 xong. Số trạng thái: 11
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 31
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 19
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 29
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 38
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1585 trạng thái trong 104.1s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.3755
+  Epoch 2: Loss = 0.3296
+  Epoch 3: Loss = 0.3087
+Đã lưu weights/az_iter_5.pt
+
+--- Vòng lặp 6/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 33
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 33
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 33
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 31
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 42
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 11
+  Ván 24/40 xong. Số trạng thái: 25
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 33
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 33
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 33
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1567 trạng thái trong 102.3s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.4236
+  Epoch 2: Loss = 0.3179
+  Epoch 3: Loss = 0.2916
+Đã lưu weights/az_iter_6.pt
+
+--- Vòng lặp 7/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 35
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 15
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 15
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1619 trạng thái trong 100.0s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.2283
+  Epoch 2: Loss = 0.2072
+  Epoch 3: Loss = 0.1911
+Đã lưu weights/az_iter_7.pt
+
+--- Vòng lặp 8/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 38
+  Ván 15/40 xong. Số trạng thái: 42
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 30
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1664 trạng thái trong 106.6s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.2642
+  Epoch 2: Loss = 0.2374
+  Epoch 3: Loss = 0.2235
+Đã lưu weights/az_iter_8.pt
+
+--- Vòng lặp 9/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 42
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 11
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 15
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 42
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 35
+  Ván 26/40 xong. Số trạng thái: 29
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 42
+  Ván 34/40 xong. Số trạng thái: 42
+  Ván 35/40 xong. Số trạng thái: 38
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 42
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1598 trạng thái trong 91.8s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.3794
+  Epoch 2: Loss = 0.3420
+  Epoch 3: Loss = 0.3269
+Đã lưu weights/az_iter_9.pt
+
+--- Vòng lặp 10/10 ---
+  Ván 1/40 xong. Số trạng thái: 42
+  Ván 2/40 xong. Số trạng thái: 23
+  Ván 3/40 xong. Số trạng thái: 42
+  Ván 4/40 xong. Số trạng thái: 42
+  Ván 5/40 xong. Số trạng thái: 42
+  Ván 6/40 xong. Số trạng thái: 42
+  Ván 7/40 xong. Số trạng thái: 42
+  Ván 8/40 xong. Số trạng thái: 42
+  Ván 9/40 xong. Số trạng thái: 42
+  Ván 10/40 xong. Số trạng thái: 42
+  Ván 11/40 xong. Số trạng thái: 42
+  Ván 12/40 xong. Số trạng thái: 42
+  Ván 13/40 xong. Số trạng thái: 42
+  Ván 14/40 xong. Số trạng thái: 42
+  Ván 15/40 xong. Số trạng thái: 7
+  Ván 16/40 xong. Số trạng thái: 42
+  Ván 17/40 xong. Số trạng thái: 18
+  Ván 18/40 xong. Số trạng thái: 42
+  Ván 19/40 xong. Số trạng thái: 42
+  Ván 20/40 xong. Số trạng thái: 42
+  Ván 21/40 xong. Số trạng thái: 42
+  Ván 22/40 xong. Số trạng thái: 42
+  Ván 23/40 xong. Số trạng thái: 42
+  Ván 24/40 xong. Số trạng thái: 42
+  Ván 25/40 xong. Số trạng thái: 42
+  Ván 26/40 xong. Số trạng thái: 42
+  Ván 27/40 xong. Số trạng thái: 42
+  Ván 28/40 xong. Số trạng thái: 42
+  Ván 29/40 xong. Số trạng thái: 42
+  Ván 30/40 xong. Số trạng thái: 42
+  Ván 31/40 xong. Số trạng thái: 42
+  Ván 32/40 xong. Số trạng thái: 42
+  Ván 33/40 xong. Số trạng thái: 39
+  Ván 34/40 xong. Số trạng thái: 40
+  Ván 35/40 xong. Số trạng thái: 42
+  Ván 36/40 xong. Số trạng thái: 42
+  Ván 37/40 xong. Số trạng thái: 42
+  Ván 38/40 xong. Số trạng thái: 42
+  Ván 39/40 xong. Số trạng thái: 9
+  Ván 40/40 xong. Số trạng thái: 42
+Thu thập 1564 trạng thái trong 87.4s
+Đang huấn luyện mạng...
+  Epoch 1: Loss = 0.3615
+  Epoch 2: Loss = 0.3291
+  Epoch 3: Loss = 0.3099
+Đã lưu weights/az_iter_10.pt
