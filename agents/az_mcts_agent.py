@@ -48,10 +48,19 @@ class AZNode:
                 best_child = child
         return best_child
 
+_MODEL_CACHE = {}
+
+def _get_model(ckpt):
+    """Chỉ đọc checkpoint một lần cho mỗi đường dẫn (trước đây đọc lại ở MỖI nước đi)."""
+    if ckpt not in _MODEL_CACHE:
+        _MODEL_CACHE[ckpt] = load_model(ckpt)
+    return _MODEL_CACHE[ckpt]
+
+
 def az_mcts_agent(env: ConnectFourEnv, n_simulations: int = 200, c_puct: float = 1.0, ckpt: str = 'weights/sl.pt') -> int:
     """Cấp 7: MCTS dùng mạng Policy-Value."""
     start_time = time.perf_counter()
-    model = load_model(ckpt)
+    model = _get_model(ckpt)
     root = AZNode(env)
     
     # Đánh giá node gốc lần đầu
@@ -77,12 +86,10 @@ def az_mcts_agent(env: ConnectFourEnv, n_simulations: int = 200, c_puct: float =
             value = -1.0 if node.env.reward == 1 else (1.0 if node.env.reward == -1 else 0.0)
             
         # 3. Backpropagation
-        for n in reversed(path):
-            # Giá trị cần đảo dấu liên tục vì góc nhìn thay đổi qua các lượt
-            if n.env.turn == node.env.turn:
-                n.value_sum += value
-            else:
-                n.value_sum -= value
+        # value là góc nhìn của người SẮP ĐI tại lá. Đảo dấu theo độ sâu (không dùng env.turn,
+        # vì sau nước thắng env.turn không đổi nên so sánh turn sẽ sai dấu từ độ sâu 2 trở lên).
+        for i, n in enumerate(reversed(path)):
+            n.value_sum += value if i % 2 == 0 else -value
             n.visits += 1
             
     # Chọn nước đi tốt nhất dựa trên số lần thăm (visits)
