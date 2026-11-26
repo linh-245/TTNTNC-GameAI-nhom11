@@ -69,7 +69,7 @@ Bản web gọi trực tiếp engine và các tác tử của đồ án (`game/`
 - Hiển thị lịch sử nước đi kèm thời gian suy nghĩ, số nút và số mô phỏng của từng AI.
 - Menu tác tử lấy từ cùng cấu hình với giao diện Pygame; mục AZ-MCTS chỉ hiện khi có checkpoint trong `weights/`.
 
-<!-- Demo trực tuyến: thêm link Hugging Face Space tại đây khi đã đưa lên -->
+**Demo trực tuyến:** https://huggingface.co/spaces/Linh345/connect4-nhom11
 
 Chạy trên máy (từ thư mục gốc repo):
 
