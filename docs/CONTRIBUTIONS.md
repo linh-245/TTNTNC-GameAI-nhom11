@@ -66,6 +66,8 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 25/11 | Cấp 8: thêm khám phá vào tự chơi (10 nước đầu lấy mẫu theo phân phối lượt thăm) và tham số dòng lệnh cho `training/selfplay.py`; thêm tác tử `AZ8-N` vào `eval/tournament.py` | commit `5d6589c`, `62671eb`; PR #47 |
 | 25/11 | Chạy tự chơi cấp 8 thật: 10 vòng x 40 ván x 50 mô phỏng, seed 0, khởi tạo từ `weights/sl.pt`, lưu `weights/az_iter_1..10.pt` và `logs/training/selfplay_log.txt` | commit `cd9266f`; PR #48 (đã merge vào `dev`), nhánh `results/bup-all10` |
 | 25/11 | Chạy giải đấu vòng tròn 10 tác tử (seed 42, 45 cặp x 100 ván = 4500 ván, 0 lỗi, mất khoảng 22 phút): AlphaBeta-7 8,44, MCTS-200 6,575, AZ8-10 6,36, AZ-MCTS 6,08, Think3 4,825, RL 4,29, NN (SL) 3,445, Think2 3,115, Think1 1,36, Random 0,51. Ghi `logs/tournament_all10_run2.jsonl`, `_console.txt`, `_matrix.csv` | commit `192bc1f`; PR #49 (đã merge vào `dev`), nhánh `results/bup-all10` |
+| 26/11 | Cập nhật 4 README (README.md, docs/README_duan.md, README_eval.md, README_learning.md) cho cấp 6 đến 8, giải đấu 10 tác tử, solver | PR #51, nhánh `docs/bup-readme-cap78` |
+| 26/11 | Dọn logs: xóa kết quả AZ-MCTS cũ chạy trước khi sửa lỗi dấu (`tournament_az*`, `tournament_final*`, `tournament_games_matrix.csv`), đổi `eval/analyze_games.py` sang `tournament_all10_run2.jsonl`, sinh lại `summary_all.md` và `summary_all_long.csv` | PR #52, nhánh `chore/logs-cleanup` |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
