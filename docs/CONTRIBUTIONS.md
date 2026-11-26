@@ -36,7 +36,9 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 13/11 | Chạy thực nghiệm Ablation (A1: bật/tắt cắt tỉa, sắp xếp nước; A2: MCTS theo `n_simulations` x `c`) và cập nhật kết quả vào notebook. | PR #32 (đã merge), nhánh `feat/mai-ablation-results` |
 | 13/11 | Di chuyển `01_search_results.ipynb` từ `notebooks/` sang `eval/`, sửa lỗi hàm `spec_budget` và bộ lọc trùng lặp để tổng hợp đúng dữ liệu RQ1 cả 2 mức 200ms và 1000ms. Cập nhật lại bảng tóm tắt `logs/summary_rq1.csv`. | PR #36 (đã merge), nhánh `fix/mai-move-notebook` |
 | 13/11 | Viết tài liệu `docs/README_eval.md` hướng dẫn chi tiết cách chạy giải đấu, RQ1 và Ablation (cờ dòng lệnh, cách đọc kết quả). Cập nhật `README.md` và `docs/CONTRIBUTIONS.md` | PR #37 (đã mở chờ review), nhánh `docs/mai-report` |
-
+| 17/11 | Thêm `--out` mặc định vào `logs/` và làm tròn số khi ghi CSV (script đo độ chính xác nước tối ưu) | commit `145a401`; PR #41 (đã merge), nhánh `feature/optimal-accuracy-csv` |
+| 24/11 | Hoàn thiện Cấp 7 và Cấp 8 (AlphaZero), cập nhật giải đấu, các script đánh giá và file kết quả đánh giá | commit `2afd4e4`, `ac4866e`; PR #45 (đã merge), nhánh `feature/mai-az-mcts-final` |
+| 25/11 | Sửa lỗi đảo dấu Q trong AZ-MCTS và cập nhật kết quả giải đấu | commit `3026771`; PR #46 (đã merge), nhánh `feature/mai-az-mcts-final` |
 
 ## Nguyễn Lương Hồng Búp (@bupnguyen-19)
 | Ngày | Việc đã làm | Commit / PR / Issue |
