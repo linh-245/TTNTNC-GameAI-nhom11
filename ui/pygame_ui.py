@@ -104,6 +104,22 @@ def _register_optional_agents():
         AGENTS['RL'] = partial(nn_agent, ckpt='weights/rl.pt')
     except Exception:
         pass
+    # Cấp 7: AZ-MCTS (MCTS dẫn đường bằng mạng chính sách-giá trị).
+    # Chỉ thêm vào menu nếu file checkpoint tồn tại; tự dò xem hàm có tham số ckpt không.
+    try:
+        from agents.az_mcts_agent import az_mcts_agent
+        _root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        _az_params = inspect.signature(az_mcts_agent).parameters
+        for label, rel, sims in [('AZ-MCTS iter1',  'weights/az_iter_1.pt',  200),
+                                 ('AZ-MCTS iter10', 'weights/az_iter_10.pt', 200)]:
+            path = os.path.join(_root, rel)
+            if os.path.exists(path):
+                kw = {'n_simulations': sims}
+                if 'ckpt' in _az_params:
+                    kw['ckpt'] = path
+                AGENTS[label] = partial(az_mcts_agent, **kw)
+    except Exception:
+        pass
 
 
 _register_optional_agents()
@@ -246,6 +262,7 @@ class Connect4UI:
             "• Minimax: Alpha-Beta (Ch.5-7)",
             "• MCTS: Monte Carlo (Ch.8), -50ms/-200ms: theo ngân sách",
             "• NN (SL) / RL: mạng học được (nếu đã có checkpoint)",
+            "• AZ-MCTS: MCTS + mạng chính sách-giá trị (nếu có checkpoint)",
         ]
         for i, line in enumerate(info_lines):
             col = ACCENT if i == 0 else GRAY
