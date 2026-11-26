@@ -77,6 +77,13 @@ def build_agents(budget_ms=None):
         agents['RL'] = partial(nn_agent, ckpt='weights/rl.pt')
     except Exception:
         pass
+    try:
+        from agents.az_mcts_agent import az_mcts_agent
+        # Cấp 7: AZ-MCTS dùng mạng SL; cấp 8: cùng tác tử dùng mạng sau 10 vòng tự chơi
+        agents['AZ-MCTS'] = partial(az_mcts_agent, n_simulations=200, ckpt='weights/sl.pt')
+        agents['AZ8-10'] = partial(az_mcts_agent, n_simulations=200, ckpt='weights/az_iter_10.pt')
+    except Exception:
+        pass
     return agents
 
 
