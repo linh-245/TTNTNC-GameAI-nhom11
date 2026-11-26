@@ -811,174 +811,103 @@ tournament_500ms_matrix,6,RL,AlphaBeta-5,0.05
 tournament_500ms_matrix,6,RL,MCTS-200,0
 tournament_500ms_matrix,6,RL,NN (SL),0.65
 tournament_500ms_matrix,6,RL,total,2.35
-tournament_az_matrix,1,Random,AZ-MCTS,0.8
-tournament_az_matrix,1,Random,AlphaBeta-5,0
-tournament_az_matrix,1,Random,total,0.8
-tournament_az_matrix,2,AZ-MCTS,Random,0.2
-tournament_az_matrix,2,AZ-MCTS,AlphaBeta-5,0.1
-tournament_az_matrix,2,AZ-MCTS,total,0.3
-tournament_az_matrix,3,AlphaBeta-5,Random,1
-tournament_az_matrix,3,AlphaBeta-5,AZ-MCTS,0.9
-tournament_az_matrix,3,AlphaBeta-5,total,1.9
-tournament_final_matrix,1,Random,Think1,0.4
-tournament_final_matrix,1,Random,Think2,0.1
-tournament_final_matrix,1,Random,Think3,0
-tournament_final_matrix,1,Random,AlphaBeta-7,0
-tournament_final_matrix,1,Random,MCTS-200,0
-tournament_final_matrix,1,Random,NN (SL),0.1
-tournament_final_matrix,1,Random,RL,0
-tournament_final_matrix,1,Random,AZ-MCTS,0.75
-tournament_final_matrix,1,Random,total,1.35
-tournament_final_matrix,2,Think1,Random,0.6
-tournament_final_matrix,2,Think1,Think2,0.2
-tournament_final_matrix,2,Think1,Think3,0
-tournament_final_matrix,2,Think1,AlphaBeta-7,0
-tournament_final_matrix,2,Think1,MCTS-200,0
-tournament_final_matrix,2,Think1,NN (SL),0
-tournament_final_matrix,2,Think1,RL,0.2
-tournament_final_matrix,2,Think1,AZ-MCTS,0.9
-tournament_final_matrix,2,Think1,total,1.9
-tournament_final_matrix,3,Think2,Random,0.9
-tournament_final_matrix,3,Think2,Think1,0.8
-tournament_final_matrix,3,Think2,Think3,0
-tournament_final_matrix,3,Think2,AlphaBeta-7,0
-tournament_final_matrix,3,Think2,MCTS-200,0
-tournament_final_matrix,3,Think2,NN (SL),1
-tournament_final_matrix,3,Think2,RL,0.6
-tournament_final_matrix,3,Think2,AZ-MCTS,0.5
-tournament_final_matrix,3,Think2,total,3.8
-tournament_final_matrix,4,Think3,Random,1
-tournament_final_matrix,4,Think3,Think1,1
-tournament_final_matrix,4,Think3,Think2,1
-tournament_final_matrix,4,Think3,AlphaBeta-7,0.1
-tournament_final_matrix,4,Think3,MCTS-200,0.3
-tournament_final_matrix,4,Think3,NN (SL),0.55
-tournament_final_matrix,4,Think3,RL,0.5
-tournament_final_matrix,4,Think3,AZ-MCTS,0.7
-tournament_final_matrix,4,Think3,total,5.15
-tournament_final_matrix,5,AlphaBeta-7,Random,1
-tournament_final_matrix,5,AlphaBeta-7,Think1,1
-tournament_final_matrix,5,AlphaBeta-7,Think2,1
-tournament_final_matrix,5,AlphaBeta-7,Think3,0.9
-tournament_final_matrix,5,AlphaBeta-7,MCTS-200,0.8
-tournament_final_matrix,5,AlphaBeta-7,NN (SL),1
-tournament_final_matrix,5,AlphaBeta-7,RL,1
-tournament_final_matrix,5,AlphaBeta-7,AZ-MCTS,1
-tournament_final_matrix,5,AlphaBeta-7,total,7.7
-tournament_final_matrix,6,MCTS-200,Random,1
-tournament_final_matrix,6,MCTS-200,Think1,1
-tournament_final_matrix,6,MCTS-200,Think2,1
-tournament_final_matrix,6,MCTS-200,Think3,0.7
-tournament_final_matrix,6,MCTS-200,AlphaBeta-7,0.2
-tournament_final_matrix,6,MCTS-200,NN (SL),0.9
-tournament_final_matrix,6,MCTS-200,RL,0.9
-tournament_final_matrix,6,MCTS-200,AZ-MCTS,1
-tournament_final_matrix,6,MCTS-200,total,6.7
-tournament_final_matrix,7,NN (SL),Random,0.9
-tournament_final_matrix,7,NN (SL),Think1,1
-tournament_final_matrix,7,NN (SL),Think2,0
-tournament_final_matrix,7,NN (SL),Think3,0.45
-tournament_final_matrix,7,NN (SL),AlphaBeta-7,0
-tournament_final_matrix,7,NN (SL),MCTS-200,0.1
-tournament_final_matrix,7,NN (SL),RL,0.4
-tournament_final_matrix,7,NN (SL),AZ-MCTS,0.65
-tournament_final_matrix,7,NN (SL),total,3.5
-tournament_final_matrix,8,RL,Random,1
-tournament_final_matrix,8,RL,Think1,0.8
-tournament_final_matrix,8,RL,Think2,0.4
-tournament_final_matrix,8,RL,Think3,0.5
-tournament_final_matrix,8,RL,AlphaBeta-7,0
-tournament_final_matrix,8,RL,MCTS-200,0.1
-tournament_final_matrix,8,RL,NN (SL),0.6
-tournament_final_matrix,8,RL,AZ-MCTS,0.65
-tournament_final_matrix,8,RL,total,4.05
-tournament_final_matrix,9,AZ-MCTS,Random,0.25
-tournament_final_matrix,9,AZ-MCTS,Think1,0.1
-tournament_final_matrix,9,AZ-MCTS,Think2,0.5
-tournament_final_matrix,9,AZ-MCTS,Think3,0.3
-tournament_final_matrix,9,AZ-MCTS,AlphaBeta-7,0
-tournament_final_matrix,9,AZ-MCTS,MCTS-200,0
-tournament_final_matrix,9,AZ-MCTS,NN (SL),0.35
-tournament_final_matrix,9,AZ-MCTS,RL,0.35
-tournament_final_matrix,9,AZ-MCTS,total,1.85
-tournament_games_matrix,1,Random,Think1,0.4
-tournament_games_matrix,1,Random,Think2,0.1
-tournament_games_matrix,1,Random,Think3,0
-tournament_games_matrix,1,Random,AlphaBeta-7,0
-tournament_games_matrix,1,Random,MCTS-200,0
-tournament_games_matrix,1,Random,NN (SL),0.1
-tournament_games_matrix,1,Random,RL,0
-tournament_games_matrix,1,Random,AZ-MCTS,0.1
-tournament_games_matrix,1,Random,total,0.7
-tournament_games_matrix,2,Think1,Random,0.6
-tournament_games_matrix,2,Think1,Think2,0.2
-tournament_games_matrix,2,Think1,Think3,0
-tournament_games_matrix,2,Think1,AlphaBeta-7,0
-tournament_games_matrix,2,Think1,MCTS-200,0
-tournament_games_matrix,2,Think1,NN (SL),0
-tournament_games_matrix,2,Think1,RL,0.2
-tournament_games_matrix,2,Think1,AZ-MCTS,0.1
-tournament_games_matrix,2,Think1,total,1.1
-tournament_games_matrix,3,Think2,Random,0.9
-tournament_games_matrix,3,Think2,Think1,0.8
-tournament_games_matrix,3,Think2,Think3,0
-tournament_games_matrix,3,Think2,AlphaBeta-7,0
-tournament_games_matrix,3,Think2,MCTS-200,0
-tournament_games_matrix,3,Think2,NN (SL),1
-tournament_games_matrix,3,Think2,RL,0.6
-tournament_games_matrix,3,Think2,AZ-MCTS,1
-tournament_games_matrix,3,Think2,total,4.3
-tournament_games_matrix,4,Think3,Random,1
-tournament_games_matrix,4,Think3,Think1,1
-tournament_games_matrix,4,Think3,Think2,1
-tournament_games_matrix,4,Think3,AlphaBeta-7,0.1
-tournament_games_matrix,4,Think3,MCTS-200,0.3
-tournament_games_matrix,4,Think3,NN (SL),0.55
-tournament_games_matrix,4,Think3,RL,0.5
-tournament_games_matrix,4,Think3,AZ-MCTS,0.7
-tournament_games_matrix,4,Think3,total,5.15
-tournament_games_matrix,5,AlphaBeta-7,Random,1
-tournament_games_matrix,5,AlphaBeta-7,Think1,1
-tournament_games_matrix,5,AlphaBeta-7,Think2,1
-tournament_games_matrix,5,AlphaBeta-7,Think3,0.9
-tournament_games_matrix,5,AlphaBeta-7,MCTS-200,0.8
-tournament_games_matrix,5,AlphaBeta-7,NN (SL),1
-tournament_games_matrix,5,AlphaBeta-7,RL,1
-tournament_games_matrix,5,AlphaBeta-7,AZ-MCTS,1
-tournament_games_matrix,5,AlphaBeta-7,total,7.7
-tournament_games_matrix,6,MCTS-200,Random,1
-tournament_games_matrix,6,MCTS-200,Think1,1
-tournament_games_matrix,6,MCTS-200,Think2,1
-tournament_games_matrix,6,MCTS-200,Think3,0.7
-tournament_games_matrix,6,MCTS-200,AlphaBeta-7,0.2
-tournament_games_matrix,6,MCTS-200,NN (SL),0.9
-tournament_games_matrix,6,MCTS-200,RL,0.9
-tournament_games_matrix,6,MCTS-200,AZ-MCTS,0.9
-tournament_games_matrix,6,MCTS-200,total,6.6
-tournament_games_matrix,7,NN (SL),Random,0.9
-tournament_games_matrix,7,NN (SL),Think1,1
-tournament_games_matrix,7,NN (SL),Think2,0
-tournament_games_matrix,7,NN (SL),Think3,0.45
-tournament_games_matrix,7,NN (SL),AlphaBeta-7,0
-tournament_games_matrix,7,NN (SL),MCTS-200,0.1
-tournament_games_matrix,7,NN (SL),RL,0.4
-tournament_games_matrix,7,NN (SL),AZ-MCTS,0.75
-tournament_games_matrix,7,NN (SL),total,3.6
-tournament_games_matrix,8,RL,Random,1
-tournament_games_matrix,8,RL,Think1,0.8
-tournament_games_matrix,8,RL,Think2,0.4
-tournament_games_matrix,8,RL,Think3,0.5
-tournament_games_matrix,8,RL,AlphaBeta-7,0
-tournament_games_matrix,8,RL,MCTS-200,0.1
-tournament_games_matrix,8,RL,NN (SL),0.6
-tournament_games_matrix,8,RL,AZ-MCTS,0.75
-tournament_games_matrix,8,RL,total,4.15
-tournament_games_matrix,9,AZ-MCTS,Random,0.9
-tournament_games_matrix,9,AZ-MCTS,Think1,0.9
-tournament_games_matrix,9,AZ-MCTS,Think2,0
-tournament_games_matrix,9,AZ-MCTS,Think3,0.3
-tournament_games_matrix,9,AZ-MCTS,AlphaBeta-7,0
-tournament_games_matrix,9,AZ-MCTS,MCTS-200,0.1
-tournament_games_matrix,9,AZ-MCTS,NN (SL),0.25
-tournament_games_matrix,9,AZ-MCTS,RL,0.25
-tournament_games_matrix,9,AZ-MCTS,total,2.7
+tournament_all10_run2_matrix,1,Random,Think1,0.27
+tournament_all10_run2_matrix,1,Random,Think2,0.11
+tournament_all10_run2_matrix,1,Random,Think3,0
+tournament_all10_run2_matrix,1,Random,AlphaBeta-7,0
+tournament_all10_run2_matrix,1,Random,MCTS-200,0
+tournament_all10_run2_matrix,1,Random,NN (SL),0.06
+tournament_all10_run2_matrix,1,Random,RL,0.04
+tournament_all10_run2_matrix,1,Random,AZ-MCTS,0.03
+tournament_all10_run2_matrix,1,Random,AZ8-10,0
+tournament_all10_run2_matrix,1,Random,total,0.51
+tournament_all10_run2_matrix,2,Think1,Random,0.73
+tournament_all10_run2_matrix,2,Think1,Think2,0.15
+tournament_all10_run2_matrix,2,Think1,Think3,0.07
+tournament_all10_run2_matrix,2,Think1,AlphaBeta-7,0
+tournament_all10_run2_matrix,2,Think1,MCTS-200,0
+tournament_all10_run2_matrix,2,Think1,NN (SL),0.19
+tournament_all10_run2_matrix,2,Think1,RL,0.14
+tournament_all10_run2_matrix,2,Think1,AZ-MCTS,0.06
+tournament_all10_run2_matrix,2,Think1,AZ8-10,0.02
+tournament_all10_run2_matrix,2,Think1,total,1.36
+tournament_all10_run2_matrix,3,Think2,Random,0.89
+tournament_all10_run2_matrix,3,Think2,Think1,0.85
+tournament_all10_run2_matrix,3,Think2,Think3,0.045
+tournament_all10_run2_matrix,3,Think2,AlphaBeta-7,0
+tournament_all10_run2_matrix,3,Think2,MCTS-200,0.01
+tournament_all10_run2_matrix,3,Think2,NN (SL),0.75
+tournament_all10_run2_matrix,3,Think2,RL,0.51
+tournament_all10_run2_matrix,3,Think2,AZ-MCTS,0.015
+tournament_all10_run2_matrix,3,Think2,AZ8-10,0.045
+tournament_all10_run2_matrix,3,Think2,total,3.115
+tournament_all10_run2_matrix,4,Think3,Random,1
+tournament_all10_run2_matrix,4,Think3,Think1,0.93
+tournament_all10_run2_matrix,4,Think3,Think2,0.955
+tournament_all10_run2_matrix,4,Think3,AlphaBeta-7,0.08
+tournament_all10_run2_matrix,4,Think3,MCTS-200,0.435
+tournament_all10_run2_matrix,4,Think3,NN (SL),0.505
+tournament_all10_run2_matrix,4,Think3,RL,0.45
+tournament_all10_run2_matrix,4,Think3,AZ-MCTS,0.235
+tournament_all10_run2_matrix,4,Think3,AZ8-10,0.235
+tournament_all10_run2_matrix,4,Think3,total,4.825
+tournament_all10_run2_matrix,5,AlphaBeta-7,Random,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think1,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think2,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think3,0.92
+tournament_all10_run2_matrix,5,AlphaBeta-7,MCTS-200,0.855
+tournament_all10_run2_matrix,5,AlphaBeta-7,NN (SL),0.98
+tournament_all10_run2_matrix,5,AlphaBeta-7,RL,0.975
+tournament_all10_run2_matrix,5,AlphaBeta-7,AZ-MCTS,0.865
+tournament_all10_run2_matrix,5,AlphaBeta-7,AZ8-10,0.845
+tournament_all10_run2_matrix,5,AlphaBeta-7,total,8.44
+tournament_all10_run2_matrix,6,MCTS-200,Random,1
+tournament_all10_run2_matrix,6,MCTS-200,Think1,1
+tournament_all10_run2_matrix,6,MCTS-200,Think2,0.99
+tournament_all10_run2_matrix,6,MCTS-200,Think3,0.565
+tournament_all10_run2_matrix,6,MCTS-200,AlphaBeta-7,0.145
+tournament_all10_run2_matrix,6,MCTS-200,NN (SL),0.94
+tournament_all10_run2_matrix,6,MCTS-200,RL,0.9
+tournament_all10_run2_matrix,6,MCTS-200,AZ-MCTS,0.475
+tournament_all10_run2_matrix,6,MCTS-200,AZ8-10,0.56
+tournament_all10_run2_matrix,6,MCTS-200,total,6.575
+tournament_all10_run2_matrix,7,NN (SL),Random,0.94
+tournament_all10_run2_matrix,7,NN (SL),Think1,0.81
+tournament_all10_run2_matrix,7,NN (SL),Think2,0.25
+tournament_all10_run2_matrix,7,NN (SL),Think3,0.495
+tournament_all10_run2_matrix,7,NN (SL),AlphaBeta-7,0.02
+tournament_all10_run2_matrix,7,NN (SL),MCTS-200,0.06
+tournament_all10_run2_matrix,7,NN (SL),RL,0.4
+tournament_all10_run2_matrix,7,NN (SL),AZ-MCTS,0.245
+tournament_all10_run2_matrix,7,NN (SL),AZ8-10,0.225
+tournament_all10_run2_matrix,7,NN (SL),total,3.445
+tournament_all10_run2_matrix,8,RL,Random,0.96
+tournament_all10_run2_matrix,8,RL,Think1,0.86
+tournament_all10_run2_matrix,8,RL,Think2,0.49
+tournament_all10_run2_matrix,8,RL,Think3,0.55
+tournament_all10_run2_matrix,8,RL,AlphaBeta-7,0.025
+tournament_all10_run2_matrix,8,RL,MCTS-200,0.1
+tournament_all10_run2_matrix,8,RL,NN (SL),0.6
+tournament_all10_run2_matrix,8,RL,AZ-MCTS,0.46
+tournament_all10_run2_matrix,8,RL,AZ8-10,0.245
+tournament_all10_run2_matrix,8,RL,total,4.29
+tournament_all10_run2_matrix,9,AZ-MCTS,Random,0.97
+tournament_all10_run2_matrix,9,AZ-MCTS,Think1,0.94
+tournament_all10_run2_matrix,9,AZ-MCTS,Think2,0.985
+tournament_all10_run2_matrix,9,AZ-MCTS,Think3,0.765
+tournament_all10_run2_matrix,9,AZ-MCTS,AlphaBeta-7,0.135
+tournament_all10_run2_matrix,9,AZ-MCTS,MCTS-200,0.525
+tournament_all10_run2_matrix,9,AZ-MCTS,NN (SL),0.755
+tournament_all10_run2_matrix,9,AZ-MCTS,RL,0.54
+tournament_all10_run2_matrix,9,AZ-MCTS,AZ8-10,0.465
+tournament_all10_run2_matrix,9,AZ-MCTS,total,6.08
+tournament_all10_run2_matrix,10,AZ8-10,Random,1
+tournament_all10_run2_matrix,10,AZ8-10,Think1,0.98
+tournament_all10_run2_matrix,10,AZ8-10,Think2,0.955
+tournament_all10_run2_matrix,10,AZ8-10,Think3,0.765
+tournament_all10_run2_matrix,10,AZ8-10,AlphaBeta-7,0.155
+tournament_all10_run2_matrix,10,AZ8-10,MCTS-200,0.44
+tournament_all10_run2_matrix,10,AZ8-10,NN (SL),0.775
+tournament_all10_run2_matrix,10,AZ8-10,RL,0.755
+tournament_all10_run2_matrix,10,AZ8-10,AZ-MCTS,0.535
+tournament_all10_run2_matrix,10,AZ8-10,total,6.36
