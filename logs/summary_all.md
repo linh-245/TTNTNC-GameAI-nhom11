@@ -13,6 +13,13 @@
 | NN (SL) | 500 | 250 | 0.5 | 0.4563 | 0.5437 | 0 | 0 | 21.73 | 2.03 |
 | RL | 500 | 247 | 0.494 | 0.4504 | 0.5377 | 0 | 0 | 1.29 | 2.23 |
 
+## optimal_accuracy_az
+
+| agent | n | hits | accuracy | ci_low | ci_high | invalid | errors | mean_ms | p95_ms |
+|---|---|---|---|---|---|---|---|---|---|
+| AZ-MCTS | 500 | 346 | 0.692 | 0.6502 | 0.7309 | 0 | 0 | 124.97 | 218.72 |
+| AZ8-10 | 500 | 343 | 0.686 | 0.644 | 0.7251 | 0 | 0 | 144.26 | 260.28 |
+
 ## optimal_accuracy_budget50
 
 | agent | n | hits | accuracy | ci_low | ci_high | invalid | errors | mean_ms | p95_ms |

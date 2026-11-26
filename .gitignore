@@ -24,3 +24,7 @@ data/
 
 # Checkpoint RL trung gian (chỉ để đo đường cong, không commit)
 weights/rl_ckpt/
+
+# File chạy thử
+weights/*_test.*
+logs/training/*test*.csv

@@ -68,6 +68,7 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 25/11 | Chạy giải đấu vòng tròn 10 tác tử (seed 42, 45 cặp x 100 ván = 4500 ván, 0 lỗi, mất khoảng 22 phút): AlphaBeta-7 8,44, MCTS-200 6,575, AZ8-10 6,36, AZ-MCTS 6,08, Think3 4,825, RL 4,29, NN (SL) 3,445, Think2 3,115, Think1 1,36, Random 0,51. Ghi `logs/tournament_all10_run2.jsonl`, `_console.txt`, `_matrix.csv` | commit `192bc1f`; PR #49 (đã merge vào `dev`), nhánh `results/bup-all10` |
 | 26/11 | Cập nhật 4 README (README.md, docs/README_duan.md, README_eval.md, README_learning.md) cho cấp 6 đến 8, giải đấu 10 tác tử, solver | PR #51, nhánh `docs/bup-readme-cap78` |
 | 26/11 | Dọn logs: xóa kết quả AZ-MCTS cũ chạy trước khi sửa lỗi dấu (`tournament_az*`, `tournament_final*`, `tournament_games_matrix.csv`), đổi `eval/analyze_games.py` sang `tournament_all10_run2.jsonl`, sinh lại `summary_all.md` và `summary_all_long.csv` | PR #52, nhánh `chore/logs-cleanup` |
+| 26/11 | Solver: thêm AZ-MCTS (cấp 7) và AZ8-10 (cấp 8) vào `solver/optimal_accuracy.py`, đo trên 500 thế chuẩn (200 mô phỏng): AZ-MCTS 69,2% [65,0–73,1], AZ8-10 68,6% [64,4–72,5], 0 sai nước; ghi `logs/optimal_accuracy_az.csv`, sinh lại `summary_all.*`; thêm file chạy thử `*_test.*` vào `.gitignore` | PR #54, nhánh `feat/bup-solver-az` |
 
 ## Tỷ lệ đóng góp (điền ở ngày cuối)
 | Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
