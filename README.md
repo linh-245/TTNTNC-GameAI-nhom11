@@ -39,6 +39,7 @@ training/    Sinh dữ liệu, huấn luyện SL, RL và tự chơi AlphaZero, �
 eval/        Giải đấu round-robin, Wilson CI, ablation
 solver/      Sinh 500 thế chuẩn và đo độ chính xác nước tối ưu
 ui/          Giao diện Pygame
+web/         Demo web (Gradio): chơi Human/AI cho cả hai bên trên trình duyệt
 tests/       Kiểm thử tự động
 notebooks/   Notebook đường cong học (02_learning_curves.ipynb); notebook kết quả tìm kiếm nằm ở eval/
 results/     Hình sinh từ log (results/figures/)
@@ -59,6 +60,27 @@ python -m eval.tournament --games 100 --seed 42 --workers 4   # giải đấu, x
 
 Huấn luyện (cấp 5 đến 8) xem `docs/README_learning.md`; giải đấu, RQ1, ablation xem `docs/README_eval.md`. Cấp 5 đến 8 cần torch. Seed, số ván, cấu hình máy ghi trong các file này.
 
+## Demo web
+
+Ngoài giao diện Pygame, nhóm làm thêm bản demo chạy trên trình duyệt bằng Gradio (`web/app.py`).
+Bản web gọi trực tiếp engine và các tác tử của đồ án (`game/`, `agents/`, `weights/`), không viết lại logic riêng.
+
+- Chọn **Human** hoặc bất kỳ tác tử AI nào cho từng bên: Human vs AI, AI vs AI, Human vs Human.
+- Hiển thị lịch sử nước đi kèm thời gian suy nghĩ, số nút và số mô phỏng của từng AI.
+- Menu tác tử lấy từ cùng cấu hình với giao diện Pygame; mục AZ-MCTS chỉ hiện khi có checkpoint trong `weights/`.
+
+**Demo trực tuyến:** https://huggingface.co/spaces/Linh345/connect4-nhom11
+
+Chạy trên máy (từ thư mục gốc repo):
+
+```bash
+pip install -r requirements.txt
+pip install gradio
+python web/app.py
+```
+
+Mở `http://127.0.0.1:7860` trong trình duyệt. Bấm "Ván mới / Bắt đầu" sau mỗi lần đổi người chơi.
+
 ## Kết quả
 
 Chỉ ghi các số đã chạy thật (kèm seed, số ván, cấu hình). Bảng và hình sinh lại từ eval/01_search_results.ipynb và notebooks/02_learning_curves.ipynb.
@@ -75,7 +97,7 @@ Chỉ ghi các số đã chạy thật (kèm seed, số ván, cấu hình). Bả
 ## Phần kế thừa và phần nhóm tự làm
 
 - **Kế thừa từ sách** Mark Liu, *AlphaGo Simplified* (CRC Press): khung engine kiểu Gym, Random, Think1–3, Alpha-Beta, MCTS cơ bản.
-- **Nhóm tự làm / sửa / bổ sung:** sửa 3 lỗi (reward giải đấu, dấu lan truyền ngược MCTS, Think3), bổ sung API engine, giao diện, giải đấu, ablation, dữ liệu, mạng nơ-ron, RL, AZ-MCTS và tự chơi AlphaZero (kèm sửa lỗi dấu giá trị theo độ sâu), solver, kiểm thử.
+- **Nhóm tự làm / sửa / bổ sung:** sửa 3 lỗi (reward giải đấu, dấu lan truyền ngược MCTS, Think3), bổ sung API engine, giao diện Pygame, demo web (Gradio), giải đấu, ablation, dữ liệu, mạng nơ-ron, RL, AZ-MCTS và tự chơi AlphaZero (kèm sửa lỗi dấu giá trị theo độ sâu), solver, kiểm thử.
 
 ## Quy ước làm việc nhóm
 
