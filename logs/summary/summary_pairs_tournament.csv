@@ -1,0 +1,16 @@
+agent1,agent2,n,wins,draws,losses,score,ci_lo,ci_hi,forfeits
+Random,Think1,100,27,0,73,0.27,0.1927,0.3643,0
+Random,Think2,100,11,0,89,0.11,0.0625,0.1863,0
+Random,Think3,100,0,0,100,0,0,0.037,0
+Random,AlphaBeta,100,0,0,100,0,0,0.037,0
+Random,MCTS,100,0,0,100,0,0,0.037,0
+Think1,Think2,100,8,0,92,0.08,0.0411,0.15,0
+Think1,Think3,100,5,0,95,0.05,0.0215,0.1118,0
+Think1,AlphaBeta,100,0,0,100,0,0,0.037,0
+Think1,MCTS,100,0,0,100,0,0,0.037,0
+Think2,Think3,100,2,2,96,0.03,0.0103,0.0845,0
+Think2,AlphaBeta,100,0,0,100,0,0,0.037,0
+Think2,MCTS,100,0,0,100,0,0,0.037,0
+Think3,AlphaBeta,100,17,12,71,0.23,0.1584,0.3215,0
+Think3,MCTS,100,40,3,57,0.415,0.3233,0.513,0
+AlphaBeta,MCTS,100,73,3,24,0.745,0.6516,0.8203,0

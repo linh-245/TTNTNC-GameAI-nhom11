@@ -29,8 +29,16 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from game.connect4_env import ConnectFourEnv
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
 
-
+def fmt(r):
+    """Làm tròn số trước khi ghi CSV."""
+    out = dict(r)
+    for k in ('accuracy', 'ci_low', 'ci_high'):
+        out[k] = round(r[k], 4)
+    for k in ('mean_ms', 'p95_ms'):
+        out[k] = '' if math.isnan(r[k]) else round(r[k], 2)
+    return out
 def wilson_ci(hits: int, n: int, z: float = 1.96):
     """Khoảng tin cậy Wilson cho tỷ lệ hits/n."""
     if n == 0:
@@ -67,6 +75,13 @@ def build_agents(budget_ms=None):
         from agents.nn_agent import nn_agent
         agents['NN (SL)'] = partial(nn_agent, ckpt='weights/sl.pt')
         agents['RL'] = partial(nn_agent, ckpt='weights/rl.pt')
+    except Exception:
+        pass
+    try:
+        from agents.az_mcts_agent import az_mcts_agent
+        # Cấp 7: AZ-MCTS dùng mạng SL; cấp 8: cùng tác tử dùng mạng sau 10 vòng tự chơi
+        agents['AZ-MCTS'] = partial(az_mcts_agent, n_simulations=200, ckpt='weights/sl.pt')
+        agents['AZ8-10'] = partial(az_mcts_agent, n_simulations=200, ckpt='weights/az_iter_10.pt')
     except Exception:
         pass
     return agents
@@ -119,7 +134,8 @@ def main():
     ap.add_argument('--seed', type=int, default=0)
     ap.add_argument('--budget-ms', type=int, default=None)
     ap.add_argument('--limit', type=int, default=None, help='chỉ dùng N thế đầu (chạy thử)')
-    ap.add_argument('--out', default=None, help='ghi CSV kết quả')
+    ap.add_argument('--out', default=os.path.join(ROOT, 'logs', 'optimal_accuracy.csv'),
+                help='file CSV kết quả (mặc định: logs/optimal_accuracy.csv ở thư mục gốc)')
     args = ap.parse_args()
 
     with open(args.positions, encoding='utf-8') as f:
@@ -150,7 +166,7 @@ def main():
             w = csv.DictWriter(f, fieldnames=['agent', 'n', 'hits', 'accuracy', 'ci_low',
                                               'ci_high', 'invalid', 'errors', 'mean_ms', 'p95_ms'])
             w.writeheader()
-            w.writerows(rows)
+            w.writerows(fmt(r) for r in rows)
         print(f"Đã ghi {args.out}")
 
 

@@ -1,0 +1,20 @@
+{
+  "args": {
+    "init": "weights/sl.pt",
+    "out": "weights/rl.pt",
+    "log_csv": "logs/training/rl_log.csv",
+    "iterations": 300,
+    "games": 32,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "value_weight": 1.0,
+    "temperature": 1.0,
+    "seed": 0,
+    "save_every": 50,
+    "ckpt_dir": "weights/rl_ckpt"
+  },
+  "device": "cpu",
+  "torch": "2.12.1+cu130",
+  "python": "3.13.5",
+  "train_seconds": 435.8
+}

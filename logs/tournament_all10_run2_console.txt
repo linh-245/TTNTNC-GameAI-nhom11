@@ -1,0 +1,295 @@
+
+============================================================
+ROUND-ROBIN TOURNAMENT
+Agents: ['Random', 'Think1', 'Think2', 'Think3', 'AlphaBeta-7', 'MCTS-200', 'NN (SL)', 'RL', 'AZ-MCTS', 'AZ8-10']
+Ván mỗi cặp: 100 | workers: 4 | openers: 2 | seed: 42
+============================================================
+
+    [20/4500] ván đã xong
+    [40/4500] ván đã xong
+    [60/4500] ván đã xong
+    [80/4500] ván đã xong
+    [100/4500] ván đã xong
+    [120/4500] ván đã xong
+    [140/4500] ván đã xong
+    [160/4500] ván đã xong
+    [180/4500] ván đã xong
+    [200/4500] ván đã xong
+    [220/4500] ván đã xong
+    [240/4500] ván đã xong
+    [260/4500] ván đã xong
+    [280/4500] ván đã xong
+    [300/4500] ván đã xong
+    [320/4500] ván đã xong
+    [340/4500] ván đã xong
+    [360/4500] ván đã xong
+    [380/4500] ván đã xong
+    [400/4500] ván đã xong
+    [420/4500] ván đã xong
+    [440/4500] ván đã xong
+    [460/4500] ván đã xong
+    [480/4500] ván đã xong
+    [500/4500] ván đã xong
+    [520/4500] ván đã xong
+    [540/4500] ván đã xong
+    [560/4500] ván đã xong
+    [580/4500] ván đã xong
+    [600/4500] ván đã xong
+    [620/4500] ván đã xong
+    [640/4500] ván đã xong
+    [660/4500] ván đã xong
+    [680/4500] ván đã xong
+    [700/4500] ván đã xong
+    [720/4500] ván đã xong
+    [740/4500] ván đã xong
+    [760/4500] ván đã xong
+    [780/4500] ván đã xong
+    [800/4500] ván đã xong
+    [820/4500] ván đã xong
+    [840/4500] ván đã xong
+    [860/4500] ván đã xong
+    [880/4500] ván đã xong
+    [900/4500] ván đã xong
+    [920/4500] ván đã xong
+    [940/4500] ván đã xong
+    [960/4500] ván đã xong
+    [980/4500] ván đã xong
+    [1000/4500] ván đã xong
+    [1020/4500] ván đã xong
+    [1040/4500] ván đã xong
+    [1060/4500] ván đã xong
+    [1080/4500] ván đã xong
+    [1100/4500] ván đã xong
+    [1120/4500] ván đã xong
+    [1140/4500] ván đã xong
+    [1160/4500] ván đã xong
+    [1180/4500] ván đã xong
+    [1200/4500] ván đã xong
+    [1220/4500] ván đã xong
+    [1240/4500] ván đã xong
+    [1260/4500] ván đã xong
+    [1280/4500] ván đã xong
+    [1300/4500] ván đã xong
+    [1320/4500] ván đã xong
+    [1340/4500] ván đã xong
+    [1360/4500] ván đã xong
+    [1380/4500] ván đã xong
+    [1400/4500] ván đã xong
+    [1420/4500] ván đã xong
+    [1440/4500] ván đã xong
+    [1460/4500] ván đã xong
+    [1480/4500] ván đã xong
+    [1500/4500] ván đã xong
+    [1520/4500] ván đã xong
+    [1540/4500] ván đã xong
+    [1560/4500] ván đã xong
+    [1580/4500] ván đã xong
+    [1600/4500] ván đã xong
+    [1620/4500] ván đã xong
+    [1640/4500] ván đã xong
+    [1660/4500] ván đã xong
+    [1680/4500] ván đã xong
+    [1700/4500] ván đã xong
+    [1720/4500] ván đã xong
+    [1740/4500] ván đã xong
+    [1760/4500] ván đã xong
+    [1780/4500] ván đã xong
+    [1800/4500] ván đã xong
+    [1820/4500] ván đã xong
+    [1840/4500] ván đã xong
+    [1860/4500] ván đã xong
+    [1880/4500] ván đã xong
+    [1900/4500] ván đã xong
+    [1920/4500] ván đã xong
+    [1940/4500] ván đã xong
+    [1960/4500] ván đã xong
+    [1980/4500] ván đã xong
+    [2000/4500] ván đã xong
+    [2020/4500] ván đã xong
+    [2040/4500] ván đã xong
+    [2060/4500] ván đã xong
+    [2080/4500] ván đã xong
+    [2100/4500] ván đã xong
+    [2120/4500] ván đã xong
+    [2140/4500] ván đã xong
+    [2160/4500] ván đã xong
+    [2180/4500] ván đã xong
+    [2200/4500] ván đã xong
+    [2220/4500] ván đã xong
+    [2240/4500] ván đã xong
+    [2260/4500] ván đã xong
+    [2280/4500] ván đã xong
+    [2300/4500] ván đã xong
+    [2320/4500] ván đã xong
+    [2340/4500] ván đã xong
+    [2360/4500] ván đã xong
+    [2380/4500] ván đã xong
+    [2400/4500] ván đã xong
+    [2420/4500] ván đã xong
+    [2440/4500] ván đã xong
+    [2460/4500] ván đã xong
+    [2480/4500] ván đã xong
+    [2500/4500] ván đã xong
+    [2520/4500] ván đã xong
+    [2540/4500] ván đã xong
+    [2560/4500] ván đã xong
+    [2580/4500] ván đã xong
+    [2600/4500] ván đã xong
+    [2620/4500] ván đã xong
+    [2640/4500] ván đã xong
+    [2660/4500] ván đã xong
+    [2680/4500] ván đã xong
+    [2700/4500] ván đã xong
+    [2720/4500] ván đã xong
+    [2740/4500] ván đã xong
+    [2760/4500] ván đã xong
+    [2780/4500] ván đã xong
+    [2800/4500] ván đã xong
+    [2820/4500] ván đã xong
+    [2840/4500] ván đã xong
+    [2860/4500] ván đã xong
+    [2880/4500] ván đã xong
+    [2900/4500] ván đã xong
+    [2920/4500] ván đã xong
+    [2940/4500] ván đã xong
+    [2960/4500] ván đã xong
+    [2980/4500] ván đã xong
+    [3000/4500] ván đã xong
+    [3020/4500] ván đã xong
+    [3040/4500] ván đã xong
+    [3060/4500] ván đã xong
+    [3080/4500] ván đã xong
+    [3100/4500] ván đã xong
+    [3120/4500] ván đã xong
+    [3140/4500] ván đã xong
+    [3160/4500] ván đã xong
+    [3180/4500] ván đã xong
+    [3200/4500] ván đã xong
+    [3220/4500] ván đã xong
+    [3240/4500] ván đã xong
+    [3260/4500] ván đã xong
+    [3280/4500] ván đã xong
+    [3300/4500] ván đã xong
+    [3320/4500] ván đã xong
+    [3340/4500] ván đã xong
+    [3360/4500] ván đã xong
+    [3380/4500] ván đã xong
+    [3400/4500] ván đã xong
+    [3420/4500] ván đã xong
+    [3440/4500] ván đã xong
+    [3460/4500] ván đã xong
+    [3480/4500] ván đã xong
+    [3500/4500] ván đã xong
+    [3520/4500] ván đã xong
+    [3540/4500] ván đã xong
+    [3560/4500] ván đã xong
+    [3580/4500] ván đã xong
+    [3600/4500] ván đã xong
+    [3620/4500] ván đã xong
+    [3640/4500] ván đã xong
+    [3660/4500] ván đã xong
+    [3680/4500] ván đã xong
+    [3700/4500] ván đã xong
+    [3720/4500] ván đã xong
+    [3740/4500] ván đã xong
+    [3760/4500] ván đã xong
+    [3780/4500] ván đã xong
+    [3800/4500] ván đã xong
+    [3820/4500] ván đã xong
+    [3840/4500] ván đã xong
+    [3860/4500] ván đã xong
+    [3880/4500] ván đã xong
+    [3900/4500] ván đã xong
+    [3920/4500] ván đã xong
+    [3940/4500] ván đã xong
+    [3960/4500] ván đã xong
+    [3980/4500] ván đã xong
+    [4000/4500] ván đã xong
+    [4020/4500] ván đã xong
+    [4040/4500] ván đã xong
+    [4060/4500] ván đã xong
+    [4080/4500] ván đã xong
+    [4100/4500] ván đã xong
+    [4120/4500] ván đã xong
+    [4140/4500] ván đã xong
+    [4160/4500] ván đã xong
+    [4180/4500] ván đã xong
+    [4200/4500] ván đã xong
+    [4220/4500] ván đã xong
+    [4240/4500] ván đã xong
+    [4260/4500] ván đã xong
+    [4280/4500] ván đã xong
+    [4300/4500] ván đã xong
+    [4320/4500] ván đã xong
+    [4340/4500] ván đã xong
+    [4360/4500] ván đã xong
+    [4380/4500] ván đã xong
+    [4400/4500] ván đã xong
+    [4420/4500] ván đã xong
+    [4440/4500] ván đã xong
+    [4460/4500] ván đã xong
+    [4480/4500] ván đã xong
+    [4500/4500] ván đã xong
+Random vs Think1: score=0.270 W=27 L=73 D=0 CI=(0.1927, 0.3643) | p95/nước: Random=0.013ms Think1=0.202ms
+Random vs Think2: score=0.110 W=11 L=89 D=0 CI=(0.0625, 0.1863) | p95/nước: Random=0.013ms Think2=0.903ms
+Random vs Think3: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Random=0.014ms Think3=1.071ms
+Random vs AlphaBeta-7: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Random=0.017ms AlphaBeta-7=652.211ms
+Random vs MCTS-200: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Random=0.009ms MCTS-200=23.713ms
+Random vs NN (SL): score=0.060 W=6 L=94 D=0 CI=(0.0278, 0.1248) | p95/nước: Random=0.031ms NN (SL)=2.816ms
+Random vs RL: score=0.040 W=4 L=96 D=0 CI=(0.0157, 0.0984) | p95/nước: Random=0.013ms RL=1.574ms
+Random vs AZ-MCTS: score=0.030 W=3 L=97 D=0 CI=(0.0103, 0.0845) | p95/nước: Random=0.016ms AZ-MCTS=244.11ms
+Random vs AZ8-10: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Random=0.022ms AZ8-10=341.536ms
+Think1 vs Think2: score=0.150 W=15 L=85 D=0 CI=(0.0931, 0.2328) | p95/nước: Think1=0.077ms Think2=0.515ms
+Think1 vs Think3: score=0.070 W=7 L=93 D=0 CI=(0.0343, 0.1375) | p95/nước: Think1=0.049ms Think3=0.423ms
+Think1 vs AlphaBeta-7: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Think1=0.109ms AlphaBeta-7=794.821ms
+Think1 vs MCTS-200: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Think1=0.115ms MCTS-200=30.66ms
+Think1 vs NN (SL): score=0.190 W=19 L=81 D=0 CI=(0.1251, 0.2778) | p95/nước: Think1=0.328ms NN (SL)=9.871ms
+Think1 vs RL: score=0.140 W=14 L=86 D=0 CI=(0.0853, 0.2214) | p95/nước: Think1=0.163ms RL=3.561ms
+Think1 vs AZ-MCTS: score=0.060 W=6 L=94 D=0 CI=(0.0278, 0.1248) | p95/nước: Think1=0.122ms AZ-MCTS=340.316ms
+Think1 vs AZ8-10: score=0.020 W=2 L=98 D=0 CI=(0.0055, 0.07) | p95/nước: Think1=0.091ms AZ8-10=260.404ms
+Think2 vs Think3: score=0.045 W=1 L=92 D=7 CI=(0.0186, 0.1051) | p95/nước: Think2=0.328ms Think3=0.401ms
+Think2 vs AlphaBeta-7: score=0.000 W=0 L=100 D=0 CI=(0.0, 0.037) | p95/nước: Think2=0.351ms AlphaBeta-7=969.381ms
+Think2 vs MCTS-200: score=0.010 W=1 L=99 D=0 CI=(0.0018, 0.0545) | p95/nước: Think2=0.578ms MCTS-200=22.266ms
+Think2 vs NN (SL): score=0.750 W=75 L=25 D=0 CI=(0.657, 0.8245) | p95/nước: Think2=0.703ms NN (SL)=3.423ms
+Think2 vs RL: score=0.510 W=50 L=48 D=2 CI=(0.4135, 0.6058) | p95/nước: Think2=0.543ms RL=2.083ms
+Think2 vs AZ-MCTS: score=0.015 W=1 L=98 D=1 CI=(0.0035, 0.0624) | p95/nước: Think2=0.422ms AZ-MCTS=237.511ms
+Think2 vs AZ8-10: score=0.045 W=2 L=93 D=5 CI=(0.0186, 0.1051) | p95/nước: Think2=0.521ms AZ8-10=259.346ms
+Think3 vs AlphaBeta-7: score=0.080 W=7 L=91 D=2 CI=(0.0411, 0.15) | p95/nước: Think3=0.637ms AlphaBeta-7=643.227ms
+Think3 vs MCTS-200: score=0.435 W=42 L=55 D=3 CI=(0.342, 0.5328) | p95/nước: Think3=0.615ms MCTS-200=23.239ms
+Think3 vs NN (SL): score=0.505 W=24 L=23 D=53 CI=(0.4086, 0.601) | p95/nước: Think3=0.524ms NN (SL)=1.882ms
+Think3 vs RL: score=0.450 W=17 L=27 D=56 CI=(0.3561, 0.5476) | p95/nước: Think3=0.582ms RL=2.09ms
+Think3 vs AZ-MCTS: score=0.235 W=0 L=53 D=47 CI=(0.1627, 0.3269) | p95/nước: Think3=0.511ms AZ-MCTS=230.344ms
+Think3 vs AZ8-10: score=0.235 W=4 L=57 D=39 CI=(0.1627, 0.3269) | p95/nước: Think3=0.636ms AZ8-10=283.917ms
+AlphaBeta-7 vs MCTS-200: score=0.855 W=85 L=14 D=1 CI=(0.7729, 0.9109) | p95/nước: AlphaBeta-7=592.599ms MCTS-200=23.337ms
+AlphaBeta-7 vs NN (SL): score=0.980 W=98 L=2 D=0 CI=(0.93, 0.9945) | p95/nước: AlphaBeta-7=667.836ms NN (SL)=2.229ms
+AlphaBeta-7 vs RL: score=0.975 W=97 L=2 D=1 CI=(0.9226, 0.9922) | p95/nước: AlphaBeta-7=583.195ms RL=2.302ms
+AlphaBeta-7 vs AZ-MCTS: score=0.865 W=83 L=10 D=7 CI=(0.7844, 0.9186) | p95/nước: AlphaBeta-7=596.233ms AZ-MCTS=236.558ms
+AlphaBeta-7 vs AZ8-10: score=0.845 W=80 L=11 D=9 CI=(0.7615, 0.903) | p95/nước: AlphaBeta-7=814.868ms AZ8-10=329.993ms
+MCTS-200 vs NN (SL): score=0.940 W=94 L=6 D=0 CI=(0.8752, 0.9722) | p95/nước: MCTS-200=25.955ms NN (SL)=3.004ms
+MCTS-200 vs RL: score=0.900 W=89 L=9 D=2 CI=(0.8256, 0.9448) | p95/nước: MCTS-200=36.925ms RL=4.615ms
+MCTS-200 vs AZ-MCTS: score=0.475 W=46 L=51 D=3 CI=(0.3799, 0.572) | p95/nước: MCTS-200=26.411ms AZ-MCTS=337.184ms
+MCTS-200 vs AZ8-10: score=0.560 W=54 L=42 D=4 CI=(0.4623, 0.6533) | p95/nước: MCTS-200=28.159ms AZ8-10=404.578ms
+NN (SL) vs RL: score=0.400 W=11 L=31 D=58 CI=(0.3094, 0.498) | p95/nước: NN (SL)=2.269ms RL=2.207ms
+NN (SL) vs AZ-MCTS: score=0.245 W=0 L=51 D=49 CI=(0.1712, 0.3377) | p95/nước: NN (SL)=2.861ms AZ-MCTS=282.332ms
+NN (SL) vs AZ8-10: score=0.225 W=4 L=59 D=37 CI=(0.1542, 0.3161) | p95/nước: NN (SL)=3.196ms AZ8-10=396.817ms
+RL vs AZ-MCTS: score=0.460 W=22 L=30 D=48 CI=(0.3656, 0.5574) | p95/nước: RL=3.469ms AZ-MCTS=336.537ms
+RL vs AZ8-10: score=0.245 W=16 L=67 D=17 CI=(0.1712, 0.3377) | p95/nước: RL=3.291ms AZ8-10=473.335ms
+AZ-MCTS vs AZ8-10: score=0.465 W=22 L=29 D=49 CI=(0.3704, 0.5622) | p95/nước: AZ-MCTS=249.934ms AZ8-10=307.534ms
+
+============================================================
+FINAL RANKING
+============================================================
+  1. AlphaBeta-7: 8.440  (avg 207.33 ms, p95 687.447 ms/nước)
+  2. MCTS-200: 6.575  (avg 14.317 ms, p95 27.889 ms/nước)
+  3. AZ8-10: 6.360  (avg 184.664 ms, p95 366.193 ms/nước)
+  4. AZ-MCTS: 6.080  (avg 122.696 ms, p95 276.995 ms/nước)
+  5. Think3: 4.825  (avg 0.254 ms, p95 0.641 ms/nước)
+  6. RL: 4.290  (avg 1.515 ms, p95 3.146 ms/nước)
+  7. NN (SL): 3.445  (avg 2.934 ms, p95 3.568 ms/nước)
+  8. Think2: 3.115  (avg 0.259 ms, p95 0.561 ms/nước)
+  9. Think1: 1.360  (avg 0.077 ms, p95 0.169 ms/nước)
+  10. Random: 0.510  (avg 0.009 ms, p95 0.017 ms/nước)
+
+Tổng thời gian: 1335.8s
+Ma trận CSV: logs/tournament_all10_run2_matrix.csv
+Log JSONL : logs/tournament_all10_run2.jsonl

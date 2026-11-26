@@ -15,3 +15,6 @@ ipykernel>=6.0
 
 # Kiểm thử
 pytest>=7.4
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+gradio>=4.0

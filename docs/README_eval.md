@@ -6,6 +6,7 @@ Tài liệu này mô tả cách chạy lại phần đánh giá do `eval/tournam
 
 - Python 3.10 trở lên, `numpy` (cho `eval/` và `agents/`). Các số liệu trong báo cáo được chạy bằng Python 3.13.13.
 - Notebook cần thêm `pandas`, `matplotlib`, `jupyter`.
+- Tác tử `NN (SL)`, `RL`, `AZ-MCTS`, `AZ8-N` cần thêm `torch` và các file trong `weights/`.
 
 ```bash
 pip install numpy pandas matplotlib jupyter
@@ -15,24 +16,24 @@ Khi đo độ trễ hoặc chạy theo ngân sách thời gian (`--budget-ms`), 
 
 ### Máy chạy tham chiếu
 
-Số liệu trong báo cáo (`docs/mai.md`) chạy trên: Intel Core i3-1115G4 @ 3,00 GHz (2 lõi, 4 luồng), RAM 3,7 GB, Windows 10 Home Single Language (10.0.19045), Python 3.13.13. Kết quả theo ngân sách thời gian và độ trễ chỉ so sánh được trên cùng một máy; với máy chỉ có 2 lõi, nên dùng `--workers 1` khi cần đo thời gian.
+Số liệu giải đấu 6 tác tử, RQ1 và ablation trong báo cáo chạy trên: Intel Core i3-1115G4 @ 3,00 GHz (2 lõi, 4 luồng), RAM 3,7 GB, Windows 10 Home Single Language (10.0.19045), Python 3.13.13. Kết quả theo ngân sách thời gian và độ trễ chỉ so sánh được trên cùng một máy; với máy chỉ có 2 lõi, nên dùng `--workers 1` khi cần đo thời gian.
 
 ## 2. Giải đấu round-robin: `eval/tournament.py`
 
 Mỗi cặp tác tử đấu `--games` ván; mọi ván của mọi cặp được dồn vào một pool tiến trình chung.
 
 ```bash
-# Chế độ ngân sách thời gian cho Alpha-Beta và MCTS (ví dụ)
 python eval/tournament.py --games 200 --seed 42 --budget-ms 50 --workers 1 \
        --out logs/tournament_games.jsonl
-
-# Cấu hình mặc định (không budget): Alpha-Beta độ sâu 5, MCTS 200 mô phỏng
 python eval/tournament.py --games 100 --seed 42 --workers 1 \
        --out logs/tournament_default_games.jsonl
-
-# Chạy thử nhanh
 python eval/tournament.py --games 10 --agents Think2 Random --budget-ms 50 --workers 1
+OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -u -m eval.tournament --games 100 --seed 42 --workers 4 \
+       --agents Random Think1 Think2 Think3 AlphaBeta-7 MCTS-200 "NN (SL)" RL AZ-MCTS AZ8-10 \
+       --out logs/tournament_all10_run2.jsonl
 ```
+
+Khi chạy nhiều tiến trình có `torch`, đặt `OMP_NUM_THREADS=1 MKL_NUM_THREADS=1` (trên Windows PowerShell: `$env:OMP_NUM_THREADS=1; $env:MKL_NUM_THREADS=1`), nếu không các tiến trình tranh nhau luồng CPU và giải đấu chạy rất chậm.
 
 Các lệnh trên là ví dụ cấu hình. Cấu hình thực tế của từng ván nằm trong trường `spec1`/`spec2` của log (lưu ý: log chỉ ghi `spec` của hai tác tử ở **ván đang đọc**, nên ván đầu tiên của log giải đấu là `Random` vs `Think1` và không cho biết cấu hình Alpha-Beta/MCTS).
 
@@ -48,6 +49,8 @@ Các lệnh trên là ví dụ cấu hình. Cấu hình thực tế của từng
 | Workers | _chưa ghi lại_ (mặc định `cpu_count // 2` = 2 trên máy này) | 1 (tuần tự, một tiến trình) | 1 |
 | Đối thủ cố định | không có | không có | `Think2` |
 
+Lần chạy 10 tác tử (`logs/tournament_all10_run2.*`, PR #48 và #49) là cấu hình riêng, **không gộp vào cột Giải đấu ở trên**: 10 tác tử, 45 cặp x 100 ván = 4500 ván, seed 42, 2 khai cuộc ngẫu nhiên, 4 workers, Alpha-Beta độ sâu 7, MCTS 200 mô phỏng, AZ-MCTS và AZ8-10 đều 200 mô phỏng, không đặt `--budget-ms`; 0 lỗi, 0 bỏ cuộc, mất khoảng 22 phút. Độ trễ đo khi chạy 4 tiến trình song song nên chỉ so sánh tương đối.
+
 ### Tham số
 
 | Tham số | Mặc định | Ý nghĩa |
@@ -55,7 +58,7 @@ Các lệnh trên là ví dụ cấu hình. Cấu hình thực tế của từng
 | `--games` | 100 | Số ván mỗi cặp (nên chẵn và từ 100 trở lên) |
 | `--seed` | 42 | Seed gốc; seed ván và seed khai cuộc suy ra từ đây |
 | `--budget-ms` | không đặt | Ngân sách thời gian mỗi nước cho `AlphaBeta` và `MCTS` |
-| `--agents` | `Random Think1 Think2 Think3 AlphaBeta MCTS` | Danh sách tác tử |
+| `--agents` | `Random Think1 Think2 Think3 AlphaBeta-7 MCTS-200 NN (SL) RL AZ-MCTS` | Danh sách tác tử (tên có dấu cách phải đặt trong nháy kép) |
 | `--openers` | 2 | Số nước đầu ngẫu nhiên theo seed (0 đến 4) |
 | `--workers` | nửa số lõi CPU | Số tiến trình song song |
 | `--depth` | 5 | Độ sâu Alpha-Beta khi **không** có `--budget-ms` |
@@ -70,6 +73,10 @@ Các lệnh trên là ví dụ cấu hình. Cấu hình thực tế của từng
 | `Think1`, `Think2`, `Think3` | Tác tử luật: nhìn 1, 2, 3 bước (`agents/heuristic_agent.py`) |
 | `AlphaBeta` hoặc `AlphaBeta-<d>` | Alpha-Beta; `<d>` ghi đè độ sâu (chỉ có tác dụng khi không có budget) |
 | `MCTS` hoặc `MCTS-<n>` | MCTS; `<n>` ghi đè số mô phỏng (chỉ có tác dụng khi không có budget) |
+| `NN (SL)` | Cấp 5: mạng học có giám sát, `weights/sl.pt` |
+| `RL` | Cấp 6: mạng sau tự chơi RL, `weights/rl.pt` |
+| `AZ-MCTS` | Cấp 7: AZ-MCTS 200 mô phỏng với `weights/sl.pt` |
+| `AZ8` hoặc `AZ8-<N>` | Cấp 8: AZ-MCTS 200 mô phỏng với `weights/az_iter_<N>.pt` (mặc định N = 10) |
 
 ### Tác dụng của `--budget-ms`
 
@@ -196,7 +203,7 @@ Trường ít hơn log giải đấu: `game_id`, `seed`, `pair`, `spec1`, `spec2
 - **Win Score** = (thắng + 0,5 × hòa) / số ván, theo góc nhìn tác tử đang xét.
 - **Khoảng tin cậy Wilson 95%** tính trên (thắng + 0,5 × hòa) và số ván. Nếu khoảng chứa 0,5 thì chưa đủ bằng chứng để nói tác tử mạnh hơn hay yếu hơn. Khi so sánh hai ô, hai khoảng chồng nhau thường nghĩa là chênh lệch chưa có ý nghĩa thống kê.
 - **Độ trễ trung bình và p95** tính theo từng nước: gom mọi nước đi của tác tử trong các ván, không tính theo ván.
-- **Ma trận CSV** (`<tên>_matrix.csv`): ô (hàng, cột) là Win Score của tác tử ở hàng khi gặp tác tử ở cột; cột `total` là tổng các ô của hàng, dùng để xếp hạng. Với 6 tác tử, tổng cột `total` phải bằng 15 (một điểm cho mỗi cặp), có thể dùng để kiểm tra nhanh.
+- **Ma trận CSV** (`<tên>_matrix.csv`): ô (hàng, cột) là Win Score của tác tử ở hàng khi gặp tác tử ở cột; cột `total` là tổng các ô của hàng, dùng để xếp hạng. Với n tác tử, tổng cột `total` phải bằng n(n-1)/2 (một điểm cho mỗi cặp): 15 với 6 tác tử, 45 với 10 tác tử; có thể dùng để kiểm tra nhanh.
 - **Nút/giây, mô phỏng/giây** (notebook): tổng nút (hoặc mô phỏng) chia tổng thời gian của các nước đó. Lưu ý: MCTS đếm mọi vòng lặp là một "mô phỏng", kể cả vòng chạm nút đã kết thúc (không rollout), nên mô phỏng/giây cao hơn nhiều ở cuối ván; khi so sánh giữa các thí nghiệm, dùng trung vị hoặc tách theo `ply` thay vì trung bình số học.
 
 ## 7. Tổng hợp bằng notebook

@@ -1,0 +1,931 @@
+source,row,agent,metric,value
+optimal_accuracy,1,Random,n,500
+optimal_accuracy,1,Random,hits,123
+optimal_accuracy,1,Random,accuracy,0.246
+optimal_accuracy,1,Random,ci_low,0.2103
+optimal_accuracy,1,Random,ci_high,0.2856
+optimal_accuracy,1,Random,invalid,0
+optimal_accuracy,1,Random,errors,0
+optimal_accuracy,1,Random,mean_ms,0
+optimal_accuracy,1,Random,p95_ms,0
+optimal_accuracy,2,Think1,n,500
+optimal_accuracy,2,Think1,hits,245
+optimal_accuracy,2,Think1,accuracy,0.49
+optimal_accuracy,2,Think1,ci_low,0.4464
+optimal_accuracy,2,Think1,ci_high,0.5337
+optimal_accuracy,2,Think1,invalid,0
+optimal_accuracy,2,Think1,errors,0
+optimal_accuracy,2,Think1,mean_ms,0.04
+optimal_accuracy,2,Think1,p95_ms,0.08
+optimal_accuracy,3,Think2,n,500
+optimal_accuracy,3,Think2,hits,310
+optimal_accuracy,3,Think2,accuracy,0.62
+optimal_accuracy,3,Think2,ci_low,0.5767
+optimal_accuracy,3,Think2,ci_high,0.6615
+optimal_accuracy,3,Think2,invalid,0
+optimal_accuracy,3,Think2,errors,0
+optimal_accuracy,3,Think2,mean_ms,0.26
+optimal_accuracy,3,Think2,p95_ms,0.38
+optimal_accuracy,4,Think3,n,500
+optimal_accuracy,4,Think3,hits,374
+optimal_accuracy,4,Think3,accuracy,0.748
+optimal_accuracy,4,Think3,ci_low,0.7082
+optimal_accuracy,4,Think3,ci_high,0.7841
+optimal_accuracy,4,Think3,invalid,0
+optimal_accuracy,4,Think3,errors,0
+optimal_accuracy,4,Think3,mean_ms,0.23
+optimal_accuracy,4,Think3,p95_ms,0.47
+optimal_accuracy,5,AlphaBeta d5,n,500
+optimal_accuracy,5,AlphaBeta d5,hits,433
+optimal_accuracy,5,AlphaBeta d5,accuracy,0.866
+optimal_accuracy,5,AlphaBeta d5,ci_low,0.8333
+optimal_accuracy,5,AlphaBeta d5,ci_high,0.8931
+optimal_accuracy,5,AlphaBeta d5,invalid,0
+optimal_accuracy,5,AlphaBeta d5,errors,0
+optimal_accuracy,5,AlphaBeta d5,mean_ms,20.18
+optimal_accuracy,5,AlphaBeta d5,p95_ms,64.54
+optimal_accuracy,6,MCTS-200,n,500
+optimal_accuracy,6,MCTS-200,hits,410
+optimal_accuracy,6,MCTS-200,accuracy,0.82
+optimal_accuracy,6,MCTS-200,ci_low,0.7839
+optimal_accuracy,6,MCTS-200,ci_high,0.8512
+optimal_accuracy,6,MCTS-200,invalid,0
+optimal_accuracy,6,MCTS-200,errors,0
+optimal_accuracy,6,MCTS-200,mean_ms,10.42
+optimal_accuracy,6,MCTS-200,p95_ms,18.46
+optimal_accuracy,7,NN (SL),n,500
+optimal_accuracy,7,NN (SL),hits,250
+optimal_accuracy,7,NN (SL),accuracy,0.5
+optimal_accuracy,7,NN (SL),ci_low,0.4563
+optimal_accuracy,7,NN (SL),ci_high,0.5437
+optimal_accuracy,7,NN (SL),invalid,0
+optimal_accuracy,7,NN (SL),errors,0
+optimal_accuracy,7,NN (SL),mean_ms,21.73
+optimal_accuracy,7,NN (SL),p95_ms,2.03
+optimal_accuracy,8,RL,n,500
+optimal_accuracy,8,RL,hits,247
+optimal_accuracy,8,RL,accuracy,0.494
+optimal_accuracy,8,RL,ci_low,0.4504
+optimal_accuracy,8,RL,ci_high,0.5377
+optimal_accuracy,8,RL,invalid,0
+optimal_accuracy,8,RL,errors,0
+optimal_accuracy,8,RL,mean_ms,1.29
+optimal_accuracy,8,RL,p95_ms,2.23
+optimal_accuracy_az,1,AZ-MCTS,n,500
+optimal_accuracy_az,1,AZ-MCTS,hits,346
+optimal_accuracy_az,1,AZ-MCTS,accuracy,0.692
+optimal_accuracy_az,1,AZ-MCTS,ci_low,0.6502
+optimal_accuracy_az,1,AZ-MCTS,ci_high,0.7309
+optimal_accuracy_az,1,AZ-MCTS,invalid,0
+optimal_accuracy_az,1,AZ-MCTS,errors,0
+optimal_accuracy_az,1,AZ-MCTS,mean_ms,124.97
+optimal_accuracy_az,1,AZ-MCTS,p95_ms,218.72
+optimal_accuracy_az,2,AZ8-10,n,500
+optimal_accuracy_az,2,AZ8-10,hits,343
+optimal_accuracy_az,2,AZ8-10,accuracy,0.686
+optimal_accuracy_az,2,AZ8-10,ci_low,0.644
+optimal_accuracy_az,2,AZ8-10,ci_high,0.7251
+optimal_accuracy_az,2,AZ8-10,invalid,0
+optimal_accuracy_az,2,AZ8-10,errors,0
+optimal_accuracy_az,2,AZ8-10,mean_ms,144.26
+optimal_accuracy_az,2,AZ8-10,p95_ms,260.28
+optimal_accuracy_budget50,1,Random,n,500
+optimal_accuracy_budget50,1,Random,hits,123
+optimal_accuracy_budget50,1,Random,accuracy,0.246
+optimal_accuracy_budget50,1,Random,ci_low,0.2103
+optimal_accuracy_budget50,1,Random,ci_high,0.2856
+optimal_accuracy_budget50,1,Random,invalid,0
+optimal_accuracy_budget50,1,Random,errors,0
+optimal_accuracy_budget50,1,Random,mean_ms,0
+optimal_accuracy_budget50,1,Random,p95_ms,0.01
+optimal_accuracy_budget50,2,Think1,n,500
+optimal_accuracy_budget50,2,Think1,hits,245
+optimal_accuracy_budget50,2,Think1,accuracy,0.49
+optimal_accuracy_budget50,2,Think1,ci_low,0.4464
+optimal_accuracy_budget50,2,Think1,ci_high,0.5337
+optimal_accuracy_budget50,2,Think1,invalid,0
+optimal_accuracy_budget50,2,Think1,errors,0
+optimal_accuracy_budget50,2,Think1,mean_ms,0.05
+optimal_accuracy_budget50,2,Think1,p95_ms,0.08
+optimal_accuracy_budget50,3,Think2,n,500
+optimal_accuracy_budget50,3,Think2,hits,310
+optimal_accuracy_budget50,3,Think2,accuracy,0.62
+optimal_accuracy_budget50,3,Think2,ci_low,0.5767
+optimal_accuracy_budget50,3,Think2,ci_high,0.6615
+optimal_accuracy_budget50,3,Think2,invalid,0
+optimal_accuracy_budget50,3,Think2,errors,0
+optimal_accuracy_budget50,3,Think2,mean_ms,0.32
+optimal_accuracy_budget50,3,Think2,p95_ms,0.65
+optimal_accuracy_budget50,4,Think3,n,500
+optimal_accuracy_budget50,4,Think3,hits,374
+optimal_accuracy_budget50,4,Think3,accuracy,0.748
+optimal_accuracy_budget50,4,Think3,ci_low,0.7082
+optimal_accuracy_budget50,4,Think3,ci_high,0.7841
+optimal_accuracy_budget50,4,Think3,invalid,0
+optimal_accuracy_budget50,4,Think3,errors,0
+optimal_accuracy_budget50,4,Think3,mean_ms,0.27
+optimal_accuracy_budget50,4,Think3,p95_ms,0.67
+optimal_accuracy_budget50,5,AlphaBeta d5,n,500
+optimal_accuracy_budget50,5,AlphaBeta d5,hits,437
+optimal_accuracy_budget50,5,AlphaBeta d5,accuracy,0.874
+optimal_accuracy_budget50,5,AlphaBeta d5,ci_low,0.842
+optimal_accuracy_budget50,5,AlphaBeta d5,ci_high,0.9003
+optimal_accuracy_budget50,5,AlphaBeta d5,invalid,0
+optimal_accuracy_budget50,5,AlphaBeta d5,errors,0
+optimal_accuracy_budget50,5,AlphaBeta d5,mean_ms,23.58
+optimal_accuracy_budget50,5,AlphaBeta d5,p95_ms,50.03
+optimal_accuracy_budget50,6,MCTS-200,n,500
+optimal_accuracy_budget50,6,MCTS-200,hits,428
+optimal_accuracy_budget50,6,MCTS-200,accuracy,0.856
+optimal_accuracy_budget50,6,MCTS-200,ci_low,0.8225
+optimal_accuracy_budget50,6,MCTS-200,ci_high,0.8841
+optimal_accuracy_budget50,6,MCTS-200,invalid,0
+optimal_accuracy_budget50,6,MCTS-200,errors,0
+optimal_accuracy_budget50,6,MCTS-200,mean_ms,50.23
+optimal_accuracy_budget50,6,MCTS-200,p95_ms,50.19
+optimal_accuracy_budget50,7,NN (SL),n,500
+optimal_accuracy_budget50,7,NN (SL),hits,250
+optimal_accuracy_budget50,7,NN (SL),accuracy,0.5
+optimal_accuracy_budget50,7,NN (SL),ci_low,0.4563
+optimal_accuracy_budget50,7,NN (SL),ci_high,0.5437
+optimal_accuracy_budget50,7,NN (SL),invalid,0
+optimal_accuracy_budget50,7,NN (SL),errors,0
+optimal_accuracy_budget50,7,NN (SL),mean_ms,12.46
+optimal_accuracy_budget50,7,NN (SL),p95_ms,2.58
+optimal_accuracy_budget50,8,RL,n,500
+optimal_accuracy_budget50,8,RL,hits,247
+optimal_accuracy_budget50,8,RL,accuracy,0.494
+optimal_accuracy_budget50,8,RL,ci_low,0.4504
+optimal_accuracy_budget50,8,RL,ci_high,0.5377
+optimal_accuracy_budget50,8,RL,invalid,0
+optimal_accuracy_budget50,8,RL,errors,0
+optimal_accuracy_budget50,8,RL,mean_ms,1.14
+optimal_accuracy_budget50,8,RL,p95_ms,1.71
+summary_a1_budget,1,"prune=on, order=on",cấu hình,"prune=on, order=on"
+summary_a1_budget,1,"prune=on, order=on",budget_ms,50
+summary_a1_budget,1,"prune=on, order=on",độ sâu TB,5.5
+summary_a1_budget,1,"prune=on, order=on",độ sâu min,4
+summary_a1_budget,1,"prune=on, order=on",độ sâu max,8
+summary_a1_budget,1,"prune=on, order=on",tỷ lệ hết giờ,1
+summary_a1_budget,2,"prune=on, order=on",cấu hình,"prune=on, order=on"
+summary_a1_budget,2,"prune=on, order=on",budget_ms,200
+summary_a1_budget,2,"prune=on, order=on",độ sâu TB,6.75
+summary_a1_budget,2,"prune=on, order=on",độ sâu min,5
+summary_a1_budget,2,"prune=on, order=on",độ sâu max,10
+summary_a1_budget,2,"prune=on, order=on",tỷ lệ hết giờ,1
+summary_a1_budget,3,"prune=on, order=off",cấu hình,"prune=on, order=off"
+summary_a1_budget,3,"prune=on, order=off",budget_ms,50
+summary_a1_budget,3,"prune=on, order=off",độ sâu TB,4.75
+summary_a1_budget,3,"prune=on, order=off",độ sâu min,4
+summary_a1_budget,3,"prune=on, order=off",độ sâu max,6
+summary_a1_budget,3,"prune=on, order=off",tỷ lệ hết giờ,1
+summary_a1_budget,4,"prune=on, order=off",cấu hình,"prune=on, order=off"
+summary_a1_budget,4,"prune=on, order=off",budget_ms,200
+summary_a1_budget,4,"prune=on, order=off",độ sâu TB,6
+summary_a1_budget,4,"prune=on, order=off",độ sâu min,5
+summary_a1_budget,4,"prune=on, order=off",độ sâu max,8
+summary_a1_budget,4,"prune=on, order=off",tỷ lệ hết giờ,1
+summary_a1_budget,5,"prune=off, order=on",cấu hình,"prune=off, order=on"
+summary_a1_budget,5,"prune=off, order=on",budget_ms,50
+summary_a1_budget,5,"prune=off, order=on",độ sâu TB,3.3
+summary_a1_budget,5,"prune=off, order=on",độ sâu min,3
+summary_a1_budget,5,"prune=off, order=on",độ sâu max,5
+summary_a1_budget,5,"prune=off, order=on",tỷ lệ hết giờ,1
+summary_a1_budget,6,"prune=off, order=on",cấu hình,"prune=off, order=on"
+summary_a1_budget,6,"prune=off, order=on",budget_ms,200
+summary_a1_budget,6,"prune=off, order=on",độ sâu TB,4.15
+summary_a1_budget,6,"prune=off, order=on",độ sâu min,4
+summary_a1_budget,6,"prune=off, order=on",độ sâu max,5
+summary_a1_budget,6,"prune=off, order=on",tỷ lệ hết giờ,1
+summary_a1_budget,7,"prune=off, order=off",cấu hình,"prune=off, order=off"
+summary_a1_budget,7,"prune=off, order=off",budget_ms,50
+summary_a1_budget,7,"prune=off, order=off",độ sâu TB,3.25
+summary_a1_budget,7,"prune=off, order=off",độ sâu min,3
+summary_a1_budget,7,"prune=off, order=off",độ sâu max,5
+summary_a1_budget,7,"prune=off, order=off",tỷ lệ hết giờ,1
+summary_a1_budget,8,"prune=off, order=off",cấu hình,"prune=off, order=off"
+summary_a1_budget,8,"prune=off, order=off",budget_ms,200
+summary_a1_budget,8,"prune=off, order=off",độ sâu TB,4.25
+summary_a1_budget,8,"prune=off, order=off",độ sâu min,4
+summary_a1_budget,8,"prune=off, order=off",độ sâu max,6
+summary_a1_budget,8,"prune=off, order=off",tỷ lệ hết giờ,1
+summary_a1_cost,1,"prune=on, order=on",cấu hình,"prune=on, order=on"
+summary_a1_cost,1,"prune=on, order=on",depth,4
+summary_a1_cost,1,"prune=on, order=on",nút TB,344.3
+summary_a1_cost,1,"prune=on, order=on",nút trung vị,347.5
+summary_a1_cost,1,"prune=on, order=on",ms/nước TB,11.376
+summary_a1_cost,1,"prune=on, order=on",ms/nước p95,21.327
+summary_a1_cost,2,"prune=on, order=off",cấu hình,"prune=on, order=off"
+summary_a1_cost,2,"prune=on, order=off",depth,4
+summary_a1_cost,2,"prune=on, order=off",nút TB,605.7
+summary_a1_cost,2,"prune=on, order=off",nút trung vị,507.5
+summary_a1_cost,2,"prune=on, order=off",ms/nước TB,12.859
+summary_a1_cost,2,"prune=on, order=off",ms/nước p95,23.69
+summary_a1_cost,3,"prune=off, order=on",cấu hình,"prune=off, order=on"
+summary_a1_cost,3,"prune=off, order=on",depth,4
+summary_a1_cost,3,"prune=off, order=on",nút TB,2155.1
+summary_a1_cost,3,"prune=off, order=on",nút trung vị,2436.5
+summary_a1_cost,3,"prune=off, order=on",ms/nước TB,49.402
+summary_a1_cost,3,"prune=off, order=on",ms/nước p95,70.271
+summary_a1_cost,4,"prune=off, order=off",cấu hình,"prune=off, order=off"
+summary_a1_cost,4,"prune=off, order=off",depth,4
+summary_a1_cost,4,"prune=off, order=off",nút TB,2155.1
+summary_a1_cost,4,"prune=off, order=off",nút trung vị,2436.5
+summary_a1_cost,4,"prune=off, order=off",ms/nước TB,69.823
+summary_a1_cost,4,"prune=off, order=off",ms/nước p95,131.861
+summary_a1_match,1,"prune=on, order=on",cấu hình,"prune=on, order=on"
+summary_a1_match,1,"prune=on, order=on",ván,100
+summary_a1_match,1,"prune=on, order=on",thắng,100
+summary_a1_match,1,"prune=on, order=on",hòa,0
+summary_a1_match,1,"prune=on, order=on",thua,0
+summary_a1_match,1,"prune=on, order=on",score,1
+summary_a1_match,1,"prune=on, order=on",ci_lo,0.963
+summary_a1_match,1,"prune=on, order=on",ci_hi,1
+summary_a1_match,1,"prune=on, order=on",p95 ms/nước,18.916
+summary_a1_match,2,"prune=on, order=off",cấu hình,"prune=on, order=off"
+summary_a1_match,2,"prune=on, order=off",ván,100
+summary_a1_match,2,"prune=on, order=off",thắng,100
+summary_a1_match,2,"prune=on, order=off",hòa,0
+summary_a1_match,2,"prune=on, order=off",thua,0
+summary_a1_match,2,"prune=on, order=off",score,1
+summary_a1_match,2,"prune=on, order=off",ci_lo,0.963
+summary_a1_match,2,"prune=on, order=off",ci_hi,1
+summary_a1_match,2,"prune=on, order=off",p95 ms/nước,22.083
+summary_a1_match,3,"prune=off, order=on",cấu hình,"prune=off, order=on"
+summary_a1_match,3,"prune=off, order=on",ván,100
+summary_a1_match,3,"prune=off, order=on",thắng,100
+summary_a1_match,3,"prune=off, order=on",hòa,0
+summary_a1_match,3,"prune=off, order=on",thua,0
+summary_a1_match,3,"prune=off, order=on",score,1
+summary_a1_match,3,"prune=off, order=on",ci_lo,0.963
+summary_a1_match,3,"prune=off, order=on",ci_hi,1
+summary_a1_match,3,"prune=off, order=on",p95 ms/nước,68.322
+summary_a1_match,4,"prune=off, order=off",cấu hình,"prune=off, order=off"
+summary_a1_match,4,"prune=off, order=off",ván,100
+summary_a1_match,4,"prune=off, order=off",thắng,100
+summary_a1_match,4,"prune=off, order=off",hòa,0
+summary_a1_match,4,"prune=off, order=off",thua,0
+summary_a1_match,4,"prune=off, order=off",score,1
+summary_a1_match,4,"prune=off, order=off",ci_lo,0.963
+summary_a1_match,4,"prune=off, order=off",ci_hi,1
+summary_a1_match,4,"prune=off, order=off",p95 ms/nước,69.974
+summary_a2,1,50,n_simulations,50
+summary_a2,1,50,c,0.5
+summary_a2,1,50,ván,100
+summary_a2,1,50,thắng,69
+summary_a2,1,50,hòa,1
+summary_a2,1,50,thua,30
+summary_a2,1,50,score,0.695
+summary_a2,1,50,ci_lo,0.5989
+summary_a2,1,50,ci_hi,0.7766
+summary_a2,1,50,avg ms/nước,3.83
+summary_a2,1,50,p95 ms/nước,7.097
+summary_a2,2,50,n_simulations,50
+summary_a2,2,50,c,1
+summary_a2,2,50,ván,100
+summary_a2,2,50,thắng,79
+summary_a2,2,50,hòa,0
+summary_a2,2,50,thua,21
+summary_a2,2,50,score,0.79
+summary_a2,2,50,ci_lo,0.7002
+summary_a2,2,50,ci_hi,0.8583
+summary_a2,2,50,avg ms/nước,3.613
+summary_a2,2,50,p95 ms/nước,6.386
+summary_a2,3,50,n_simulations,50
+summary_a2,3,50,c,1.414
+summary_a2,3,50,ván,100
+summary_a2,3,50,thắng,75
+summary_a2,3,50,hòa,1
+summary_a2,3,50,thua,24
+summary_a2,3,50,score,0.755
+summary_a2,3,50,ci_lo,0.6623
+summary_a2,3,50,ci_hi,0.8288
+summary_a2,3,50,avg ms/nước,4.07
+summary_a2,3,50,p95 ms/nước,7.235
+summary_a2,4,50,n_simulations,50
+summary_a2,4,50,c,2
+summary_a2,4,50,ván,100
+summary_a2,4,50,thắng,70
+summary_a2,4,50,hòa,1
+summary_a2,4,50,thua,29
+summary_a2,4,50,score,0.705
+summary_a2,4,50,ci_lo,0.6094
+summary_a2,4,50,ci_hi,0.7855
+summary_a2,4,50,avg ms/nước,3.815
+summary_a2,4,50,p95 ms/nước,6.725
+summary_a2,5,100,n_simulations,100
+summary_a2,5,100,c,0.5
+summary_a2,5,100,ván,100
+summary_a2,5,100,thắng,81
+summary_a2,5,100,hòa,0
+summary_a2,5,100,thua,19
+summary_a2,5,100,score,0.81
+summary_a2,5,100,ci_lo,0.7222
+summary_a2,5,100,ci_hi,0.8749
+summary_a2,5,100,avg ms/nước,6.902
+summary_a2,5,100,p95 ms/nước,11.961
+summary_a2,6,100,n_simulations,100
+summary_a2,6,100,c,1
+summary_a2,6,100,ván,100
+summary_a2,6,100,thắng,95
+summary_a2,6,100,hòa,0
+summary_a2,6,100,thua,5
+summary_a2,6,100,score,0.95
+summary_a2,6,100,ci_lo,0.8882
+summary_a2,6,100,ci_hi,0.9785
+summary_a2,6,100,avg ms/nước,7.132
+summary_a2,6,100,p95 ms/nước,12.679
+summary_a2,7,100,n_simulations,100
+summary_a2,7,100,c,1.414
+summary_a2,7,100,ván,100
+summary_a2,7,100,thắng,92
+summary_a2,7,100,hòa,0
+summary_a2,7,100,thua,8
+summary_a2,7,100,score,0.92
+summary_a2,7,100,ci_lo,0.85
+summary_a2,7,100,ci_hi,0.9589
+summary_a2,7,100,avg ms/nước,7.229
+summary_a2,7,100,p95 ms/nước,11.975
+summary_a2,8,100,n_simulations,100
+summary_a2,8,100,c,2
+summary_a2,8,100,ván,100
+summary_a2,8,100,thắng,88
+summary_a2,8,100,hòa,0
+summary_a2,8,100,thua,12
+summary_a2,8,100,score,0.88
+summary_a2,8,100,ci_lo,0.8019
+summary_a2,8,100,ci_hi,0.93
+summary_a2,8,100,avg ms/nước,7.921
+summary_a2,8,100,p95 ms/nước,14.643
+summary_a2,9,200,n_simulations,200
+summary_a2,9,200,c,0.5
+summary_a2,9,200,ván,100
+summary_a2,9,200,thắng,99
+summary_a2,9,200,hòa,0
+summary_a2,9,200,thua,1
+summary_a2,9,200,score,0.99
+summary_a2,9,200,ci_lo,0.9455
+summary_a2,9,200,ci_hi,0.9982
+summary_a2,9,200,avg ms/nước,13.929
+summary_a2,9,200,p95 ms/nước,24.669
+summary_a2,10,200,n_simulations,200
+summary_a2,10,200,c,1
+summary_a2,10,200,ván,100
+summary_a2,10,200,thắng,100
+summary_a2,10,200,hòa,0
+summary_a2,10,200,thua,0
+summary_a2,10,200,score,1
+summary_a2,10,200,ci_lo,0.963
+summary_a2,10,200,ci_hi,1
+summary_a2,10,200,avg ms/nước,14.515
+summary_a2,10,200,p95 ms/nước,23.581
+summary_a2,11,200,n_simulations,200
+summary_a2,11,200,c,1.414
+summary_a2,11,200,ván,100
+summary_a2,11,200,thắng,97
+summary_a2,11,200,hòa,1
+summary_a2,11,200,thua,2
+summary_a2,11,200,score,0.975
+summary_a2,11,200,ci_lo,0.9226
+summary_a2,11,200,ci_hi,0.9922
+summary_a2,11,200,avg ms/nước,14.427
+summary_a2,11,200,p95 ms/nước,25.613
+summary_a2,12,200,n_simulations,200
+summary_a2,12,200,c,2
+summary_a2,12,200,ván,100
+summary_a2,12,200,thắng,99
+summary_a2,12,200,hòa,0
+summary_a2,12,200,thua,1
+summary_a2,12,200,score,0.99
+summary_a2,12,200,ci_lo,0.9455
+summary_a2,12,200,ci_hi,0.9982
+summary_a2,12,200,avg ms/nước,14.429
+summary_a2,12,200,p95 ms/nước,23.585
+summary_a2,13,500,n_simulations,500
+summary_a2,13,500,c,0.5
+summary_a2,13,500,ván,100
+summary_a2,13,500,thắng,99
+summary_a2,13,500,hòa,0
+summary_a2,13,500,thua,1
+summary_a2,13,500,score,0.99
+summary_a2,13,500,ci_lo,0.9455
+summary_a2,13,500,ci_hi,0.9982
+summary_a2,13,500,avg ms/nước,35.355
+summary_a2,13,500,p95 ms/nước,62.49
+summary_a2,14,500,n_simulations,500
+summary_a2,14,500,c,1
+summary_a2,14,500,ván,100
+summary_a2,14,500,thắng,100
+summary_a2,14,500,hòa,0
+summary_a2,14,500,thua,0
+summary_a2,14,500,score,1
+summary_a2,14,500,ci_lo,0.963
+summary_a2,14,500,ci_hi,1
+summary_a2,14,500,avg ms/nước,41.067
+summary_a2,14,500,p95 ms/nước,76.445
+summary_a2,15,500,n_simulations,500
+summary_a2,15,500,c,1.414
+summary_a2,15,500,ván,100
+summary_a2,15,500,thắng,100
+summary_a2,15,500,hòa,0
+summary_a2,15,500,thua,0
+summary_a2,15,500,score,1
+summary_a2,15,500,ci_lo,0.963
+summary_a2,15,500,ci_hi,1
+summary_a2,15,500,avg ms/nước,39.714
+summary_a2,15,500,p95 ms/nước,73.41
+summary_a2,16,500,n_simulations,500
+summary_a2,16,500,c,2
+summary_a2,16,500,ván,100
+summary_a2,16,500,thắng,100
+summary_a2,16,500,hòa,0
+summary_a2,16,500,thua,0
+summary_a2,16,500,score,1
+summary_a2,16,500,ci_lo,0.963
+summary_a2,16,500,ci_hi,1
+summary_a2,16,500,avg ms/nước,37.091
+summary_a2,16,500,p95 ms/nước,61.493
+summary_a2,17,1000,n_simulations,1000
+summary_a2,17,1000,c,0.5
+summary_a2,17,1000,ván,100
+summary_a2,17,1000,thắng,100
+summary_a2,17,1000,hòa,0
+summary_a2,17,1000,thua,0
+summary_a2,17,1000,score,1
+summary_a2,17,1000,ci_lo,0.963
+summary_a2,17,1000,ci_hi,1
+summary_a2,17,1000,avg ms/nước,69.323
+summary_a2,17,1000,p95 ms/nước,120.827
+summary_a2,18,1000,n_simulations,1000
+summary_a2,18,1000,c,1
+summary_a2,18,1000,ván,100
+summary_a2,18,1000,thắng,100
+summary_a2,18,1000,hòa,0
+summary_a2,18,1000,thua,0
+summary_a2,18,1000,score,1
+summary_a2,18,1000,ci_lo,0.963
+summary_a2,18,1000,ci_hi,1
+summary_a2,18,1000,avg ms/nước,77.303
+summary_a2,18,1000,p95 ms/nước,130.806
+summary_a2,19,1000,n_simulations,1000
+summary_a2,19,1000,c,1.414
+summary_a2,19,1000,ván,100
+summary_a2,19,1000,thắng,100
+summary_a2,19,1000,hòa,0
+summary_a2,19,1000,thua,0
+summary_a2,19,1000,score,1
+summary_a2,19,1000,ci_lo,0.963
+summary_a2,19,1000,ci_hi,1
+summary_a2,19,1000,avg ms/nước,74.445
+summary_a2,19,1000,p95 ms/nước,124.132
+summary_a2,20,1000,n_simulations,1000
+summary_a2,20,1000,c,2
+summary_a2,20,1000,ván,100
+summary_a2,20,1000,thắng,100
+summary_a2,20,1000,hòa,0
+summary_a2,20,1000,thua,0
+summary_a2,20,1000,score,1
+summary_a2,20,1000,ci_lo,0.963
+summary_a2,20,1000,ci_hi,1
+summary_a2,20,1000,avg ms/nước,73.717
+summary_a2,20,1000,p95 ms/nước,123.958
+summary_first_second_tournament,1,AlphaBeta,went_first,False
+summary_first_second_tournament,1,AlphaBeta,n,250
+summary_first_second_tournament,1,AlphaBeta,score,0.912
+summary_first_second_tournament,1,AlphaBeta,ci_lo,0.8704
+summary_first_second_tournament,1,AlphaBeta,ci_hi,0.9412
+summary_first_second_tournament,2,AlphaBeta,went_first,True
+summary_first_second_tournament,2,AlphaBeta,n,250
+summary_first_second_tournament,2,AlphaBeta,score,0.894
+summary_first_second_tournament,2,AlphaBeta,ci_lo,0.8497
+summary_first_second_tournament,2,AlphaBeta,ci_hi,0.9264
+summary_first_second_tournament,3,MCTS,went_first,False
+summary_first_second_tournament,3,MCTS,n,250
+summary_first_second_tournament,3,MCTS,score,0.788
+summary_first_second_tournament,3,MCTS,ci_lo,0.7332
+summary_first_second_tournament,3,MCTS,ci_hi,0.8341
+summary_first_second_tournament,4,MCTS,went_first,True
+summary_first_second_tournament,4,MCTS,n,250
+summary_first_second_tournament,4,MCTS,score,0.748
+summary_first_second_tournament,4,MCTS,ci_lo,0.6907
+summary_first_second_tournament,4,MCTS,ci_hi,0.7978
+summary_first_second_tournament,5,Random,went_first,False
+summary_first_second_tournament,5,Random,n,250
+summary_first_second_tournament,5,Random,score,0.06
+summary_first_second_tournament,5,Random,ci_lo,0.0367
+summary_first_second_tournament,5,Random,ci_hi,0.0966
+summary_first_second_tournament,6,Random,went_first,True
+summary_first_second_tournament,6,Random,n,250
+summary_first_second_tournament,6,Random,score,0.092
+summary_first_second_tournament,6,Random,ci_lo,0.0621
+summary_first_second_tournament,6,Random,ci_hi,0.1343
+summary_first_second_tournament,7,Think1,went_first,False
+summary_first_second_tournament,7,Think1,n,250
+summary_first_second_tournament,7,Think1,score,0.172
+summary_first_second_tournament,7,Think1,ci_lo,0.1303
+summary_first_second_tournament,7,Think1,ci_hi,0.2237
+summary_first_second_tournament,8,Think1,went_first,True
+summary_first_second_tournament,8,Think1,n,250
+summary_first_second_tournament,8,Think1,score,0.172
+summary_first_second_tournament,8,Think1,ci_lo,0.1303
+summary_first_second_tournament,8,Think1,ci_hi,0.2237
+summary_first_second_tournament,9,Think2,went_first,False
+summary_first_second_tournament,9,Think2,n,250
+summary_first_second_tournament,9,Think2,score,0.344
+summary_first_second_tournament,9,Think2,ci_lo,0.2879
+summary_first_second_tournament,9,Think2,ci_hi,0.4048
+summary_first_second_tournament,10,Think2,went_first,True
+summary_first_second_tournament,10,Think2,n,250
+summary_first_second_tournament,10,Think2,score,0.392
+summary_first_second_tournament,10,Think2,ci_lo,0.3336
+summary_first_second_tournament,10,Think2,ci_hi,0.4537
+summary_first_second_tournament,11,Think3,went_first,False
+summary_first_second_tournament,11,Think3,n,250
+summary_first_second_tournament,11,Think3,score,0.724
+summary_first_second_tournament,11,Think3,ci_lo,0.6655
+summary_first_second_tournament,11,Think3,ci_hi,0.7757
+summary_first_second_tournament,12,Think3,went_first,True
+summary_first_second_tournament,12,Think3,n,250
+summary_first_second_tournament,12,Think3,score,0.702
+summary_first_second_tournament,12,Think3,ci_lo,0.6426
+summary_first_second_tournament,12,Think3,ci_hi,0.7553
+summary_latency_tournament,1,AlphaBeta,moves,4174
+summary_latency_tournament,1,AlphaBeta,avg_ms,50.11
+summary_latency_tournament,1,AlphaBeta,p95_ms,149.82
+summary_latency_tournament,1,AlphaBeta,max_ms,624.97
+summary_latency_tournament,2,MCTS,moves,4561
+summary_latency_tournament,2,MCTS,avg_ms,29.25
+summary_latency_tournament,2,MCTS,p95_ms,64.37
+summary_latency_tournament,2,MCTS,max_ms,347.52
+summary_latency_tournament,3,Random,moves,2794
+summary_latency_tournament,3,Random,avg_ms,0.02
+summary_latency_tournament,3,Random,p95_ms,0.02
+summary_latency_tournament,3,Random,max_ms,5.54
+summary_latency_tournament,4,Think1,moves,2772
+summary_latency_tournament,4,Think1,avg_ms,0.14
+summary_latency_tournament,4,Think1,p95_ms,0.32
+summary_latency_tournament,4,Think1,max_ms,7.41
+summary_latency_tournament,5,Think2,moves,4162
+summary_latency_tournament,5,Think2,avg_ms,0.66
+summary_latency_tournament,5,Think2,p95_ms,1.61
+summary_latency_tournament,5,Think2,max_ms,39.03
+summary_latency_tournament,6,Think3,moves,4871
+summary_latency_tournament,6,Think3,avg_ms,0.81
+summary_latency_tournament,6,Think3,p95_ms,2.31
+summary_latency_tournament,6,Think3,max_ms,59.46
+summary_pairs_tournament,1,Random,agent1,Random
+summary_pairs_tournament,1,Random,agent2,Think1
+summary_pairs_tournament,1,Random,n,100
+summary_pairs_tournament,1,Random,wins,27
+summary_pairs_tournament,1,Random,draws,0
+summary_pairs_tournament,1,Random,losses,73
+summary_pairs_tournament,1,Random,score,0.27
+summary_pairs_tournament,1,Random,ci_lo,0.1927
+summary_pairs_tournament,1,Random,ci_hi,0.3643
+summary_pairs_tournament,1,Random,forfeits,0
+summary_pairs_tournament,2,Random,agent1,Random
+summary_pairs_tournament,2,Random,agent2,Think2
+summary_pairs_tournament,2,Random,n,100
+summary_pairs_tournament,2,Random,wins,11
+summary_pairs_tournament,2,Random,draws,0
+summary_pairs_tournament,2,Random,losses,89
+summary_pairs_tournament,2,Random,score,0.11
+summary_pairs_tournament,2,Random,ci_lo,0.0625
+summary_pairs_tournament,2,Random,ci_hi,0.1863
+summary_pairs_tournament,2,Random,forfeits,0
+summary_pairs_tournament,3,Random,agent1,Random
+summary_pairs_tournament,3,Random,agent2,Think3
+summary_pairs_tournament,3,Random,n,100
+summary_pairs_tournament,3,Random,wins,0
+summary_pairs_tournament,3,Random,draws,0
+summary_pairs_tournament,3,Random,losses,100
+summary_pairs_tournament,3,Random,score,0
+summary_pairs_tournament,3,Random,ci_lo,0
+summary_pairs_tournament,3,Random,ci_hi,0.037
+summary_pairs_tournament,3,Random,forfeits,0
+summary_pairs_tournament,4,Random,agent1,Random
+summary_pairs_tournament,4,Random,agent2,AlphaBeta
+summary_pairs_tournament,4,Random,n,100
+summary_pairs_tournament,4,Random,wins,0
+summary_pairs_tournament,4,Random,draws,0
+summary_pairs_tournament,4,Random,losses,100
+summary_pairs_tournament,4,Random,score,0
+summary_pairs_tournament,4,Random,ci_lo,0
+summary_pairs_tournament,4,Random,ci_hi,0.037
+summary_pairs_tournament,4,Random,forfeits,0
+summary_pairs_tournament,5,Random,agent1,Random
+summary_pairs_tournament,5,Random,agent2,MCTS
+summary_pairs_tournament,5,Random,n,100
+summary_pairs_tournament,5,Random,wins,0
+summary_pairs_tournament,5,Random,draws,0
+summary_pairs_tournament,5,Random,losses,100
+summary_pairs_tournament,5,Random,score,0
+summary_pairs_tournament,5,Random,ci_lo,0
+summary_pairs_tournament,5,Random,ci_hi,0.037
+summary_pairs_tournament,5,Random,forfeits,0
+summary_pairs_tournament,6,Think1,agent1,Think1
+summary_pairs_tournament,6,Think1,agent2,Think2
+summary_pairs_tournament,6,Think1,n,100
+summary_pairs_tournament,6,Think1,wins,8
+summary_pairs_tournament,6,Think1,draws,0
+summary_pairs_tournament,6,Think1,losses,92
+summary_pairs_tournament,6,Think1,score,0.08
+summary_pairs_tournament,6,Think1,ci_lo,0.0411
+summary_pairs_tournament,6,Think1,ci_hi,0.15
+summary_pairs_tournament,6,Think1,forfeits,0
+summary_pairs_tournament,7,Think1,agent1,Think1
+summary_pairs_tournament,7,Think1,agent2,Think3
+summary_pairs_tournament,7,Think1,n,100
+summary_pairs_tournament,7,Think1,wins,5
+summary_pairs_tournament,7,Think1,draws,0
+summary_pairs_tournament,7,Think1,losses,95
+summary_pairs_tournament,7,Think1,score,0.05
+summary_pairs_tournament,7,Think1,ci_lo,0.0215
+summary_pairs_tournament,7,Think1,ci_hi,0.1118
+summary_pairs_tournament,7,Think1,forfeits,0
+summary_pairs_tournament,8,Think1,agent1,Think1
+summary_pairs_tournament,8,Think1,agent2,AlphaBeta
+summary_pairs_tournament,8,Think1,n,100
+summary_pairs_tournament,8,Think1,wins,0
+summary_pairs_tournament,8,Think1,draws,0
+summary_pairs_tournament,8,Think1,losses,100
+summary_pairs_tournament,8,Think1,score,0
+summary_pairs_tournament,8,Think1,ci_lo,0
+summary_pairs_tournament,8,Think1,ci_hi,0.037
+summary_pairs_tournament,8,Think1,forfeits,0
+summary_pairs_tournament,9,Think1,agent1,Think1
+summary_pairs_tournament,9,Think1,agent2,MCTS
+summary_pairs_tournament,9,Think1,n,100
+summary_pairs_tournament,9,Think1,wins,0
+summary_pairs_tournament,9,Think1,draws,0
+summary_pairs_tournament,9,Think1,losses,100
+summary_pairs_tournament,9,Think1,score,0
+summary_pairs_tournament,9,Think1,ci_lo,0
+summary_pairs_tournament,9,Think1,ci_hi,0.037
+summary_pairs_tournament,9,Think1,forfeits,0
+summary_pairs_tournament,10,Think2,agent1,Think2
+summary_pairs_tournament,10,Think2,agent2,Think3
+summary_pairs_tournament,10,Think2,n,100
+summary_pairs_tournament,10,Think2,wins,2
+summary_pairs_tournament,10,Think2,draws,2
+summary_pairs_tournament,10,Think2,losses,96
+summary_pairs_tournament,10,Think2,score,0.03
+summary_pairs_tournament,10,Think2,ci_lo,0.0103
+summary_pairs_tournament,10,Think2,ci_hi,0.0845
+summary_pairs_tournament,10,Think2,forfeits,0
+summary_pairs_tournament,11,Think2,agent1,Think2
+summary_pairs_tournament,11,Think2,agent2,AlphaBeta
+summary_pairs_tournament,11,Think2,n,100
+summary_pairs_tournament,11,Think2,wins,0
+summary_pairs_tournament,11,Think2,draws,0
+summary_pairs_tournament,11,Think2,losses,100
+summary_pairs_tournament,11,Think2,score,0
+summary_pairs_tournament,11,Think2,ci_lo,0
+summary_pairs_tournament,11,Think2,ci_hi,0.037
+summary_pairs_tournament,11,Think2,forfeits,0
+summary_pairs_tournament,12,Think2,agent1,Think2
+summary_pairs_tournament,12,Think2,agent2,MCTS
+summary_pairs_tournament,12,Think2,n,100
+summary_pairs_tournament,12,Think2,wins,0
+summary_pairs_tournament,12,Think2,draws,0
+summary_pairs_tournament,12,Think2,losses,100
+summary_pairs_tournament,12,Think2,score,0
+summary_pairs_tournament,12,Think2,ci_lo,0
+summary_pairs_tournament,12,Think2,ci_hi,0.037
+summary_pairs_tournament,12,Think2,forfeits,0
+summary_pairs_tournament,13,Think3,agent1,Think3
+summary_pairs_tournament,13,Think3,agent2,AlphaBeta
+summary_pairs_tournament,13,Think3,n,100
+summary_pairs_tournament,13,Think3,wins,17
+summary_pairs_tournament,13,Think3,draws,12
+summary_pairs_tournament,13,Think3,losses,71
+summary_pairs_tournament,13,Think3,score,0.23
+summary_pairs_tournament,13,Think3,ci_lo,0.1584
+summary_pairs_tournament,13,Think3,ci_hi,0.3215
+summary_pairs_tournament,13,Think3,forfeits,0
+summary_pairs_tournament,14,Think3,agent1,Think3
+summary_pairs_tournament,14,Think3,agent2,MCTS
+summary_pairs_tournament,14,Think3,n,100
+summary_pairs_tournament,14,Think3,wins,40
+summary_pairs_tournament,14,Think3,draws,3
+summary_pairs_tournament,14,Think3,losses,57
+summary_pairs_tournament,14,Think3,score,0.415
+summary_pairs_tournament,14,Think3,ci_lo,0.3233
+summary_pairs_tournament,14,Think3,ci_hi,0.513
+summary_pairs_tournament,14,Think3,forfeits,0
+summary_pairs_tournament,15,AlphaBeta,agent1,AlphaBeta
+summary_pairs_tournament,15,AlphaBeta,agent2,MCTS
+summary_pairs_tournament,15,AlphaBeta,n,100
+summary_pairs_tournament,15,AlphaBeta,wins,73
+summary_pairs_tournament,15,AlphaBeta,draws,3
+summary_pairs_tournament,15,AlphaBeta,losses,24
+summary_pairs_tournament,15,AlphaBeta,score,0.745
+summary_pairs_tournament,15,AlphaBeta,ci_lo,0.6516
+summary_pairs_tournament,15,AlphaBeta,ci_hi,0.8203
+summary_pairs_tournament,15,AlphaBeta,forfeits,0
+summary_rq1,1,200,budget_ms,200
+summary_rq1,1,200,n,100
+summary_rq1,1,200,AB thắng,48
+summary_rq1,1,200,hòa,2
+summary_rq1,1,200,AB thua,50
+summary_rq1,1,200,AB score,0.49
+summary_rq1,1,200,ci_lo,0.3942
+summary_rq1,1,200,ci_hi,0.5865
+summary_rq1,1,200,AB độ sâu TB,5.716
+summary_rq1,1,200,MCTS mô phỏng TB,12119.1939
+summary_rq1,1,200,AB p95 ms,200.022
+summary_rq1,1,200,MCTS p95 ms,200.2345
+summary_rq1,2,1000,budget_ms,1000
+summary_rq1,2,1000,n,100
+summary_rq1,2,1000,AB thắng,50
+summary_rq1,2,1000,hòa,9
+summary_rq1,2,1000,AB thua,41
+summary_rq1,2,1000,AB score,0.545
+summary_rq1,2,1000,ci_lo,0.4475
+summary_rq1,2,1000,ci_hi,0.6391
+summary_rq1,2,1000,AB độ sâu TB,5.8927
+summary_rq1,2,1000,MCTS mô phỏng TB,74126.9196
+summary_rq1,2,1000,AB p95 ms,259.784
+summary_rq1,2,1000,MCTS p95 ms,1000.24
+summary_throughput_tournament,1,AlphaBeta,đơn vị,nút/s
+summary_throughput_tournament,1,AlphaBeta,nước,4174
+summary_throughput_tournament,1,AlphaBeta,tổng (gộp),22265.4
+summary_throughput_tournament,1,AlphaBeta,trung vị mỗi nước,28236
+summary_throughput_tournament,1,AlphaBeta,nodes TB/nước,1115.8
+summary_throughput_tournament,2,MCTS,đơn vị,mô phỏng/s
+summary_throughput_tournament,2,MCTS,nước,4561
+summary_throughput_tournament,2,MCTS,tổng (gộp),6838
+summary_throughput_tournament,2,MCTS,trung vị mỗi nước,7526.2
+summary_throughput_tournament,2,MCTS,sims TB/nước,200
+tournament_100ms_matrix,1,Random,Think3,0
+tournament_100ms_matrix,1,Random,AlphaBeta-5,0
+tournament_100ms_matrix,1,Random,MCTS-200,0
+tournament_100ms_matrix,1,Random,NN (SL),0
+tournament_100ms_matrix,1,Random,RL,0
+tournament_100ms_matrix,1,Random,total,0
+tournament_100ms_matrix,2,Think3,Random,1
+tournament_100ms_matrix,2,Think3,AlphaBeta-5,0.1
+tournament_100ms_matrix,2,Think3,MCTS-200,0.05
+tournament_100ms_matrix,2,Think3,NN (SL),0.55
+tournament_100ms_matrix,2,Think3,RL,0.35
+tournament_100ms_matrix,2,Think3,total,2.05
+tournament_100ms_matrix,3,AlphaBeta-5,Random,1
+tournament_100ms_matrix,3,AlphaBeta-5,Think3,0.9
+tournament_100ms_matrix,3,AlphaBeta-5,MCTS-200,0.55
+tournament_100ms_matrix,3,AlphaBeta-5,NN (SL),0.9
+tournament_100ms_matrix,3,AlphaBeta-5,RL,0.7
+tournament_100ms_matrix,3,AlphaBeta-5,total,4.05
+tournament_100ms_matrix,4,MCTS-200,Random,1
+tournament_100ms_matrix,4,MCTS-200,Think3,0.95
+tournament_100ms_matrix,4,MCTS-200,AlphaBeta-5,0.45
+tournament_100ms_matrix,4,MCTS-200,NN (SL),0.8
+tournament_100ms_matrix,4,MCTS-200,RL,1
+tournament_100ms_matrix,4,MCTS-200,total,4.2
+tournament_100ms_matrix,5,NN (SL),Random,1
+tournament_100ms_matrix,5,NN (SL),Think3,0.45
+tournament_100ms_matrix,5,NN (SL),AlphaBeta-5,0.1
+tournament_100ms_matrix,5,NN (SL),MCTS-200,0.2
+tournament_100ms_matrix,5,NN (SL),RL,0.35
+tournament_100ms_matrix,5,NN (SL),total,2.1
+tournament_100ms_matrix,6,RL,Random,1
+tournament_100ms_matrix,6,RL,Think3,0.65
+tournament_100ms_matrix,6,RL,AlphaBeta-5,0.3
+tournament_100ms_matrix,6,RL,MCTS-200,0
+tournament_100ms_matrix,6,RL,NN (SL),0.65
+tournament_100ms_matrix,6,RL,total,2.6
+tournament_500ms_matrix,1,Random,Think3,0
+tournament_500ms_matrix,1,Random,AlphaBeta-5,0
+tournament_500ms_matrix,1,Random,MCTS-200,0
+tournament_500ms_matrix,1,Random,NN (SL),0
+tournament_500ms_matrix,1,Random,RL,0
+tournament_500ms_matrix,1,Random,total,0
+tournament_500ms_matrix,2,Think3,Random,1
+tournament_500ms_matrix,2,Think3,AlphaBeta-5,0.1
+tournament_500ms_matrix,2,Think3,MCTS-200,0.1
+tournament_500ms_matrix,2,Think3,NN (SL),0.55
+tournament_500ms_matrix,2,Think3,RL,0.35
+tournament_500ms_matrix,2,Think3,total,2.1
+tournament_500ms_matrix,3,AlphaBeta-5,Random,1
+tournament_500ms_matrix,3,AlphaBeta-5,Think3,0.9
+tournament_500ms_matrix,3,AlphaBeta-5,MCTS-200,0.65
+tournament_500ms_matrix,3,AlphaBeta-5,NN (SL),1
+tournament_500ms_matrix,3,AlphaBeta-5,RL,0.95
+tournament_500ms_matrix,3,AlphaBeta-5,total,4.5
+tournament_500ms_matrix,4,MCTS-200,Random,1
+tournament_500ms_matrix,4,MCTS-200,Think3,0.9
+tournament_500ms_matrix,4,MCTS-200,AlphaBeta-5,0.35
+tournament_500ms_matrix,4,MCTS-200,NN (SL),1
+tournament_500ms_matrix,4,MCTS-200,RL,1
+tournament_500ms_matrix,4,MCTS-200,total,4.25
+tournament_500ms_matrix,5,NN (SL),Random,1
+tournament_500ms_matrix,5,NN (SL),Think3,0.45
+tournament_500ms_matrix,5,NN (SL),AlphaBeta-5,0
+tournament_500ms_matrix,5,NN (SL),MCTS-200,0
+tournament_500ms_matrix,5,NN (SL),RL,0.35
+tournament_500ms_matrix,5,NN (SL),total,1.8
+tournament_500ms_matrix,6,RL,Random,1
+tournament_500ms_matrix,6,RL,Think3,0.65
+tournament_500ms_matrix,6,RL,AlphaBeta-5,0.05
+tournament_500ms_matrix,6,RL,MCTS-200,0
+tournament_500ms_matrix,6,RL,NN (SL),0.65
+tournament_500ms_matrix,6,RL,total,2.35
+tournament_all10_run2_matrix,1,Random,Think1,0.27
+tournament_all10_run2_matrix,1,Random,Think2,0.11
+tournament_all10_run2_matrix,1,Random,Think3,0
+tournament_all10_run2_matrix,1,Random,AlphaBeta-7,0
+tournament_all10_run2_matrix,1,Random,MCTS-200,0
+tournament_all10_run2_matrix,1,Random,NN (SL),0.06
+tournament_all10_run2_matrix,1,Random,RL,0.04
+tournament_all10_run2_matrix,1,Random,AZ-MCTS,0.03
+tournament_all10_run2_matrix,1,Random,AZ8-10,0
+tournament_all10_run2_matrix,1,Random,total,0.51
+tournament_all10_run2_matrix,2,Think1,Random,0.73
+tournament_all10_run2_matrix,2,Think1,Think2,0.15
+tournament_all10_run2_matrix,2,Think1,Think3,0.07
+tournament_all10_run2_matrix,2,Think1,AlphaBeta-7,0
+tournament_all10_run2_matrix,2,Think1,MCTS-200,0
+tournament_all10_run2_matrix,2,Think1,NN (SL),0.19
+tournament_all10_run2_matrix,2,Think1,RL,0.14
+tournament_all10_run2_matrix,2,Think1,AZ-MCTS,0.06
+tournament_all10_run2_matrix,2,Think1,AZ8-10,0.02
+tournament_all10_run2_matrix,2,Think1,total,1.36
+tournament_all10_run2_matrix,3,Think2,Random,0.89
+tournament_all10_run2_matrix,3,Think2,Think1,0.85
+tournament_all10_run2_matrix,3,Think2,Think3,0.045
+tournament_all10_run2_matrix,3,Think2,AlphaBeta-7,0
+tournament_all10_run2_matrix,3,Think2,MCTS-200,0.01
+tournament_all10_run2_matrix,3,Think2,NN (SL),0.75
+tournament_all10_run2_matrix,3,Think2,RL,0.51
+tournament_all10_run2_matrix,3,Think2,AZ-MCTS,0.015
+tournament_all10_run2_matrix,3,Think2,AZ8-10,0.045
+tournament_all10_run2_matrix,3,Think2,total,3.115
+tournament_all10_run2_matrix,4,Think3,Random,1
+tournament_all10_run2_matrix,4,Think3,Think1,0.93
+tournament_all10_run2_matrix,4,Think3,Think2,0.955
+tournament_all10_run2_matrix,4,Think3,AlphaBeta-7,0.08
+tournament_all10_run2_matrix,4,Think3,MCTS-200,0.435
+tournament_all10_run2_matrix,4,Think3,NN (SL),0.505
+tournament_all10_run2_matrix,4,Think3,RL,0.45
+tournament_all10_run2_matrix,4,Think3,AZ-MCTS,0.235
+tournament_all10_run2_matrix,4,Think3,AZ8-10,0.235
+tournament_all10_run2_matrix,4,Think3,total,4.825
+tournament_all10_run2_matrix,5,AlphaBeta-7,Random,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think1,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think2,1
+tournament_all10_run2_matrix,5,AlphaBeta-7,Think3,0.92
+tournament_all10_run2_matrix,5,AlphaBeta-7,MCTS-200,0.855
+tournament_all10_run2_matrix,5,AlphaBeta-7,NN (SL),0.98
+tournament_all10_run2_matrix,5,AlphaBeta-7,RL,0.975
+tournament_all10_run2_matrix,5,AlphaBeta-7,AZ-MCTS,0.865
+tournament_all10_run2_matrix,5,AlphaBeta-7,AZ8-10,0.845
+tournament_all10_run2_matrix,5,AlphaBeta-7,total,8.44
+tournament_all10_run2_matrix,6,MCTS-200,Random,1
+tournament_all10_run2_matrix,6,MCTS-200,Think1,1
+tournament_all10_run2_matrix,6,MCTS-200,Think2,0.99
+tournament_all10_run2_matrix,6,MCTS-200,Think3,0.565
+tournament_all10_run2_matrix,6,MCTS-200,AlphaBeta-7,0.145
+tournament_all10_run2_matrix,6,MCTS-200,NN (SL),0.94
+tournament_all10_run2_matrix,6,MCTS-200,RL,0.9
+tournament_all10_run2_matrix,6,MCTS-200,AZ-MCTS,0.475
+tournament_all10_run2_matrix,6,MCTS-200,AZ8-10,0.56
+tournament_all10_run2_matrix,6,MCTS-200,total,6.575
+tournament_all10_run2_matrix,7,NN (SL),Random,0.94
+tournament_all10_run2_matrix,7,NN (SL),Think1,0.81
+tournament_all10_run2_matrix,7,NN (SL),Think2,0.25
+tournament_all10_run2_matrix,7,NN (SL),Think3,0.495
+tournament_all10_run2_matrix,7,NN (SL),AlphaBeta-7,0.02
+tournament_all10_run2_matrix,7,NN (SL),MCTS-200,0.06
+tournament_all10_run2_matrix,7,NN (SL),RL,0.4
+tournament_all10_run2_matrix,7,NN (SL),AZ-MCTS,0.245
+tournament_all10_run2_matrix,7,NN (SL),AZ8-10,0.225
+tournament_all10_run2_matrix,7,NN (SL),total,3.445
+tournament_all10_run2_matrix,8,RL,Random,0.96
+tournament_all10_run2_matrix,8,RL,Think1,0.86
+tournament_all10_run2_matrix,8,RL,Think2,0.49
+tournament_all10_run2_matrix,8,RL,Think3,0.55
+tournament_all10_run2_matrix,8,RL,AlphaBeta-7,0.025
+tournament_all10_run2_matrix,8,RL,MCTS-200,0.1
+tournament_all10_run2_matrix,8,RL,NN (SL),0.6
+tournament_all10_run2_matrix,8,RL,AZ-MCTS,0.46
+tournament_all10_run2_matrix,8,RL,AZ8-10,0.245
+tournament_all10_run2_matrix,8,RL,total,4.29
+tournament_all10_run2_matrix,9,AZ-MCTS,Random,0.97
+tournament_all10_run2_matrix,9,AZ-MCTS,Think1,0.94
+tournament_all10_run2_matrix,9,AZ-MCTS,Think2,0.985
+tournament_all10_run2_matrix,9,AZ-MCTS,Think3,0.765
+tournament_all10_run2_matrix,9,AZ-MCTS,AlphaBeta-7,0.135
+tournament_all10_run2_matrix,9,AZ-MCTS,MCTS-200,0.525
+tournament_all10_run2_matrix,9,AZ-MCTS,NN (SL),0.755
+tournament_all10_run2_matrix,9,AZ-MCTS,RL,0.54
+tournament_all10_run2_matrix,9,AZ-MCTS,AZ8-10,0.465
+tournament_all10_run2_matrix,9,AZ-MCTS,total,6.08
+tournament_all10_run2_matrix,10,AZ8-10,Random,1
+tournament_all10_run2_matrix,10,AZ8-10,Think1,0.98
+tournament_all10_run2_matrix,10,AZ8-10,Think2,0.955
+tournament_all10_run2_matrix,10,AZ8-10,Think3,0.765
+tournament_all10_run2_matrix,10,AZ8-10,AlphaBeta-7,0.155
+tournament_all10_run2_matrix,10,AZ8-10,MCTS-200,0.44
+tournament_all10_run2_matrix,10,AZ8-10,NN (SL),0.775
+tournament_all10_run2_matrix,10,AZ8-10,RL,0.755
+tournament_all10_run2_matrix,10,AZ8-10,AZ-MCTS,0.535
+tournament_all10_run2_matrix,10,AZ8-10,total,6.36

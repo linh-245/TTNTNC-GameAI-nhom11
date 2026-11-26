@@ -1,0 +1,13 @@
+agent,went_first,n,score,ci_lo,ci_hi
+AlphaBeta,False,250,0.912,0.8704,0.9412
+AlphaBeta,True,250,0.894,0.8497,0.9264
+MCTS,False,250,0.788,0.7332,0.8341
+MCTS,True,250,0.748,0.6907,0.7978
+Random,False,250,0.06,0.0367,0.0966
+Random,True,250,0.092,0.0621,0.1343
+Think1,False,250,0.172,0.1303,0.2237
+Think1,True,250,0.172,0.1303,0.2237
+Think2,False,250,0.344,0.2879,0.4048
+Think2,True,250,0.392,0.3336,0.4537
+Think3,False,250,0.724,0.6655,0.7757
+Think3,True,250,0.702,0.6426,0.7553

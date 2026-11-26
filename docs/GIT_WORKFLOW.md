@@ -22,9 +22,9 @@ CuoiKy/<Khu vực>: <việc đã làm>
 ```
 
 ```
-CuoiKy/Engine: thêm undo() và legal_actions()
-CuoiKy/MCTS: sửa dấu lan truyền ngược, thêm test hồi quy
-CuoiKy/Docs: cập nhật README bảng trạng thái các cấp
+Duan_GameAI/Engine: thêm undo() và legal_actions()
+Duan_GameAI/MCTS: sửa dấu lan truyền ngược, thêm test hồi quy
+Duan_GameAI/Docs: cập nhật README bảng trạng thái các cấp
 ```
 
 - Khu vực: Engine, Agents, AlphaBeta, MCTS, UI, Eval, Training, Test, Fix, Docs.
