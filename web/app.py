@@ -149,9 +149,12 @@ def agent_choose(fn, env):
 
 
 # =====================================================================
-# GIAO DIỆN
+# GIAO DIỆN  (chọn được cả hai vai: Human hoặc bất kỳ tác tử nào, như pygame)
 # =====================================================================
 PIECE_COLOR = {0: "#0a0a1c", 1: "#dc3232", -1: "#f0c81e"}
+HUMAN = "Human"
+VN = {"red": "ĐỎ", "yellow": "VÀNG"}
+PLAYER_CHOICES = [HUMAN] + AGENT_NAMES
 
 
 def render_board(env):
@@ -169,74 +172,112 @@ def render_board(env):
             + "".join(rows) + f"<tr>{nums}</tr></table>")
 
 
-def _status(state, extra=""):
-    res = state["result"]
+def _is_human(state, color):
+    return state["agents"][color] is None
+
+
+def _status(state, thinking=False):
+    res, names = state["result"], state["names"]
     if res is None:
-        msg = "Đến lượt bạn."
-    elif res == "draw":
-        msg = "HÒA!"
-    elif res == state["human"]:
-        msg = "BẠN THẮNG!"
-    else:
-        msg = "AI THẮNG."
-    return msg + (f"  |  {extra}" if extra else "")
+        turn = state["env"].turn
+        if _is_human(state, turn):
+            return f"Lượt {VN[turn]} ({names[turn]}): bấm số cột 1–7."
+        return (f"Lượt {VN[turn]} ({names[turn]}): "
+                + ("đang suy nghĩ…" if thinking else "AI sắp đi."))
+    if res == "draw":
+        return "HÒA!"
+    return f"{VN[res]} ({names[res]}) THẮNG!"
 
 
-def _ai_turn(state):
-    col, info = agent_choose(state["agent"], state["env"])
-    if col not in legal_moves(state["env"]):
-        col = legal_moves(state["env"])[0]
-    state["result"] = play(state["env"], col)
-    return f"AI đi cột {col} ({info})"
+def _out(state, thinking=False):
+    """Bộ 4 đầu ra: state, bàn cờ, trạng thái, lịch sử."""
+    return (state, render_board(state["env"]), _status(state, thinking),
+            "\n".join(state["log"]))
 
 
-def start(agent_name, budget_ms, ai_first):
-    state = {
-        "env": new_env(),
-        "agent": make_agent(agent_name, budget_ms),
-        "human": "yellow" if ai_first else "red",  # đỏ luôn đi trước
-        "result": None,
-    }
-    extra = _ai_turn(state) if ai_first else ""
-    return state, render_board(state["env"]), _status(state, extra)
+def _run_ai(state):
+    """Cho AI đi liên tục tới khi đến lượt người hoặc hết ván (yield sau mỗi nước)."""
+    state["busy"] = True
+    try:
+        has_human = any(_is_human(state, c) for c in ("red", "yellow"))
+        while state["result"] is None and not _is_human(state, state["env"].turn):
+            env = state["env"]
+            turn = env.turn
+            yield _out(state, thinking=True)
+            col, info = agent_choose(state["agents"][turn], env)
+            if col not in legal_moves(env):
+                col = legal_moves(env)[0]
+            state["result"] = play(env, col)
+            state["log"].append(f"{VN[turn]} ({state['names'][turn]}) → cột {col} ({info})")
+            yield _out(state)
+            if not has_human:
+                time.sleep(0.4)  # AI vs AI: dừng chút để xem được từng nước
+    finally:
+        state["busy"] = False
+
+
+def start(red_name, yellow_name, budget_ms):
+    names = {"red": red_name, "yellow": yellow_name}
+    agents = {c: (None if n == HUMAN else make_agent(n, budget_ms))
+              for c, n in names.items()}
+    state = {"env": new_env(), "agents": agents, "names": names,
+             "result": None, "log": [], "busy": False}
+    yield _out(state)
+    yield from _run_ai(state)
 
 
 def make_click(col):
     def on_click(state):
         if state is None:
-            return state, gr.update(), "Hãy bấm 'Ván mới' trước."
+            yield None, gr.update(), "Hãy bấm 'Ván mới / Bắt đầu' trước.", gr.update()
+            return
+        env = state["env"]
+        if state["busy"]:
+            yield state, gr.update(), "AI đang suy nghĩ, chờ một chút…", gr.update()
+            return
         if state["result"] is not None:
-            return state, render_board(state["env"]), _status(state)
-        if col not in legal_moves(state["env"]):
-            return state, render_board(state["env"]), "Cột đã đầy, chọn cột khác."
-        state["result"] = play(state["env"], col)
-        extra = _ai_turn(state) if state["result"] is None else ""
-        return state, render_board(state["env"]), _status(state, extra)
+            yield _out(state)
+            return
+        turn = env.turn
+        if not _is_human(state, turn):
+            yield state, gr.update(), f"Không phải lượt người chơi ({VN[turn]} là AI).", gr.update()
+            return
+        if col not in legal_moves(env):
+            yield state, gr.update(), "Cột đã đầy, chọn cột khác.", gr.update()
+            return
+        state["result"] = play(env, col)
+        state["log"].append(f"{VN[turn]} ({state['names'][turn]}) → cột {col}")
+        yield _out(state)
+        yield from _run_ai(state)
     return on_click
 
 
 with gr.Blocks(title="Connect Four 7x6 - Nhóm 11") as demo:
     gr.Markdown("# Connect Four 7×6 – Game AI đa cấp độ\n"
-                "Nhóm 11 – Trí tuệ nhân tạo nâng cao. Bạn là quân **đỏ** "
-                "(đi trước), trừ khi tick 'AI đi trước'.")
+                "Nhóm 11 – Trí tuệ nhân tạo nâng cao. Chọn **Human** hoặc một tác tử AI "
+                "cho từng bên (ĐỎ đi trước). Human vs AI, AI vs AI, hoặc Human vs Human.")
     with gr.Row():
-        agent_dd = gr.Dropdown(AGENT_NAMES, value=AGENT_NAMES[min(7, len(AGENT_NAMES) - 1)],
-                               label="Đối thủ AI")
+        red_dd = gr.Dropdown(PLAYER_CHOICES, value=HUMAN,
+                             label="Người chơi ĐỎ (đi trước)")
+        yellow_default = "MCTS-500" if "MCTS-500" in AGENT_NAMES else AGENT_NAMES[0]
+        yellow_dd = gr.Dropdown(PLAYER_CHOICES, value=yellow_default,
+                                label="Người chơi VÀNG")
         budget = gr.Slider(50, 2000, value=300, step=50,
                            label="Ngân sách (ms) - chỉ áp dụng cho 'MCTS (theo ms)'")
-        ai_first = gr.Checkbox(False, label="AI đi trước")
-        new_btn = gr.Button("Ván mới", variant="primary")
+        new_btn = gr.Button("Ván mới / Bắt đầu", variant="primary")
 
+    status = gr.Textbox(label="Trạng thái", interactive=False)
     board_html = gr.HTML()
     with gr.Row():
         col_btns = [gr.Button(str(c)) for c in range(1, COLS + 1)]
-    status = gr.Textbox(label="Trạng thái", interactive=False)
+    log_box = gr.Textbox(label="Lịch sử nước đi", lines=8, interactive=False)
     state = gr.State(None)
 
-    new_btn.click(start, [agent_dd, budget, ai_first], [state, board_html, status])
+    outs = [state, board_html, status, log_box]
+    new_btn.click(start, [red_dd, yellow_dd, budget], outs)
     for c, b in zip(range(1, COLS + 1), col_btns):
-        b.click(make_click(c), [state], [state, board_html, status])
-    demo.load(start, [agent_dd, budget, ai_first], [state, board_html, status])
+        b.click(make_click(c), [state], outs)
+    demo.load(start, [red_dd, yellow_dd, budget], outs)
 
 if __name__ == "__main__":
     demo.launch()
