@@ -19,6 +19,13 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 12/11 | Chạy `python -m eval.tournament`, ra bảng xếp hạng 6 agent (AlphaBeta, MCTS, Think3, Think2, Think1, Random) | log CSV, JSONL (lưu trên Drive) |
 | 12/11 | Merge `dev` vào `main` cho mốc agents | PR #29; commit merge `804ac26` |
 | 12/11 | Gắn tag mốc `v0.2-agents` trên `main` | tag `v0.2-agents` → `804ac26` |
+| 14/11 | Merge `dev` vào `main` cho mốc giữa kỳ, gắn tag `v0.9-giuaky` | PR #40; commit merge `e9fb5bf`; tag `v0.9-giuaky` |
+| 26/11 | Giao diện Pygame: thêm mục AZ-MCTS vào menu `ui/pygame_ui.py` (chỉ hiện khi có checkpoint trong `weights/`); gộp thêm 3 test (nước đi hợp lệ, checkpoint thật, menu giao diện) vào `tests/test_az_mcts.py`; cập nhật `eval/tournament.ipynb` | commit `9602e6c` |
+| 26/11 | Demo web: viết `web/app.py` (Gradio) chọn Human hoặc tác tử AI cho cả hai bên (Human vs AI, AI vs AI, Human vs Human), hiển thị lịch sử nước đi kèm thời gian, số nút, số mô phỏng; gọi trực tiếp `game/`, `agents/`, `weights/` của đồ án, không viết lại logic. Chạy thử trên máy | commit `3a49b01`, `80354bb`; PR #56 (commit merge `4c88071`), PR #57 (commit merge `d223189`), nhánh `feat/web-demo` |
+| 26/11 | Đưa demo lên Hugging Face Spaces: tạo Space `Linh345/connect4-nhom11`, chép `app.py`, `game/`, `agents/`, `training/`, `weights/`, viết `README.md` và `requirements.txt` riêng cho Space (torch bản CPU), xử lý lỗi ZeroGPU bằng hàm `@spaces.GPU` giả; Space ở trạng thái Running | https://huggingface.co/spaces/Linh345/connect4-nhom11 (log Space lưu trên Hugging Face) |
+| 26/11 | README: thêm mục "Demo web", dòng `web/` trong cấu trúc thư mục, link demo trực tuyến, cập nhật phần kế thừa/tự làm | commit `497870c`; PR #57 (commit merge `d223189`), nhánh `feat/web-demo` |
+| 26/11 | Xem xét và gộp PR #55 (`docs/mai-nhat-ky`, nhật ký của Mai 17/11 đến 25/11) vào `dev` | PR #55; commit merge `dafd35b` (commit của Mai `7c3f4b9`) |
+| 26/11 | Merge `dev` vào `main` cho mốc cuối kỳ | PR #58; commit merge `2fccb6c` |
 
 ## Nguyễn Huỳnh Mai (@chloestudy0043-stack)
 | Ngày | Việc đã làm | Commit / PR / Issue |
