@@ -7,7 +7,7 @@ from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # SỬA ĐƯỜNG DẪN NÀY CHO ĐÚNG VỚI FILE LOG BẠN MUỐN PHÂN TÍCH
-LOG_FILE = 'logs/tournament_final.jsonl'
+LOG_FILE = 'logs/tournament_all10_run2.jsonl'
 
 def analyze():
     if not os.path.exists(LOG_FILE):
