@@ -79,11 +79,3 @@ Mỗi người tự ghi vào mục của mình **mỗi tối**. Cuối tuần d�
 | 26/11 | Dọn logs: xóa kết quả AZ-MCTS cũ chạy trước khi sửa lỗi dấu (`tournament_az*`, `tournament_final*`, `tournament_games_matrix.csv`), đổi `eval/analyze_games.py` sang `tournament_all10_run2.jsonl`, sinh lại `summary_all.md` và `summary_all_long.csv` | PR #52, nhánh `chore/logs-cleanup` |
 | 26/11 | Solver: thêm AZ-MCTS (cấp 7) và AZ8-10 (cấp 8) vào `solver/optimal_accuracy.py`, đo trên 500 thế chuẩn (200 mô phỏng): AZ-MCTS 69,2% [65,0–73,1], AZ8-10 68,6% [64,4–72,5], 0 sai nước; ghi `logs/optimal_accuracy_az.csv`, sinh lại `summary_all.*`; thêm file chạy thử `*_test.*` vào `.gitignore` | PR #54, nhánh `feat/bup-solver-az` |
 | 26/11 | Test: phát hiện 3 test lỗi dấu AZ-MCTS (ăn nước thắng, chặn dọc, chặn ngang) bị ghi đè khi `tests/test_az_mcts.py` được thay bằng bộ test mới; khôi phục thành file riêng `tests/test_az_mcts_search.py`, `pytest` 6 passed cùng `test_az_mcts.py` | PR #60 (đã merge vào `dev`), nhánh `test/bup-az-sign-tests` |
-
-## Tỷ lệ đóng góp (điền ở ngày cuối)
-| Thành viên | MSSV | Công việc chính | Tỷ lệ (%) |
-|---|---|---|---|
-| Nguyễn Kiều Linh | 3124720039 | | |
-| Nguyễn Huỳnh Mai | 3124720043 | | |
-| Nguyễn Lương Hồng Búp | 3124720009 | | |
-| **Tổng** | | | **100** |
